@@ -8,7 +8,7 @@ caixa existente.
 
 ## ROM 5.1 não é o mesmo que kernel 5.15
 
-- **RETRO ELITE 5.1 (Andromeda)** é a versão do sistema: frontend, menus, emuladores, atualizador,
+- **NEXTOS 5.1 (edição Nextos)** é a versão do sistema: frontend, menus, emuladores, atualizador,
   ferramentas e serviços.
 - **Linux 5.15.223** é a versão do kernel embutido nessa ROM. Ele não é o kernel "mainline" puro: são
   duas árvores de fabricante (vendor) da Amlogic, uma para a família GXL e outra para a família S4,

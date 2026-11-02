@@ -1,6 +1,6 @@
 # NEXTOS 5.1 — Recursos
 
-O **NEXTOS 5.1 Andromeda** é um sistema de jogos retrô e multimídia para TV boxes Amlogic de 64 bits. Ele roda sobre o **kernel Linux 5.15.223**. O número 5.1 é a versão do sistema; 5.15.223 é a versão do kernel. São coisas diferentes.
+O **NEXTOS 5.1 — edição Nextos** é um sistema de jogos retrô e multimídia para TV boxes Amlogic de 64 bits. Ele roda sobre o **kernel Linux 5.15.223**. O número 5.1 é a versão do sistema; 5.15.223 é a versão do kernel. São coisas diferentes.
 
 O sistema parte da base **EmuELEC**, que por sua vez descende de CoreELEC e LibreELEC. Em cima dela, o Retro Elite reorganizou toda a interface em português e trouxe para dentro do EmulationStation ferramentas que antes ficavam espalhadas em aplicativos separados. Também acrescentou recursos próprios de biblioteca, saves, controles, áudio, rede, manutenção e suporte.
 

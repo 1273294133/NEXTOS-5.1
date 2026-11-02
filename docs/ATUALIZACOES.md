@@ -2,9 +2,9 @@
 
 ## Situação das entregas
 
-A primeira release (`UID20261102070544`) é o espelho dos mesmos arquivos da5.1 já aprovada no canalR2. Ela ainda utiliza o atualizador R2 existente. A implementação que acrescenta GitHub principal, assinatura verificada pela chave pública e reserva R2 está sendo preparada na base privada; esse recurso será identificado na release que efetivamente o incluir.
+A primeira release (`UID20261102070544`) é o espelho dos mesmos arquivos da 5.1 já aprovada no canal R2. Ela ainda utiliza o atualizador R2 existente. A implementação que acrescenta GitHub principal, assinatura verificada pela chave pública e reserva R2 está sendo preparada na base privada; esse recurso será identificado na release que efetivamente o incluir.
 
-O repositório permanece privado até a aprovação do proprietário. Não coloque um tokenGitHub nos aparelhos para contornar essa fase. Publicar uma release dentro de um repositório privado não torna seus arquivos acessíveis a clientes anônimos.
+O repositório permanece privado até a aprovação do proprietário. Não coloque um token GitHub nos aparelhos para contornar essa fase. Publicar uma release dentro de um repositório privado não torna seus arquivos acessíveis a clientes anônimos.
 
 ## Como atualizar uma instalação compatível
 
@@ -22,4 +22,4 @@ Manifestos novos são assinados com Ed25519. A chave de confiança pública é [
 
 `SHA256SUMS` permite conferir corrupção de arquivos. `SHA256SUMS.sig` assina essa lista. A assinatura só estabelece confiança quando a chave usada para verificar é a chave legítima esperada; uma chave fornecida por uma origem comprometida não cria confiança por si só.
 
-Os clientes da primeira ROM desta página ainda não verificam o novo protocoloGitHub+assinatura automaticamente. Os arquivos assinados preparam a distribuição; a release correspondente ao cliente novo indicará a mudança.
+Os clientes da primeira ROM desta página ainda não verificam o novo protocolo GitHub + assinatura automaticamente. Os arquivos assinados preparam a distribuição; a release correspondente ao cliente novo indicará a mudança.
