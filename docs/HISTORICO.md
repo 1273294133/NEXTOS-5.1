@@ -19,7 +19,7 @@ Cliente de atualização com GitHub como origem principal e R2 como reserva, man
 
 Gerada pelo build padrão e instalada pela atualização nativa no TX9 e no Aquário. Nas duas instalações, boot, conclusão, identidade e dados/configurações foram conferidos. O cliente instalado verificou a assinatura do manifesto pela reserva R2. O kernel, os emuladores e os demais recursos da entrega anterior foram preservados.
 
-Nome público da edição: **Nextos**. Repositório **NEXTOS-5.1**, arquivos de distribuição **Nextos-5.1-UID.img.gz** e **Nextos-5.1-UID-update.zip**. Os identificadores técnicos internos permanecem compatíveis. As Releases ficam no repositório privado para revisão do proprietário.
+Nome público da edição: **Nextos**. Repositório **NEXTOS-5.1**, arquivos de distribuição **Nextos-5.1-UID.img.gz** e **Nextos-5.1-UID-update.zip**. Os identificadores técnicos internos permanecem compatíveis. As Releases foram revisadas em privado e abertas ao público em 02/11/2026, mantendo os mesmos binários e hashes aprovados.
 
 ### NEXTOS 5.1 — UID 20261102070544 (r175) · 02/11/2026 · primeira entrega espelhada
 

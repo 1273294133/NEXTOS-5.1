@@ -6,7 +6,7 @@ A entrega **UID 20261102145554** inclui o cliente com **GitHub como origem princ
 
 A primeira release deste repositório, UID 20261102070544, fica preservada no histórico e mantém o cliente R2 anterior. Instalações dessa entrega podem receber o novo pacote pelo canal nativo compatível.
 
-O repositório permanece **privado até a aprovação do proprietário**. Não coloque um token GitHub nos aparelhos para contornar essa fase. Enquanto estiver privado, o cliente anônimo não acessa os arquivos do GitHub e utiliza a reserva R2. O acesso anônimo bem-sucedido pelo GitHub depende da futura abertura do repositório.
+O repositório e as Releases são **públicos**. Os aparelhos acessam o GitHub sem conta ou token GitHub. Se a origem principal estiver indisponível, o cliente utiliza a reserva R2 para a mesma entrega assinada. A validação anterior à abertura pública também comprovou esse fallback no TX9 e no Aquário.
 
 ## Como atualizar uma instalação compatível
 
@@ -27,3 +27,7 @@ Os manifestos desta entrega são assinados com Ed25519. A chave de confiança p�
 `SHA256SUMS` permite conferir corrupção nos arquivos baixados. `SHA256SUMS.sig` assina essa lista. A assinatura estabelece confiança quando a chave usada para verificar é a chave legítima esperada; receber uma chave de uma origem comprometida não cria confiança por si só.
 
 O cliente novo exige o manifesto assinado. O cliente da primeira entrega espelhada não verificava esse protocolo automaticamente; por isso a versão de cada release importa.
+
+## Leitura do R2 legado
+
+A configuração embarcada mantém a identidade de leitura revisada do acervo histórico, usada também por atualizações, capas e configurações padrão. Ela é separada da credencial de escrita do operador. Os novos pacotes privados ficam em armazenamento separado, exigem autorização do serviço de contas e não são liberados por essa identidade legada. Nenhuma chave de assinatura privada ou credencial de publicação GitHub acompanha a ROM.

@@ -12,6 +12,6 @@ NEXTOS 5.1 tem desenvolvimento e integrações próprios e utiliza a base e comp
 
 A existência apenas de binários neste repositório não altera nem elimina as licenças e as obrigações aplicáveis a cada componente. Não existe uma licença única nesta página que transforme toda a ROM em MIT, GPL ou domínio público. Fontes correspondentes, avisos e ofertas aplicáveis precisam continuar disponíveis pelos canais de cada componente.
 
-A procedência e a comprovação do termo específico de redistribuição do blob VPU são uma pendência documental conhecida, mantida explícita para a revisão antes da abertura pública. Não foi atribuída uma licença presumida a esse binário.
+A procedência e a comprovação do termo específico de redistribuição do blob VPU são uma pendência documental conhecida, mantida explícita para acompanhamento. Não foi atribuída uma licença presumida a esse binário.
 
 Jogos, BIOS, chaves e dados comerciais não recebem licença de uso por estarem citados como sistemas ou capacidades de um emulador. Use seus próprios arquivos obtidos de forma autorizada.

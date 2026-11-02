@@ -7,7 +7,7 @@
 
 **Desempenho, fluidez e uma base de sistema modernizada para os aparelhos suportados.** A 5.1 reúne Linux 5.15.223, aceleração Mali-450 nos perfis GXL, evolução do frontend, memória comprimida com ZRAM, novas opções de áudio e atualização cumulativa com integridade de pacotes. O trabalho inclui desenvolvimento próprio, atualização de componentes e integração orientada ao hardware.
 
-> **Revisão privada do lançamento.** Este repositório está privado por escolha do proprietário enquanto a apresentação e a documentação são aprovadas. A distribuição R2 existente está preservada. A ROM e o primeiro pacote de atualização ficam na aba **Releases**.
+> **Lançamento público da NEXTOS 5.1.** Baixe a ROM virgem ou a atualização nativa na aba **Releases**. GitHub é a origem principal; o R2 continua disponível como reserva para a mesma entrega assinada.
 
 | Identidade | Edição 5.1 |
 |---|---|
@@ -105,7 +105,7 @@ A descrição completa por áreas está em [Recursos](docs/RECURSOS.md), com 20 
 
 Os arquivos da primeira release mantêm exatamente os bytes da entrega já aprovada. O repositório é independente do desenvolvimento privado: nenhum histórico de código da ROM foi importado para cá.
 
-A entrega UID 20261102145554 inclui o cliente que usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública é distribuída. Enquanto o repositório estiver privado, o cliente anônimo não terá acesso aos arquivos do GitHub e deverá usar a reserva R2. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
+A entrega UID 20261102145554 inclui o cliente que usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública de assinatura é distribuída. O acesso público ao GitHub dispensa uma conta GitHub nos aparelhos. A configuração de leitura do R2 legado é separada das credenciais administrativas e do acesso aos novos pacotes privados. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
 
 ## Exemplos de ports do ecossistema
 
@@ -125,7 +125,7 @@ A entrega UID 20261102145554 inclui o cliente que usa **GitHub como origem princ
 - No Aquário, o host USB CRG pode interferir no Bluetooth quando um controle USB low-speed está sendo lido. O alcance depende da combinação de periféricos.
 - O APK não concede privilégios que o Android não oferece. Acesso root ou autorização compatível podem ser necessários.
 - Ganhos de boot, RAM e desempenho são apresentados com seu contexto; não representam um ganho universal de FPS.
-- As licenças de terceiros continuam aplicáveis. A documentação específica do blob VPU permanece uma questão separada para revisão antes da abertura pública.
+- As licenças de terceiros continuam aplicáveis. A documentação específica do blob VPU permanece uma pendência documental registrada nos créditos.
 
 ## Documentação
 
