@@ -107,6 +107,18 @@ Os arquivos da primeira release mantêm exatamente os bytes da entrega já aprov
 
 A integração em preparação usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública é distribuída. Enquanto o repositório estiver privado, o cliente anônimo não terá acesso aos arquivos do GitHub e deverá usar a reserva R2. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
 
+## Exemplos de ports do ecossistema
+
+**Os jogos das imagens não acompanham a ROM virgem.** São capturas reais do acervo, sem logos ou molduras Retro Elite. Datas e versões estão na [galeria](docs/GALERIA.md).
+
+| Crash Twinsanity | Spider-Man Unlimited |
+|---|---|
+| [![Crash Twinsanity](assets/gallery/port-1-crash-twinsanity-nextos-20261031.png)](assets/gallery/port-1-crash-twinsanity-nextos-20261031.png) | [![Spider-Man Unlimited](assets/gallery/port-2-spider-man-unlimited-nextos-r051-20261030.png)](assets/gallery/port-2-spider-man-unlimited-nextos-r051-20261030.png) |
+
+| Celeste | Chasm |
+|---|---|
+| [![Celeste](assets/gallery/port-3-celeste-nextos-5.0-20261019.png)](assets/gallery/port-3-celeste-nextos-5.0-20261019.png) | [![Chasm](assets/gallery/port-4-chasm-nextos-5.0-20261019.png)](assets/gallery/port-4-chasm-nextos-5.0-20261019.png) |
+
 ## Compatibilidade e limites que importam
 
 - TX9 e Aquário passaram na atualização física da entrega inicial desta página. D905 e X2 mantêm os alcances de suas aprovações anteriores.
