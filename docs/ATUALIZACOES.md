@@ -2,11 +2,14 @@
 
 ## Situação das entregas
 
+**Migração em andamento:** as duas Releases anteriores do GitHub foram retiradas. A próxima substituirá o acesso S3 embarcado por HTTPS. Durante essa integração, o repositório voltou a privado e o R2 existente permanece disponível. Os detalhes abaixo descrevem a entrega anterior já validada.
+
+
 A entrega **UID 20261102145554** inclui o cliente com **GitHub como origem principal e R2 como reserva**, manifesto Ed25519 verificado pela chave pública fixada e conferência da identidade do pacote. A imagem e o update foram gerados pelo build normal. A atualização nativa foi concluída no TX9 e no Aquário, preservando os dados e as configurações verificados. Nos dois aparelhos, o cliente instalado também consultou o manifesto assinado pela reserva R2.
 
 A primeira release deste repositório, UID 20261102070544, fica preservada no histórico e mantém o cliente R2 anterior. Instalações dessa entrega podem receber o novo pacote pelo canal nativo compatível.
 
-O repositório e as Releases são **públicos**. Os aparelhos acessam o GitHub sem conta ou token GitHub. Se a origem principal estiver indisponível, o cliente utiliza a reserva R2 para a mesma entrega assinada. A validação anterior à abertura pública também comprovou esse fallback no TX9 e no Aquário.
+Após a migração, a nova distribuição pública retomará as Releases. Os aparelhos acessam o GitHub sem conta ou token GitHub. Se a origem principal estiver indisponível, o cliente utiliza a reserva R2 para a mesma entrega assinada. A validação anterior à abertura pública também comprovou esse fallback no TX9 e no Aquário.
 
 ## Como atualizar uma instalação compatível
 

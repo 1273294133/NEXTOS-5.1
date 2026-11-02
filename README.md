@@ -7,7 +7,7 @@
 
 **Desempenho, fluidez e uma base de sistema modernizada para os aparelhos suportados.** A 5.1 reúne Linux 5.15.223, aceleração Mali-450 nos perfis GXL, evolução do frontend, memória comprimida com ZRAM, novas opções de áudio e atualização cumulativa com integridade de pacotes. O trabalho inclui desenvolvimento próprio, atualização de componentes e integração orientada ao hardware.
 
-> **Lançamento público da NEXTOS 5.1.** Baixe a ROM virgem ou a atualização nativa na aba **Releases**. GitHub é a origem principal; o R2 continua disponível como reserva para a mesma entrega assinada.
+> **Nova distribuição em preparação.** As Releases anteriores foram retiradas a pedido do proprietário. A próxima entrega terá acesso HTTPS aos recursos e ao R2 de reserva, sem credencial de armazenamento embarcada. O repositório fica privado durante a integração e validação.
 
 | Identidade | Edição 5.1 |
 |---|---|
