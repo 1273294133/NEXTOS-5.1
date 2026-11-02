@@ -2,14 +2,13 @@
 
 ## Situação das entregas
 
-**Migração em andamento:** as duas Releases anteriores do GitHub foram retiradas. A próxima substituirá o acesso S3 embarcado por HTTPS. Durante essa integração, o repositório voltou a privado e o R2 existente permanece disponível. Os detalhes abaixo descrevem a entrega anterior já validada.
+A entrega **UID 20261102221950** usa **GitHub como origem principal e R2 como reserva por HTTPS**, sem credencial S3 permanente embarcada. O manifesto Ed25519 é conferido pela chave pública fixada; tamanho, hashes e identidade do pacote também são obrigatórios.
 
+A imagem e o update foram gerados pelo build padrão. A atualização nativa concluiu no TX9 e no Aquário, incluindo boot, finalizador a 100% e preservação dos dados e configurações verificados. Nos dois aparelhos, o cliente instalado consultou o manifesto assinado pela reserva HTTPS sem usar a configuração S3 antiga.
 
-A entrega **UID 20261102145554** inclui o cliente com **GitHub como origem principal e R2 como reserva**, manifesto Ed25519 verificado pela chave pública fixada e conferência da identidade do pacote. A imagem e o update foram gerados pelo build normal. A atualização nativa foi concluída no TX9 e no Aquário, preservando os dados e as configurações verificados. Nos dois aparelhos, o cliente instalado também consultou o manifesto assinado pela reserva R2.
+As Releases UID 20261102070544 e UID 20261102145554 foram retiradas. Seus registros de integridade permanecem como histórico. Para uma instalação antiga, use a atualização nativa compatível ou o ZIP atual pelo menu de atualização local; não é necessário restaurar a chave antiga.
 
-A primeira release deste repositório, UID 20261102070544, fica preservada no histórico e mantém o cliente R2 anterior. Instalações dessa entrega podem receber o novo pacote pelo canal nativo compatível.
-
-Após a migração, a nova distribuição pública retomará as Releases. Os aparelhos acessam o GitHub sem conta ou token GitHub. Se a origem principal estiver indisponível, o cliente utiliza a reserva R2 para a mesma entrega assinada. A validação anterior à abertura pública também comprovou esse fallback no TX9 e no Aquário.
+Os aparelhos acessam o GitHub sem conta ou token GitHub. Se a origem principal estiver indisponível, o cliente utiliza a reserva HTTPS para a mesma entrega assinada.
 
 ## Como atualizar uma instalação compatível
 
@@ -31,6 +30,12 @@ Os manifestos desta entrega são assinados com Ed25519. A chave de confiança p�
 
 O cliente novo exige o manifesto assinado. O cliente da primeira entrega espelhada não verificava esse protocolo automaticamente; por isso a versão de cada release importa.
 
-## Leitura do R2 legado
+## Instalações antigas
 
-A configuração embarcada mantém a identidade de leitura revisada do acervo histórico, usada também por atualizações, capas e configurações padrão. Ela é separada da credencial de escrita do operador. Os novos pacotes privados ficam em armazenamento separado, exigem autorização do serviço de contas e não são liberados por essa identidade legada. Nenhuma chave de assinatura privada ou credencial de publicação GitHub acompanha a ROM.
+Esta migração é da série 5.1. Os serviços e o acesso legado dos aparelhos 5.0 são preservados; retirar a chave da imagem nova não desativa a identidade usada pelas instalações antigas.
+
+## Recursos por HTTPS
+
+Catálogos, capas, recursos públicos e configurações padrão usam um serviço HTTPS que permite apenas as operações, caminhos e formatos previstos. A ROM não recebe uma credencial S3 para listar ou ler livremente o armazenamento. As configurações padrão são produzidas a partir dos arquivos de fábrica, sem exportar contas ou dados de um aparelho utilizado.
+
+Os pacotes privados continuam separados e dependem da autorização do serviço de contas. A chave privada de assinatura, credenciais administrativas, senhas do operador e códigos de recuperação ficam fora da distribuição. A chave pública de assinatura é distribuída intencionalmente para verificar os arquivos.

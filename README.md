@@ -7,7 +7,7 @@
 
 **Desempenho, fluidez e uma base de sistema modernizada para os aparelhos suportados.** A 5.1 reúne Linux 5.15.223, aceleração Mali-450 nos perfis GXL, evolução do frontend, memória comprimida com ZRAM, novas opções de áudio e atualização cumulativa com integridade de pacotes. O trabalho inclui desenvolvimento próprio, atualização de componentes e integração orientada ao hardware.
 
-> **Nova distribuição em preparação.** As Releases anteriores foram retiradas a pedido do proprietário. A próxima entrega terá acesso HTTPS aos recursos e ao R2 de reserva, sem credencial de armazenamento embarcada. O repositório fica privado durante a integração e validação.
+> **Distribuição atualizada.** A entrega UID 20261102221950 usa HTTPS para os recursos e o R2 de reserva, sem credencial de armazenamento embarcada. Os downloads anteriores foram retirados.
 
 | Identidade | Edição 5.1 |
 |---|---|
@@ -15,7 +15,7 @@
 | Arquitetura | **AArch64** |
 | Família da imagem | **Amlogic-nx · GXL / S4** |
 | Kernel Linux | **5.15.223** |
-| Entrega atual | **UID 20261102145554** · revisão técnica `r175-andromeda` |
+| Entrega atual | **UID 20261102221950** · revisão técnica `r175-andromeda` |
 | Instalação nova | Imagem `.img.gz` para cartão |
 | Atualização de instalação compatível | Pacote nativo `-update.zip` |
 | Acesso a este repositório | Documentação e binários de distribuição; sem código da ROM |
@@ -103,9 +103,9 @@ A descrição completa por áreas está em [Recursos](docs/RECURSOS.md), com 20 
 
 ## Distribuição e segurança
 
-Os arquivos da primeira release mantêm exatamente os bytes da entrega já aprovada. O repositório é independente do desenvolvimento privado: nenhum histórico de código da ROM foi importado para cá.
+Os arquivos desta release correspondem à imagem e ao update gerados pelo build padrão e validados nesta entrega. O repositório é independente do desenvolvimento privado: nenhum histórico de código da ROM foi importado para cá.
 
-A entrega UID 20261102145554 inclui o cliente que usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública de assinatura é distribuída. O acesso público ao GitHub dispensa uma conta GitHub nos aparelhos. A configuração de leitura do R2 legado é separada das credenciais administrativas e do acesso aos novos pacotes privados. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
+A entrega UID 20261102221950 inclui o cliente que usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública de assinatura é distribuída. O acesso público ao GitHub dispensa uma conta GitHub nos aparelhos. A reserva R2 e os recursos públicos são acessados por HTTPS, com caminhos e tipos permitidos no servidor. Nenhuma chave S3 permanente acompanha a ROM. Os pacotes privados continuam no serviço autenticado de contas. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
 
 ## Exemplos de ports do ecossistema
 
@@ -121,7 +121,7 @@ A entrega UID 20261102145554 inclui o cliente que usa **GitHub como origem princ
 
 ## Compatibilidade e limites que importam
 
-- TX9 e Aquário passaram na atualização nativa da entrega UID 20261102145554, incluindo a conclusão e a consulta do manifesto assinado pelo R2. D905 e X2 mantêm os alcances de suas aprovações anteriores.
+- TX9 e Aquário passaram na atualização nativa da entrega UID 20261102221950, incluindo a conclusão e a consulta do manifesto assinado pelo R2. D905 e X2 mantêm os alcances de suas aprovações anteriores.
 - No Aquário, o host USB CRG pode interferir no Bluetooth quando um controle USB low-speed está sendo lido. O alcance depende da combinação de periféricos.
 - O APK não concede privilégios que o Android não oferece. Acesso root ou autorização compatível podem ser necessários.
 - Ganhos de boot, RAM e desempenho são apresentados com seu contexto; não representam um ganho universal de FPS.

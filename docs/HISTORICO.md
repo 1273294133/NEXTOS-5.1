@@ -13,7 +13,15 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### NEXTOS 5.1 — UID 20261102145554 (r175) · 02/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261102221950 (r175) · 02/11/2026 · **atual**
+
+Recursos e R2 de reserva por HTTPS, sem credencial S3 permanente embarcada. GitHub principal, assinatura Ed25519, verificação de identidade e integridade, acompanhamento e cancelamento dos downloads preservados. Configurações padrão geradas a partir dos arquivos de fábrica, sem dados de aparelhos utilizados.
+
+Gerada pelo build padrão, instalada pela atualização nativa no TX9 e no Aquário e concluída a 100%. Boot, identidade, dados/configurações e consulta assinada sem credenciais S3 foram conferidos nos dois aparelhos. Kernel, emuladores e recursos previamente aprovados foram preservados.
+
+As Releases anteriores foram retiradas e esta entrega substitui os downloads. O histórico abaixo descreve as respectivas versões, sem disponibilizar novamente seus binários.
+
+### NEXTOS 5.1 — UID 20261102145554 (r175) · 02/11/2026 · substituída; Release retirada
 
 Cliente de atualização com GitHub como origem principal e R2 como reserva, manifesto Ed25519 conferido por chave pública fixada, identidade imutável e consultas de metadados limitadas por prazo e tamanho. A leitura do manifesto R2 usa o comando nativo compatível com o rclone embarcado.
 

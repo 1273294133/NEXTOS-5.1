@@ -1,0 +1,24 @@
+{
+  "release_id": "5.1-r175-andromeda-20261102221950",
+  "update_id": "20261102221950",
+  "version": "5.1",
+  "linux_kernel": "5.15.223",
+  "platform": "Amlogic-nx.aarch64",
+  "edition": "Nextos",
+  "source_commit": "97c269a6ea13f55a329760df89ddf95151411e8f",
+  "system_sha256": "ac4af7a55fd9c0a86830c0255e7794c5b57e544ff9123648c489734e6f1ed5e1",
+  "signing_key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
+  "assets": [
+    {
+      "name": "Nextos-5.1-20261102221950-update.zip",
+      "size": 1748908965,
+      "sha256": "c2152d409b26221780985fffa5ff177d5380ed5fb2832acffe3a2b529b250952"
+    },
+    {
+      "name": "Nextos-5.1-20261102221950.img.gz",
+      "size": 1753304446,
+      "sha256": "a71f9c03080a18ea51133c7308e5980ae4c551b99b91b8e8e79ca37875d016ce"
+    }
+  ],
+  "release_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/tag/v5.1-r175-andromeda-20261102221950"
+}
