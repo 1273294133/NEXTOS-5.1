@@ -1,0 +1,13 @@
+private/
+output/
+*.pem
+*.key
+*.img
+*.img.gz
+*.zip
+*.tar
+*.tar.gz
+*.apk
+*.part
+.env*
+__pycache__/
