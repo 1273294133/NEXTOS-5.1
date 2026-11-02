@@ -1,0 +1,36 @@
+name: Relatar um problema
+description: Informe a versão e o hardware para facilitar o diagnóstico.
+title: "[Problema]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Não inclua senhas, tokens, chaves, códigos de suporte, arquivos de contas ou dados pessoais."
+  - type: input
+    id: version
+    attributes:
+      label: Versão e UID da release
+      placeholder: "5.1 · r175-andromeda · UID da tela de versões"
+    validations:
+      required: true
+  - type: input
+    id: hardware
+    attributes:
+      label: Aparelho, SoC, memória e DTB
+      description: "O nome comercial sozinho não identifica a placa. Não envie número de série."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir e resultado observado
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Captura ou diagnóstico sanitizado
+      description: "Revise a captura antes de anexar para remover dados pessoais."

@@ -30,6 +30,8 @@ Uma evolução ampla da experiência Retro Elite: interface, identidade do jogad
 4. Explore [as novidades e os recursos próprios](docs/RECURSOS.md).
 5. Consulte [memória, ZRAM, boot e desempenho](docs/DESEMPENHO.md) e [as dúvidas frequentes](docs/FAQ.md).
 
+<p align="center"><img src="assets/menu-5.1.png" alt="Interface Retro Elite 5.1" width="760"></p>
+
 ## O que já faz parte desta entrega
 
 ### Uma primeira configuração que termina de verdade
@@ -52,7 +54,7 @@ O Java JM padrão é compilado de fonte pública, com controles, entrada, migra�
 
 A entrega inclui a criação/verificação do STORAGE, recuperação e correções de boot, atualização cumulativa nativa e preservação das configurações verificadas. A recuperação Bluetooth S4 protege armazenamento em uso e limita tentativas de reset.
 
-A descrição completa por áreas está sendo consolidada em [Recursos](docs/RECURSOS.md), sem reduzir a edição a essa introdução. Os textos de dispositivos e desempenho vinculam cada afirmação à implementação e às provas disponíveis.
+A descrição completa por áreas está em [Recursos](docs/RECURSOS.md), com 20 áreas de uso e implementação. Os textos de dispositivos e desempenho vinculam cada afirmação à implementação e às provas disponíveis.
 
 ## ROM e update: qual baixar?
 
