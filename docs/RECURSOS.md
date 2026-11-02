@@ -25,7 +25,7 @@ Esta página descreve o que existe na versão publicada, onde cada recurso fica 
 11. [Rede, celular e transferência de arquivos](#11-rede-celular-e-transferência-de-arquivos)
 12. [Armazenamento: cartão, USB e rede local](#12-armazenamento-cartão-usb-e-rede-local)
 13. [Atualização e manutenção](#13-atualização-e-manutenção)
-14. [Segurança, contas e NEXTOS EXCLUSIVOS](#14-segurança-contas-e-nextos-exclusivos)
+14. [Segurança e integridade](#14-segurança-e-integridade)
 15. [Ajuda, diagnóstico e suporte remoto](#15-ajuda-diagnóstico-e-suporte-remoto)
 16. [Controle parental, tempo de jogo e descanso](#16-controle-parental-tempo-de-jogo-e-descanso)
 17. [Desempenho e fluidez da interface](#17-desempenho-e-fluidez-da-interface)
@@ -59,7 +59,7 @@ Na 5.1, as ferramentas usam as telas nativas do EmulationStation: listas, confir
 
 | Menu (START) | O que reúne |
 | --- | --- |
-| **APLICATIVOS E MULTIMÍDIA** | YouTube, IPTV, Música e Audiolivros, Black Retro AI, Spotify Connect |
+| **APLICATIVOS E MULTIMÍDIA** | YouTube, Música e Audiolivros, Black Retro AI, Spotify Connect |
 | **AJUSTES DE JOGO** | Cheats, PortMaster, Ferramentas de jogos, perfis de desempenho, menu e indicadores do RetroArch |
 | **AJUSTES DE CONTROLES & BLUETOOTH** | Perfis, atalhos, teste, calibração, reparo e Bluetooth |
 | **TELA E APARÊNCIA** | Meu Perfil NextOS, Galeria de temas, perfil leve do menu, filtro noturno, proteção de tela, teste de modo de vídeo |
@@ -84,7 +84,7 @@ Na 5.1, as ferramentas usam as telas nativas do EmulationStation: listas, confir
   - DraStic e a alternativa **DSperate**, cada um com configuração própria.
   - Ajuda de toque e microfone: no perfil padrão do DSperate, L3 simula o microfone e R3 alterna o toque.
   - Modo **NINTENDO DS — LAN EXPERIMENTAL** para sessões em rede local entre dois aparelhos.
-- **Saturn:** emuladores atualizados com melhorias compatíveis, mantendo as opções e os formatos de saves anteriores.
+- **Saturn no TX9 — destaque da 5.1:** experiência de execução aprovada no uso do projeto, com emuladores atualizados, opções de configuração por jogo e melhorias compatíveis, preservando os formatos de saves anteriores.
 - **Java (J2ME):**
   - O **JM** é compilado de fonte pública, com controles, entrada e migração revisados. As fontes e os avisos acompanham o sistema.
   - Também está incluído o **J2ME Loader RetroElite**.
@@ -203,8 +203,6 @@ Ficam em **START > TELA E APARÊNCIA**.
 Ficam em **START > APLICATIVOS E MULTIMÍDIA**.
 
 - **YouTube:** pesquisa, listas, favoritos, playlist e histórico. A qualidade máxima é configurável (720p, 480p ou 360p).
-- **IPTV:**
-  - Player para contas IPTV contratadas à parte: canais ao vivo, filmes, séries, favoritos, histórico, grade de programação e PIN parental.
   - Em CONFIGURAÇÕES, os campos Usuário e Senha são separados e há o botão TESTAR CONEXÃO E CONTA. Contas recusadas, vencidas ou com renovação necessária têm mensagens próprias.
   - Nos aparelhos GXL, o vídeo usa decodificação por hardware, com retorno automático ao player por software. Os aparelhos S4 usam o player por software.
 - **Rádio, playlists e marcadores:** rádios configuradas, playlists M3U locais e marcadores de posição em vídeos.
@@ -275,12 +273,10 @@ Ficam em **START > SISTEMA E MANUTENÇÃO > ARMAZENAMENTO E CARTÃO SD**, salvo 
   - Tarefas programadas não rodam com relógio incerto nem são repetidas ao mudar o horário de verão.
 - **Versões, fontes e créditos (SISTEMA E MANUTENÇÃO):** mostra as versões instaladas e os avisos de licença disponíveis.
 
-## 14. Segurança, contas e NEXTOS EXCLUSIVOS
+## 14. Segurança e integridade
 
-- **NEXTOS EXCLUSIVOS:**
   - Loja nativa na lista de sistemas: catálogo por categorias, detalhes, espaço livre, download com verificação de integridade, abertura e exclusão de instalações.
   - O catálogo distribuído com o sistema pode ser consultado sem conta e sem internet ("Ver jogos existentes"). Baixar exige conta ativa.
-- **Login dos Exclusivos:** formulário com USUÁRIO e SENHA editáveis em qualquer ordem, mais LEMBRAR ACESSO NESTE APARELHO. A senha fica mascarada, e um erro mantém os campos para correção.
 - **Uma conta, uma box:**
   - Cada instalação tem uma chave de dispositivo persistente, e cada pedido privado é assinado e protegido contra reaproveitamento (replay).
   - A mesma senha em outra instalação é recusada.
@@ -335,7 +331,6 @@ Componentes criados ou reescritos para o Retro Elite:
 - **Atualizador nativo** com recibo, verificação de integridade, preservação de dados, rollback e atualização offline com prévia.
 - **Gerenciador web Retro Elite**, com pareamento por PIN, transferência temporária e controle e tela pelo navegador.
 - **Cliente de suporte remoto** por código, com consentimento e revogação.
-- **Loja NEXTOS EXCLUSIVOS** com cliente de downloads vinculado à conta e à box.
 - **Equalizador próprio** de 3 bandas com headroom.
 - **Proteções de tela originais:** Aquário Retro Elite, Corredores e relógios.
 - **Reiniciar Retro Elite 1.2:** aplicativo Android próprio, na partição de boot, que reinicia para o cartão quando o Android autoriza. O código-fonte e a licença vêm junto. Também está incluído o aplicativo Reboot to CoreELEC 5.0, com a licença dele.

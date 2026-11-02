@@ -151,7 +151,7 @@ gasta o cartão.
   troca é feita em segundo plano.
 - A tabela de frequências, as tensões e os pontos térmicos **não são alterados**. Não há overclock.
 
-## Vídeo por hardware (IPTV, só GXL)
+## Vídeo por hardware (reprodução de vídeo, só GXL)
 
 Medido no TX9 em 28/10/2026, com a CPU média dos 4 núcleos após 5 s de aquecimento:
 
@@ -160,7 +160,7 @@ Medido no TX9 em 28/10/2026, com a CPU média dos 4 núcleos após 5 s de aqueci
 | Arquivo 720p30 H.264 + AAC (30 s) | 41,7 % | **19,4 %** |
 | Canal ao vivo 720p59.94 H.264 (HLS, 40 s) | 56,6 % | **26,3 %** |
 
-O ganho vale para a reprodução IPTV. Os menus e os emuladores já usavam a GPU, e não houve medida
+O ganho vale para a reprodução reprodução de vídeo. Os menus e os emuladores já usavam a GPU, e não houve medida
 de ganho neles. Conteúdo entrelaçado ou incompatível volta para o software. No S4, o vídeo é
 decodificado por software.
 

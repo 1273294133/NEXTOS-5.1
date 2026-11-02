@@ -18,7 +18,7 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 Versão final de lançamento. Antes da publicação, ela foi instalada pelo atualizador nativo em uma TV box de referência GXL e em uma S4. Nas duas, o boot e a conclusão da atualização foram conferidos, e as configurações e os dados ficaram preservados. Depois disso, o atualizador dos dois aparelhos passou a responder "O sistema já está atualizado".
 
 - Configuração inicial com **nome opcional do jogador**. O assistente agora fecha por completo ao concluir.
-- Imagem do menu NEXTOS EXCLUSIVOS ajustada aos limites da área. A lista fica bloqueada enquanto o aviso de atualização está na tela.
+- Imagem do menu catálogo ajustada aos limites da área. A lista fica bloqueada enquanto o aviso de atualização está na tela.
 - Correções na criação, verificação e recuperação da partição de dados (STORAGE), preservando o journal ext4.
 - Aplicativo Android próprio **Reiniciar Retro Elite 1.2**, com código-fonte e licença, para reiniciar para o cartão quando o Android autoriza.
 - **JM Java compilado de fonte pública**, com controles, entrada, migração e bibliotecas revisados. As fontes e os avisos acompanham o sistema.
@@ -76,13 +76,13 @@ A primeira versão Andromeda. Foi instalada nos dois aparelhos de referência pe
 Esta versão também levou ao canal estável o trabalho de 24 a 28/10:
 
 - Logo de boot Retro Elite 5.1.
-- Mídia dos Exclusivos.
+- .
 - Criação segura do STORAGE.
 - Manutenção nas placas S4.
 - Restauração segura de configurações.
 - SSH do proprietário por chave.
-- **Decodificação de vídeo por hardware no IPTV** das placas GXL, com retorno ao player por software.
-- **Menus nativos**: ferramentas, multimídia, IPTV com formulário próprio, tela de assistência quando o menu não abre.
+- **Decodificação de vídeo por hardware no reprodução de vídeo** das placas GXL, com retorno ao player por software.
+- **Menus nativos**: ferramentas, multimídia, reprodução de vídeo com formulário próprio, tela de assistência quando o menu não abre.
 
 ### 5.1 — UID 20261023155502 (r141) · 23/10/2026
 
@@ -119,7 +119,7 @@ Estas compilações existiram durante o desenvolvimento. Algumas foram instalada
 | Período | Revisões internas | O que foi trabalhado |
 | --- | --- | --- |
 | 23/10 | r137, r138 | Compilações preparatórias da primeira publicação 5.1. |
-| 23–28/10 | r142 a r162 | Logo de boot, mídia dos Exclusivos, bootstrap do STORAGE, manutenção nas S4, restauração segura de configurações, scanner e compatibilidade S4, SSH do proprietário e decodificação por hardware nas GXL. Entraram na r169. |
+| 23–28/10 | r142 a r162 | Logo de boot, bootstrap do STORAGE, manutenção nas S4, restauração segura de configurações, scanner e compatibilidade S4, SSH do proprietário e decodificação por hardware nas GXL. Entraram na r169. |
 | 30/10 | r170 a r172 | Macros, áudio remoto, PipeWire opcional e imagens de fábrica de bancada. Entraram na r173. |
 | 31/10 | r174 | Base de bancada para medir memória do menu e fila de texturas. Entrou na r175. |
 | 01/11 | r175 (candidatas intermediárias) | Candidatas antes da publicação de 01/11 e uma candidata de prova descartada depois. |

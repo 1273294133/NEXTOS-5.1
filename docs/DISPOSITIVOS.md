@@ -46,6 +46,8 @@ própria caixa e os scripts de boot escolhem o par certo para o SoC.
 
 ### Gráficos: o que significa "GLES"
 
+**Destaque da edição:** aceleração gráfica Mali-450 funcionando na base Linux5.15.223, com Mali/libMali e framebuffer do fabricante nos perfisGXL compatíveis. A migração e a integração preservam a execução acelerada dos componentes GLES2 da plataforma.
+
 - **Mali-450** oferece **OpenGL ES 2.0**. É o alvo comum da ROM: frontend, emuladores e ports
   são feitos para funcionar em GLES2.
 - **Mali-G31** suporta OpenGL ES 3.x pelo driver do fabricante. A ROM mantém a compatibilidade
@@ -99,7 +101,7 @@ Caixas com outros SoCs (S905X2/X3/X4, S912, S922X etc.) **não fazem parte** des
 | **Controles USB** | Funcionam. Os mapeamentos são aplicados pelo sistema. Veja o limite com Bluetooth no S4 acima. |
 | **CEC (controle pela TV)** | O nó CEC está no DTB GXL. **O controle real por TV CEC não foi atestado** nesta release. |
 | **Receptor infravermelho** | Não é habilitado por padrão no DTB universal. |
-| **Aceleração de vídeo (VPU)** | **Só GXL, só no player IPTV:** H.264 por hardware com volta automática ao decodificador por software em qualquer falha. Usa firmware e módulos proprietários do fabricante. **No S4 o vídeo continua em software**: os módulos de decodificação S4 não fazem parte desta release. Os previews do frontend continuam em software nas duas famílias. |
+| **Aceleração de vídeo (VPU)** | **Só GXL, só no player reprodução de vídeo:** H.264 por hardware com volta automática ao decodificador por software em qualquer falha. Usa firmware e módulos proprietários do fabricante. **No S4 o vídeo continua em software**: os módulos de decodificação S4 não fazem parte desta release. Os previews do frontend continuam em software nas duas famílias. |
 | **Memória interna (eMMC)** | **A ROM não instala nada na memória interna.** Ela roda do cartão SD. A ferramenta de instalar na memória interna das versões antigas é removida desta família. O Android da caixa continua onde está. |
 | **Clocks, tensões e limites térmicos** | São os do fabricante. A ROM não faz overclock nem muda tensões ou pontos térmicos. Ela só escolhe o governor de CPU (veja [DESEMPENHO.md](DESEMPENHO.md)). |
 

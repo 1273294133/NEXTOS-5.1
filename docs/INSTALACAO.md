@@ -98,7 +98,7 @@ O primeiro boot de um cartão novo é mais demorado:
    - **CONTROLE**, para testar ou mapear os botões;
    - **REDE (OPCIONAL)**: a Internet não é obrigatória para jogar;
    - **SEUS JOGOS**: onde colocar os arquivos;
-   - **IPTV E SUPORTE**.
+   - **configurações opcionais e suporte**.
 
    O nome do jogador é opcional e aparece na saudação do painel. A confirmação final grava a
    conclusão e fecha o assistente. MAIS TARDE adia o assistente para o próximo início (até três vezes); PULAR ASSISTENTE o encerra de vez. A ajuda permanece em START > AJUDA E SUPORTE > MANUAL.
