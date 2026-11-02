@@ -1,7 +1,7 @@
 # Perguntas frequentes
 
 ### 5.1 é a versão do kernel?
-Não. A edição Retro Elite é 5.1; o kernel desta família é Linux 5.15.223.
+Não. A edição Nextos é 5.1; o kernel desta família é Linux 5.15.223.
 
 ### Funciona em qualquer TV Box?
 A compatibilidade depende do SoC, placa, memória, DTB e periféricos. Consulte a matriz; o mesmo nome comercial pode designar placas diferentes.
@@ -24,5 +24,5 @@ Ele solicita a reinicialização para cartão pelos mecanismos disponíveis. Pri
 ### Por que há dois arquivos grandes na release?
 A imagem `.img.gz` grava uma instalação em cartão. O `-update.zip` atualiza uma instalação compatível pelo caminho nativo. Os dois têm usos diferentes.
 
-### O GitHub já substituiu o R2 nesta primeira imagem?
-Não. A primeira imagem espelhada mantém o cliente R2 aprovado. A integração GitHub principal / R2 reserva está em preparação e será indicada na release que contiver o cliente novo. Enquanto este repositório for privado, clientes anônimos não terão acesso aos arquivos daqui.
+### Como GitHub e R2 trabalham nesta entrega?
+A entrega UID 20261102145554 inclui GitHub como origem principal e R2 como reserva para o mesmo pacote assinado e identificado. A primeira imagem espelhada, UID 20261102070544, conserva o cliente R2 anterior. Enquanto o repositório estiver privado, o cliente anônimo utiliza a reserva R2; nenhuma credencial GitHub é embarcada.

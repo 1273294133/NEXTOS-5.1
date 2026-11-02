@@ -13,9 +13,17 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### NEXTOS 5.1 — UID 20261102070544 (r175) · 02/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261102145554 (r175) · 02/11/2026 · **atual**
 
-Versão final de lançamento. Antes da publicação, ela foi instalada pelo atualizador nativo em uma TV box de referência GXL e em uma S4. Nas duas, o boot e a conclusão da atualização foram conferidos, e as configurações e os dados ficaram preservados. Depois disso, o atualizador dos dois aparelhos passou a responder "O sistema já está atualizado".
+Cliente de atualização com GitHub como origem principal e R2 como reserva, manifesto Ed25519 conferido por chave pública fixada, identidade imutável e consultas de metadados limitadas por prazo e tamanho. A leitura do manifesto R2 usa o comando nativo compatível com o rclone embarcado.
+
+Gerada pelo build padrão e instalada pela atualização nativa no TX9 e no Aquário. Nas duas instalações, boot, conclusão, identidade e dados/configurações foram conferidos. O cliente instalado verificou a assinatura do manifesto pela reserva R2. O kernel, os emuladores e os demais recursos da entrega anterior foram preservados.
+
+Nome público da edição: **Nextos**. Repositório **NEXTOS-5.1**, arquivos de distribuição **Nextos-5.1-UID.img.gz** e **Nextos-5.1-UID-update.zip**. Os identificadores técnicos internos permanecem compatíveis. As Releases ficam no repositório privado para revisão do proprietário.
+
+### NEXTOS 5.1 — UID 20261102070544 (r175) · 02/11/2026 · primeira entrega espelhada
+
+Primeira entrega aprovada desta etapa do lançamento. Antes da publicação, ela foi instalada pelo atualizador nativo em uma TV box de referência GXL e em uma S4. Nas duas, o boot e a conclusão da atualização foram conferidos, e as configurações e os dados ficaram preservados. Depois disso, o atualizador dos dois aparelhos passou a responder "O sistema já está atualizado".
 
 - Configuração inicial com **nome opcional do jogador**. O assistente agora fecha por completo ao concluir.
 - Imagem do menu catálogo ajustada aos limites da área. A lista fica bloqueada enquanto o aviso de atualização está na tela.

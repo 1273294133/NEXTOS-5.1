@@ -1,6 +1,6 @@
 # Pacotes e versões — NEXTOS 5.1
 
-Esta página lista as versões **realmente embarcadas** na versão publicada **5.1 (UID 20261102070544)**.
+Esta página lista as versões **realmente embarcadas** na versão publicada **5.1 (UID 20261102145554)**.
 Os números foram lidos dos próprios arquivos instalados no sistema desta versão: bibliotecas, binários e
 metadados do build. Não são o que uma receita "pediria" nem o último lançamento de cada projeto.
 
@@ -95,10 +95,12 @@ systemd 262.1 é compilado **sem** esses patches, porque o kernel 5.15 já ofere
 
 ## Atualizador
 
-| Componente | Na 5.1 publicada (UID 20261102070544) | Em integração (próxima imagem) |
+| Componente | Primeira entrega (UID 20261102070544) | Entrega atual (UID 20261102145554) |
 | --- | --- | --- |
-| Cliente de atualização (`nextos-updater`) | Cliente nativo que consulta o canal oficial (R2) | Novo cliente com **GitHub como origem principal e R2 como reserva**, aceitando só manifestos **assinados** (Ed25519) com chave pública fixada. Já está na fonte; **ainda não foi composto numa imagem nem verificado num aparelho**. |
-| Atualização nativa (stage, reinício, conclusão) | `nextos-update` com recibo, preservação de dados e rollback | Sem mudança de rota |
+| Cliente de atualização (`nextos-updater`) | Consulta o canal oficial R2 | **GitHub principal e R2 de reserva**, manifesto **Ed25519** verificado por chave pública fixada, limite de tamanho/prazo dos metadados e identidade imutável. Cliente instalado e consulta assinada verificados no TX9 e no Aquário. |
+| Atualização nativa | Stage, reinício, conclusão, preservação de dados e rollback | Mesma rota nativa; aplicação concluída nos dois aparelhos. |
+
+Os demais pacotes inventariados nesta página mantêm as versões da primeira entrega. A mudança desta revisão é o cliente e a configuração do canal de atualização.
 
 ## Por que manter forks e versões fixadas
 

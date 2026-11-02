@@ -1,0 +1,41 @@
+{
+  "schema": "nextos-native-channel-1",
+  "product": "retro-elite",
+  "family": "nextos-nx",
+  "platform": "Amlogic-nx.aarch64",
+  "channel": "stable",
+  "version": "5.1",
+  "edition": "Nextos",
+  "native_version": "5.1-r175-andromeda",
+  "release_id": "5.1-r175-andromeda-20261102145554",
+  "update_id": "20261102145554",
+  "source_commit": "e8ce7f2c4a5803978148d1428addb2a010f509e3",
+  "payload": {
+    "format": "nextos-native-zip-1",
+    "size_bytes": 1749109676,
+    "sha256": "f6b0d323a48c638494b77f1b11ebb3f631c12b1476f4df0856f5bfe960634213",
+    "system_sha256": "a4a3598caaa650f800e17fd2e93f95412bcd0308d8ef19fb9e53f795e1af5143",
+    "update_sha256": "f3314bc08831d612282659b0af728276135d7175a1845487771acbb9ec122519",
+    "boot_target": "Amlogic-nx-multisoc",
+    "boot_targets": [
+      "Amlogic-nx-gxl",
+      "Amlogic-nx-s4"
+    ],
+    "package_dir": "RetroElite-5.1",
+    "object_key": "updates/nextos-nx/releases/5.1-r175-andromeda-20261102145554/f6b0d323a48c638494b77f1b11ebb3f631c12b1476f4df0856f5bfe960634213/update.zip",
+    "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r175-andromeda-20261102145554/f6b0d323a48c638494b77f1b11ebb3f631c12b1476f4df0856f5bfe960634213/update.zip",
+    "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r175-andromeda-20261102145554/Nextos-5.1-20261102145554-update.zip"
+  },
+  "changelog": [
+    "Cliente de atualização NEXTOS: GitHub principal e R2 de reserva, com manifestos Ed25519 e chave pública fixada.",
+    "Leitura de manifesto R2 limitada por rclone cat, validada com o programa real dos aparelhos.",
+    "Acesso anônimo ao repositório privado recorre ao R2 assinado, sem token GitHub na ROM.",
+    "Arquivos Nextos-5.1-UID com os mesmos hashes e identidade em ambos os provedores.",
+    "KernelLinux5.15.223, aceleraçãoMali-450, systemd/pacotes, áudio e os recursos5.1 preservados nesta alteração de transporte."
+  ],
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
+    "value": "KeDTaxpssv3+Spqg1XakGsiaCq/+8ucIoA0TnmL6HN1i4IMQFriIGfMGyDFjstuue41Hfi9lkY+mKL6RkOgJDw=="
+  }
+}

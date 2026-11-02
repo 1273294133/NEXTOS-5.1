@@ -15,12 +15,12 @@
 | Arquitetura | **AArch64** |
 | Família da imagem | **Amlogic-nx · GXL / S4** |
 | Kernel Linux | **5.15.223** |
-| Primeira entrega neste repositório | `r175-andromeda · UID20261102070544` |
+| Entrega atual | **UID 20261102145554** · revisão técnica `r175-andromeda` |
 | Instalação nova | Imagem `.img.gz` para cartão |
 | Atualização de instalação compatível | Pacote nativo `-update.zip` |
 | Acesso a este repositório | Documentação e binários de distribuição; sem código da ROM |
 
-**5.1 é a versão da Retro Elite; 5.15.223 é a versão do kernel Linux.** A compatibilidade depende de SoC, placa, memória, DTB e periféricos reais. O nome comercial de uma box, sozinho, não determina compatibilidade.
+**5.1 é a versão desta edição do Nextos; 5.15.223 é a versão do kernel Linux.** A compatibilidade depende de SoC, placa, memória, DTB e periféricos reais. O nome comercial de uma box, sozinho, não determina compatibilidade.
 
 ## Imagem virgem, conteúdo escolhido por você
 
@@ -37,7 +37,7 @@
 | **Bibliotecas grandes** | Na medição do TX9, a listagem de pastas tratadas como jogo caiu de 18,9 para 4,6 s; os dados e o método estão no guia de desempenho. |
 | **ZRAM por perfil** | Memória comprimida com perfis para as placas de 1 GB / 2 GB, limites definidos e controle pelo menu. |
 | **ALSA, PulseAudio e PipeWire** | Acesso ao hardware, gerenciamento/mistura de áudio e opção de servidor; cada camada tem sua função. |
-| **Atualizações e recuperação** | Pacotes cumulativos, identidade/UID/hashes, preservação de dados e novo cliente assinado com GitHub principal / R2 de reserva na entrega correspondente. |
+| **Atualizações e recuperação** | Pacotes cumulativos, identidade/UID/hashes, preservação de dados e novo cliente assinado com GitHub principal / R2 de reserva nesta entrega. |
 
 Os números acima são medições específicas, com aparelho, versão e método descritos em [Desempenho](docs/DESEMPENHO.md). Não representam um ganho universal de FPS.
 
@@ -105,7 +105,7 @@ A descrição completa por áreas está em [Recursos](docs/RECURSOS.md), com 20 
 
 Os arquivos da primeira release mantêm exatamente os bytes da entrega já aprovada. O repositório é independente do desenvolvimento privado: nenhum histórico de código da ROM foi importado para cá.
 
-A integração em preparação usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública é distribuída. Enquanto o repositório estiver privado, o cliente anônimo não terá acesso aos arquivos do GitHub e deverá usar a reserva R2. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
+A entrega UID 20261102145554 inclui o cliente que usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública é distribuída. Enquanto o repositório estiver privado, o cliente anônimo não terá acesso aos arquivos do GitHub e deverá usar a reserva R2. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
 
 ## Exemplos de ports do ecossistema
 
@@ -121,7 +121,7 @@ A integração em preparação usa **GitHub como origem principal e R2 como rese
 
 ## Compatibilidade e limites que importam
 
-- TX9 e Aquário passaram na atualização física da entrega inicial desta página. D905 e X2 mantêm os alcances de suas aprovações anteriores.
+- TX9 e Aquário passaram na atualização nativa da entrega UID 20261102145554, incluindo a conclusão e a consulta do manifesto assinado pelo R2. D905 e X2 mantêm os alcances de suas aprovações anteriores.
 - No Aquário, o host USB CRG pode interferir no Bluetooth quando um controle USB low-speed está sendo lido. O alcance depende da combinação de periféricos.
 - O APK não concede privilégios que o Android não oferece. Acesso root ou autorização compatível podem ser necessários.
 - Ganhos de boot, RAM e desempenho são apresentados com seu contexto; não representam um ganho universal de FPS.
