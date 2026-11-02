@@ -1,6 +1,6 @@
 # Créditos e licenças
 
-Retro Elite5.1 tem desenvolvimento e integrações próprios e utiliza a base e componentes de projetos de terceiros. Este repositório é de documentação e distribuição de arquivos finais; ele não importa o código ou o histórico do desenvolvimento privado.
+NEXTOS 5.1 tem desenvolvimento e integrações próprios e utiliza a base e componentes de projetos de terceiros. Este repositório é de documentação e distribuição de arquivos finais; ele não importa o código ou o histórico do desenvolvimento privado.
 
 - EmuELEC: https://github.com/EmuELEC/EmuELEC
 - EmulationStation e seus autores, forks e integrações.

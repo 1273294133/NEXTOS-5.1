@@ -1,4 +1,4 @@
-# Pacotes e versões — RETRO ELITE 5.1 Andromeda
+# Pacotes e versões — NEXTOS 5.1
 
 Esta página lista as versões **realmente embarcadas** na versão publicada **5.1 (UID 20261102070544)**.
 Os números foram lidos dos próprios arquivos instalados no sistema desta versão: bibliotecas, binários e

@@ -23,11 +23,10 @@
     "package_dir": "RetroElite-5.1",
     "object_key": "updates/nextos-nx/releases/5.1-r175-andromeda-20261102070544/4529cc1f0675d01a97c8485613a6f8d6f77bd727aade038ea80d59b50b241051/update.zip",
     "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r175-andromeda-20261102070544/4529cc1f0675d01a97c8485613a6f8d6f77bd727aade038ea80d59b50b241051/update.zip",
-    "github_url": "https://github.com/NextOs-Ports/Retro-Elite-5.1/releases/download/v5.1-r175-andromeda-20261102070544/Retro-Elite-5.1-r175-andromeda-20261102070544-update.zip"
+    "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r175-andromeda-20261102070544/Nextos-5.1-20261102070544-update.zip"
   },
   "changelog": [
     "Configuração inicial com nome opcional do jogador e fechamento completo ao concluir o assistente.",
-    "Imagem do menu de exclusivos ajustada aos limites da área e bloqueio da lista durante a atualização.",
     "Correções de criação, verificação e recuperação do STORAGE, preservando o journal ext4 e o boot já aprovado no D905.",
     "Aplicativo próprio Reiniciar Retro Elite 1.2, com código-fonte e licença, para reiniciar para o cartão quando o Android autorizar.",
     "Java JM compilado de fonte pública, com controles, entrada, migração e bibliotecas revisados; fontes e avisos acompanham a ROM.",
@@ -54,6 +53,6 @@
   "signature": {
     "algorithm": "ed25519",
     "key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
-    "value": "ccY49g3AyGqSQja9Au6LWRz4AZ2F6H9jx6EkvVFzkV6XKM7FLgAMeflvA5/2Elzbp942c2zPSaS5qaXX2aBZCA=="
+    "value": "JvgPrrXm4N5W91fM25tBGFdSACh/rCtvEN2eUgGbQ7+hDosHeqXYqA1QOCWRHEyANBgRvx9EGYrDNEHxM2SvDw=="
   }
 }

@@ -1,4 +1,4 @@
-# Hardware e kernel — RETRO ELITE 5.1 Andromeda
+# Hardware e kernel — NEXTOS 5.1
 
 Esta página descreve **em que hardware a RETRO ELITE 5.1 foi feita para rodar, o que foi
 realmente comprovado em aparelhos físicos e o que depende da sua placa**. Os nomes das caixas

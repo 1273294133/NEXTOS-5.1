@@ -1,4 +1,4 @@
-# Desempenho, boot e memória — RETRO ELITE 5.1 Andromeda
+# Desempenho, boot e memória — NEXTOS 5.1
 
 Esta página reúne **só números medidos em aparelhos reais**, com data, versão e o que cada número
 cobre. Nenhum valor aqui é uma promessa de FPS ou de velocidade para toda caixa. A medida vale

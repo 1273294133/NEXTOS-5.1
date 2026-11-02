@@ -1,0 +1,40 @@
+{
+  "schema": "nextos-native-channel-1",
+  "product": "retro-elite",
+  "family": "nextos-nx",
+  "platform": "Amlogic-nx.aarch64",
+  "channel": "stable",
+  "version": "5.1",
+  "native_version": "5.1-r175-andromeda",
+  "release_id": "5.1-r175-andromeda-20261102134254",
+  "update_id": "20261102134254",
+  "source_commit": "fa5eb3d7386cffd39510a3cdb273ce8ec0dc99ca",
+  "payload": {
+    "format": "nextos-native-zip-1",
+    "size_bytes": 1749110075,
+    "sha256": "af1697111e32b0f5dc0de563b733276c493bdba6363eaa4c0b19c0796a27a609",
+    "system_sha256": "b6b1739a02c8f3a33af5107b402ccc0fb927c657fdf2e7488e3364d6aaf2069d",
+    "update_sha256": "2b1a03e6b082181fc1e2e815ccb97d3e1e449932857ccd4aed13c82d0f3ef8df",
+    "boot_target": "Amlogic-nx-multisoc",
+    "boot_targets": [
+      "Amlogic-nx-gxl",
+      "Amlogic-nx-s4"
+    ],
+    "package_dir": "RetroElite-5.1",
+    "object_key": "updates/nextos-nx/releases/5.1-r175-andromeda-20261102134254/af1697111e32b0f5dc0de563b733276c493bdba6363eaa4c0b19c0796a27a609/update.zip",
+    "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r175-andromeda-20261102134254/af1697111e32b0f5dc0de563b733276c493bdba6363eaa4c0b19c0796a27a609/update.zip",
+    "github_url": "https://github.com/NextOs-Ports/Retro-Elite-5.1/releases/download/v5.1-r175-andromeda-20261102134254/Retro-Elite-5.1-r175-andromeda-20261102134254-update.zip"
+  },
+  "changelog": [
+    "Novo cliente de atualização: GitHub como origem principal e R2 como reserva automática.",
+    "Manifestos Ed25519 verificados por chave pública fixa, sem token GitHub ou chave privada na ROM.",
+    "Reserva baixa o mesmo pacote, com UID, fonte, tamanho e hashes conferidos; sem downgrade automático.",
+    "Consulta do manifesto tem limite de tempo e permite recorrer ao canal reserva em falha da origem principal.",
+    "Interface, kernelLinux5.15.223, Mali-450 acelerado, áudio e demais recursos da5.1 preservados nesta atualização."
+  ],
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
+    "value": "P3w4c9TUZhMHk6uHiXyT5xTz4FffhGrTlQbXsw0Ac04VD1vryudgHUwC9BIaf3dmgwkNd4c/8di1uVLOJC7lBA=="
+  }
+}

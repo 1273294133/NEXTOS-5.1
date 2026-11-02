@@ -1,4 +1,4 @@
-# RETRO ELITE 5.1 Andromeda — Histórico de versões
+# NEXTOS 5.1 — Histórico de versões
 
 Este histórico separa duas coisas:
 
@@ -13,7 +13,7 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### 5.1 Andromeda — UID 20261102070544 (r175) · 02/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261102070544 (r175) · 02/11/2026 · **atual**
 
 Versão final de lançamento. Antes da publicação, ela foi instalada pelo atualizador nativo em uma TV box de referência GXL e em uma S4. Nas duas, o boot e a conclusão da atualização foram conferidos, e as configurações e os dados ficaram preservados. Depois disso, o atualizador dos dois aparelhos passou a responder "O sistema já está atualizado".
 
@@ -29,7 +29,7 @@ Versão final de lançamento. Antes da publicação, ela foi instalada pelo atua
 - **Teclado virtual corrigido:** soltar a tecla usada para confirmar não fecha mais o editor de texto.
 - Atualização cumulativa, com preservação das configurações e dos dados do usuário.
 
-### 5.1 Andromeda — UID 20261101171829 (r175) · 01/11/2026
+### NEXTOS 5.1 — UID 20261101171829 (r175) · 01/11/2026
 
 Publicada no canal estável e depois instalada pela atualização normal nos dois aparelhos de referência (GXL e S4). As duas instalações concluíram e preservaram as configurações. Hoje está substituída pela versão de 02/11.
 
@@ -45,7 +45,7 @@ Publicada no canal estável e depois instalada pela atualização normal nos doi
 - **Conquistas:** consulta offline da última confirmação salva e reenvio opcional após falhas, desligado por padrão.
 - **Menos memória do menu durante o jogo** e fila de texturas cancelável ao voltar do jogo.
 
-### 5.1 Andromeda — UID 20261031060345 (r173) · 31/10/2026
+### NEXTOS 5.1 — UID 20261031060345 (r173) · 31/10/2026
 
 Primeira versão gerada inteiramente pelo build normal depois da segunda leva de recursos Andromeda. O build, o pacote, os hashes, o BOOT e os DTBs foram validados antes da publicação. Foi publicada após as validações de build, pacote, BOOT e DTBs; está substituída pela r175. Não há afirmação adicional de instalação física dessa revisão neste histórico.
 
@@ -58,7 +58,7 @@ Trouxe para o canal estável o que foi desenvolvido entre 29 e 31/10:
 - Cache de compilação e fila final de patches do ES consolidados no build normal.
 - Infravermelho experimental desativado.
 
-### 5.1 Andromeda — UID 20261029191945 (r169) · 29/10/2026
+### NEXTOS 5.1 — UID 20261029191945 (r169) · 29/10/2026
 
 A primeira versão Andromeda. Foi instalada nos dois aparelhos de referência pelo próprio canal de atualização, com saves e configurações preservados e jogos abrindo e fechando normalmente. Depois disso, foi promovida ao canal estável.
 
@@ -75,7 +75,7 @@ A primeira versão Andromeda. Foi instalada nos dois aparelhos de referência pe
 
 Esta versão também levou ao canal estável o trabalho de 24 a 28/10:
 
-- Logo de boot Retro Elite 5.1.
+- Logo de boot NEXTOS 5.1.
 - .
 - Criação segura do STORAGE.
 - Manutenção nas placas S4.

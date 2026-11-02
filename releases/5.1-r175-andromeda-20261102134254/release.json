@@ -1,0 +1,23 @@
+{
+  "release_id": "5.1-r175-andromeda-20261102134254",
+  "update_id": "20261102134254",
+  "version": "5.1",
+  "linux_kernel": "5.15.223",
+  "platform": "Amlogic-nx.aarch64",
+  "source_commit": "fa5eb3d7386cffd39510a3cdb273ce8ec0dc99ca",
+  "system_sha256": "b6b1739a02c8f3a33af5107b402ccc0fb927c657fdf2e7488e3364d6aaf2069d",
+  "signing_key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
+  "assets": [
+    {
+      "name": "Retro-Elite-5.1-r175-andromeda-20261102134254-update.zip",
+      "size": 1749110075,
+      "sha256": "af1697111e32b0f5dc0de563b733276c493bdba6363eaa4c0b19c0796a27a609"
+    },
+    {
+      "name": "Retro-Elite-5.1-r175-andromeda-20261102134254.img.gz",
+      "size": 1753289762,
+      "sha256": "9ede3c03315223b349232b2cdf0ff5a3706c1e72bd90860117f14e1c52bedc52"
+    }
+  ],
+  "release_url": "https://github.com/NextOs-Ports/Retro-Elite-5.1/releases/tag/v5.1-r175-andromeda-20261102134254"
+}

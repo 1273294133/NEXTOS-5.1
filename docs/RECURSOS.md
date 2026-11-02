@@ -1,6 +1,6 @@
-# RETRO ELITE 5.1 Andromeda — Recursos
+# NEXTOS 5.1 — Recursos
 
-O **Retro Elite 5.1 Andromeda** é um sistema de jogos retrô e multimídia para TV boxes Amlogic de 64 bits. Ele roda sobre o **kernel Linux 5.15.223**. O número 5.1 é a versão do sistema; 5.15.223 é a versão do kernel. São coisas diferentes.
+O **NEXTOS 5.1 Andromeda** é um sistema de jogos retrô e multimídia para TV boxes Amlogic de 64 bits. Ele roda sobre o **kernel Linux 5.15.223**. O número 5.1 é a versão do sistema; 5.15.223 é a versão do kernel. São coisas diferentes.
 
 O sistema parte da base **EmuELEC**, que por sua vez descende de CoreELEC e LibreELEC. Em cima dela, o Retro Elite reorganizou toda a interface em português e trouxe para dentro do EmulationStation ferramentas que antes ficavam espalhadas em aplicativos separados. Também acrescentou recursos próprios de biblioteca, saves, controles, áudio, rede, manutenção e suporte.
 
@@ -48,7 +48,7 @@ Esta página descreve o que existe na versão publicada, onde cada recurso fica 
 | Recurso | Onde fica | Para que serve |
 | --- | --- | --- |
 | **Assistente de primeiro uso** | Abre sozinho no primeiro boot | Cinco passos com MAIS TARDE, PULAR e CONCLUIR. A confirmação em "Bom jogo" encerra o assistente e fecha as telas dele. O assistente não reaparece em instalações atualizadas. |
-| **Nome do jogador (opcional)** | Primeira tela do assistente, "SEU NOME (OPCIONAL)", ou START > TELA E APARÊNCIA > MEU PERFIL NEXTOS > NOME DO JOGADOR | Personaliza a saudação ("Boa noite, Ana."). Aceita até 32 caracteres. Deixar vazio volta para "Bem-vindo ao Retro Elite 5.1". |
+| **Nome do jogador (opcional)** | Primeira tela do assistente, "SEU NOME (OPCIONAL)", ou START > TELA E APARÊNCIA > MEU PERFIL NEXTOS > NOME DO JOGADOR | Personaliza a saudação ("Boa noite, Ana."). Aceita até 32 caracteres. Deixar vazio volta para "Bem-vindo ao NEXTOS 5.1". |
 | **Tela de boas-vindas e painel** | MEU PERFIL NEXTOS | Saudação, cartões de estatísticas (tempo de jogo, último jogo, favoritos, sequência de dias), MOSTRAR AO LIGAR, MOSTRAR AO SAIR DO JOGO e PRÉ-VISUALIZAR O PAINEL. |
 | **Modo TV e anti burn-in** | MEU PERFIL NEXTOS | MODO TV e ANIMAÇÃO ANTI BURN-IN para quem deixa o menu parado na tela. |
 | **Teclado virtual** | Qualquer campo de texto | Digitação pelo controle. Na 5.1 foi corrigido o caso em que soltar a tecla usada para confirmar fechava o editor logo que ele abria. |
@@ -196,7 +196,7 @@ Ficam em **START > TELA E APARÊNCIA**.
   - Prévias de cada opção.
   - A proteção não aparece durante jogo, netplay ou áudio em reprodução.
 - **Tela de abertura do jogo:** mostra a capa e a etapa real do carregamento, e sai antes de o jogo assumir a tela.
-- **Logo de boot** com a identidade Retro Elite 5.1.
+- **Logo de boot** com a identidade NEXTOS 5.1.
 
 ## 10. Multimídia
 

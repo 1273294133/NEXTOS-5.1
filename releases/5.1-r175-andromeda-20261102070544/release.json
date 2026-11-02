@@ -9,15 +9,16 @@
   "signing_key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
   "assets": [
     {
-      "name": "Retro-Elite-5.1-r175-andromeda-20261102070544-update.zip",
+      "name": "Nextos-5.1-20261102070544-update.zip",
       "size": 1749111556,
       "sha256": "4529cc1f0675d01a97c8485613a6f8d6f77bd727aade038ea80d59b50b241051"
     },
     {
-      "name": "Retro-Elite-5.1-r175-andromeda-20261102070544.img.gz",
+      "name": "Nextos-5.1-20261102070544.img.gz",
       "size": 1753280757,
       "sha256": "9c66436d5ceb8cdf838b28dd675aa2960c45f6f1c53eeb24eae1b077b12c1a0e"
     }
   ],
-  "release_url": "https://github.com/NextOs-Ports/Retro-Elite-5.1/releases/tag/v5.1-r175-andromeda-20261102070544"
+  "release_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/tag/v5.1-r175-andromeda-20261102070544",
+  "edition": "Nextos"
 }

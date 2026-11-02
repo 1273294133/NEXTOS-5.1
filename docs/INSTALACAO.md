@@ -1,4 +1,4 @@
-# Instalação, primeiro boot e atualização — RETRO ELITE 5.1 Andromeda
+# Instalação, primeiro boot e atualização — NEXTOS 5.1
 
 A RETRO ELITE 5.1 **roda do cartão SD**. Ela não apaga nem substitui o Android da caixa e não grava
 nada na memória interna (eMMC). Tire o cartão e a caixa volta a ser o que era.

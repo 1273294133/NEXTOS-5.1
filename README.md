@@ -1,9 +1,9 @@
-<p align="center"><img src="assets/cover.svg" alt="Retro Elite 5.1 Andromeda" width="100%"></p>
+<p align="center"><img src="assets/Nextos-5.1-cover.svg" alt="NEXTOS 5.1 Andromeda" width="100%"></p>
 
 <p align="center"><strong>Desempenho renovado. Fluidez no menu. Uma base técnica que evoluiu.</strong></p>
-<p align="center"><a href="https://github.com/NextOs-Ports/Retro-Elite-5.1/releases">ROM e atualizações</a> · <a href="docs/RECURSOS.md">Todos os recursos</a> · <a href="docs/DISPOSITIVOS.md">Dispositivos</a> · <a href="docs/INSTALACAO.md">Instalação</a> · <a href="docs/ATUALIZACOES.md">Como atualizar</a></p>
+<p align="center"><a href="https://github.com/NextOs-Ports/NEXTOS-5.1/releases">ROM e atualizações</a> · <a href="docs/RECURSOS.md">Todos os recursos</a> · <a href="docs/DISPOSITIVOS.md">Dispositivos</a> · <a href="docs/INSTALACAO.md">Instalação</a> · <a href="docs/ATUALIZACOES.md">Como atualizar</a></p>
 
-# Retro Elite 5.1 · Andromeda
+# NEXTOS 5.1
 
 **Desempenho, fluidez e uma base de sistema modernizada para os aparelhos suportados.** A5.1 reúne Linux5.15.223, aceleração Mali-450 nos perfisGXL, evolução do frontend, memória comprimida com ZRAM, novas opções de áudio e atualização cumulativa com integridade de pacotes. O trabalho inclui desenvolvimento próprio, atualização de componentes e integração orientada ao hardware.
 
@@ -11,7 +11,7 @@
 
 | Identidade | Edição5.1 |
 |---|---|
-| Nome da edição | **Andromeda** |
+| Nome da edição | **Nextos** |
 | Arquitetura | **AArch64** |
 | Família da imagem | **Amlogic-nx · GXL/S4** |
 | Kernel Linux | **5.15.223** |
@@ -56,14 +56,14 @@ O áudio reúne **ALSA, PulseAudio e a opção PipeWire**. A base de acesso ao h
 ## Comece por aqui
 
 1. Confira [a matriz de dispositivos](docs/DISPOSITIVOS.md).
-2. Baixe a [ROM ou atualização correta em Releases](https://github.com/NextOs-Ports/Retro-Elite-5.1/releases).
+2. Baixe a [ROM ou atualização correta em Releases](https://github.com/NextOs-Ports/NEXTOS-5.1/releases).
 3. Siga [a instalação em cartão](docs/INSTALACAO.md) ou [a atualização nativa](docs/ATUALIZACOES.md).
 4. Explore [as novidades e os recursos próprios](docs/RECURSOS.md).
 5. Consulte [memória, ZRAM, boot e desempenho](docs/DESEMPENHO.md) e [as dúvidas frequentes](docs/FAQ.md).
 
 ## Interface em resolução nativa
 
-<p align="center"><a href="assets/gallery/interface-tema-720p.png"><img src="assets/gallery/interface-tema-720p.png" alt="Tema em captura nativa1280x720, exemplo com conteúdo do usuário" width="100%"></a></p>
+<p align="center"><a href="assets/gallery/Nextos-5.1-interface-tema-720p.png"><img src="assets/gallery/Nextos-5.1-interface-tema-720p.png" alt="Tema em captura nativa1280x720, exemplo com conteúdo do usuário" width="100%"></a></p>
 
 *Captura real1280×720. Os sistemas visíveis neste exemplo decorrem dos jogos do usuário e não acompanham a ROM virgem.*
 
@@ -113,11 +113,11 @@ A integração em preparação usa **GitHub como origem principal e R2 como rese
 
 | Crash Twinsanity | Spider-Man Unlimited |
 |---|---|
-| [![Crash Twinsanity](assets/gallery/port-1-crash-twinsanity-nextos-20261031.png)](assets/gallery/port-1-crash-twinsanity-nextos-20261031.png) | [![Spider-Man Unlimited](assets/gallery/port-2-spider-man-unlimited-nextos-r051-20261030.png)](assets/gallery/port-2-spider-man-unlimited-nextos-r051-20261030.png) |
+| [![Crash Twinsanity](assets/gallery/Nextos-port-1-crash-twinsanity-nextos-20261031.png)](assets/gallery/Nextos-port-1-crash-twinsanity-nextos-20261031.png) | [![Spider-Man Unlimited](assets/gallery/Nextos-port-2-spider-man-unlimited-nextos-r051-20261030.png)](assets/gallery/Nextos-port-2-spider-man-unlimited-nextos-r051-20261030.png) |
 
 | Celeste | Chasm |
 |---|---|
-| [![Celeste](assets/gallery/port-3-celeste-nextos-5.0-20261019.png)](assets/gallery/port-3-celeste-nextos-5.0-20261019.png) | [![Chasm](assets/gallery/port-4-chasm-nextos-5.0-20261019.png)](assets/gallery/port-4-chasm-nextos-5.0-20261019.png) |
+| [![Celeste](assets/gallery/Nextos-port-3-celeste-nextos-5.0-20261019.png)](assets/gallery/Nextos-port-3-celeste-nextos-5.0-20261019.png) | [![Chasm](assets/gallery/Nextos-port-4-chasm-nextos-5.0-20261019.png)](assets/gallery/Nextos-port-4-chasm-nextos-5.0-20261019.png) |
 
 ## Compatibilidade e limites que importam
 
