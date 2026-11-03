@@ -7,7 +7,7 @@
 
 **Desempenho, fluidez e uma base de sistema modernizada para os aparelhos suportados.** A 5.1 reúne Linux 5.15.223, aceleração Mali-450 nos perfis GXL, evolução do frontend, memória comprimida com ZRAM, novas opções de áudio e atualização cumulativa com integridade de pacotes. O trabalho inclui desenvolvimento próprio, atualização de componentes e integração orientada ao hardware.
 
-> **Distribuição atualizada.** UID 20261103010444: menu da conta preservado, acesso explícito ao catálogo e categorias com jogos primeiro. GitHub principal e R2 por HTTPS, sem credencial S3 embarcada.
+> **Downloads temporariamente suspensos.** A release r175 foi retirada por problemas na configuração inicial de controles e no retorno do RetroArch ao menu. A versão corrigida está em preparação e será publicada após o teste do novo cartão.
 
 | Identidade | Edição 5.1 |
 |---|---|
@@ -15,7 +15,7 @@
 | Arquitetura | **AArch64** |
 | Família da imagem | **Amlogic-nx · GXL / S4** |
 | Kernel Linux | **5.15.223** |
-| Entrega atual | **UID 20261103010444** · revisão técnica `r175-andromeda` |
+| Entrega atual | Temporariamente retirada; nova versão em validação |
 | Instalação nova | Imagem `.img.gz` para cartão |
 | Atualização de instalação compatível | Pacote nativo `-update.zip` |
 | Acesso a este repositório | Documentação e binários de distribuição; sem código da ROM |
