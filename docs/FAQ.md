@@ -25,4 +25,4 @@ Ele solicita a reinicialização para cartão pelos mecanismos disponíveis. Pri
 A imagem `.img.gz` grava uma instalação em cartão. O `-update.zip` atualiza uma instalação compatível pelo caminho nativo. Os dois têm usos diferentes.
 
 ### Como GitHub e R2 trabalham nesta entrega?
-A entrega UID 20261102145554 inclui GitHub como origem principal e R2 como reserva para o mesmo pacote assinado e identificado. A primeira imagem espelhada, UID 20261102070544, conserva o cliente R2 anterior. O repositório agora é público: o cliente acessa o GitHub sem conta e usa o R2 como reserva quando necessário. Nenhuma credencial GitHub é embarcada.
+A r177, UID 20261103221131, preserva o cliente M71 com GitHub como origem principal e R2 como reserva para o mesmo pacote assinado e identificado. A primeira imagem espelhada, UID 20261102070544, conserva o cliente R2 anterior. O repositório agora é público: o cliente acessa o GitHub sem conta e usa o R2 como reserva quando necessário. Nenhuma credencial GitHub é embarcada.

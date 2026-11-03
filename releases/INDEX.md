@@ -1,9 +1,9 @@
 # Releases da NEXTOS 5.1
 
-Entrega atual: **UID20261103010444**, edição **Nextos**, kernel Linux **5.15.223**.
+Entrega atual: **r177 · UID 20261103221131**, edição **Nextos**, kernel Linux **5.15.223**.
 
-ROM e update: https://github.com/NextOs-Ports/NEXTOS-5.1/releases/tag/v5.1-r175-andromeda-20261103010444
+ROM e update: https://github.com/NextOs-Ports/NEXTOS-5.1/releases/tag/v5.1-r177-andromeda-20261103221131
 
-Menu de conta preservado, vitrine somente leitura, acesso explícito aos Exclusivos e categorias com conteúdo primeiro. Catálogo online de publicações compatíveis e autorizadas, sem ROM por jogo. Atualizações assinadas, GitHub principal e R2 HTTPS, sem chave S3 embarcada.
+Cartão e reinício aprovados pelo dono. Configuração de controle antes das boas-vindas, teclado padrão em RAM, salvamento atômico/checado, retorno do RetroArch pelo perfil, Sair em português, retomada do ES em S4 e consulta HDMI corrigida. Base M71 e segurança preservadas; veja o [histórico e os limites](../docs/HISTORICO.md).
 
-A entrega segura UID20261102221950 é preservada. As antigas Releases UID20261102070544 e UID20261102145554 foram retiradas em02/11/2026; seus registros históricos não tornam esses binários disponíveis novamente.
+A UID 20261103010444 foi retirada. A r176 UID 20261103203332 foi uma etapa de teste, não a entrega recomendada. Os registros antigos permanecem como histórico, sem republicar seus binários nem acrescentar Y7/G12A ao suporte.

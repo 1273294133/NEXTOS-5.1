@@ -13,7 +13,22 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### NEXTOS 5.1 — UID 20261103010444 (r175) · 03/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261103221131 (r177) · 03/11/2026 · **atual**
+
+Cartão e reinício do sistema aprovados pelo dono; publicação autorizada para esta entrega, fonte `5f01b5b104b7addb315a9601dbada47383525440`.
+
+- Configuração de gamepad sem mapa antes das boas-vindas/assistente e teclado padrão em RAM quando falta perfil.
+- Escrita atômica dos mapas, resultado verificado e aviso de erro sem concluir silenciosamente o configurador.
+- Retorno do RetroArch aberto pelo menu pelo alias do perfil GXL/S4 e rótulo **Sair** em português.
+- Retomada do EmulationStation ao reiniciar somente a interface no perfil S4.
+- Lista de resoluções segue a indicação HDMI do driver, corrigindo o falso aviso de modo inseguro identificado.
+- Base/segurança M71 preservadas: Linux 5.15.223, GitHub principal, R2 HTTPS e assinatura Ed25519, sem credencial S3 permanente na imagem.
+
+As causas dos relatos de remapeamento GameSir e de travamento persistente não foram isoladas; os ajustes de gravação e enumeração de modos não são apresentados como correções causais universais. Y7/G12A não é acrescentado ao suporte. Não há nova rodada de benchmarks ou de validação de todos os aparelhos nesta revisão.
+
+### NEXTOS 5.1 — UID 20261103010444 (r175) · 03/11/2026 · retirada; histórico
+
+Esta release foi retirada após os relatos de configuração inicial de controles e retorno do RetroArch. Os recursos e as provas abaixo são históricos; seus binários não voltam a ser recomendados.
 
 Menu da conta preservado após login; vitrine **VER JOGOS EXISTENTES** separada de **ACESSAR NEXTOS EXCLUSIVOS**, que reconsulta acesso ativo e abre a loja real. Ícone de lembrar acesso sincronizado com o estado. Categorias populadas priorizadas por contagem real, com a família de sistemas escolhida pelo proprietário e as vazias no fim; jogos e filtros pessoais preservados.
 
@@ -147,6 +162,7 @@ Estas compilações existiram durante o desenvolvimento. Algumas foram instalada
 | 30/10 | r170 a r172 | Macros, áudio remoto, PipeWire opcional e imagens de fábrica de bancada. Entraram na r173. |
 | 31/10 | r174 | Base de bancada para medir memória do menu e fila de texturas. Entrou na r175. |
 | 01/11 | r175 (candidatas intermediárias) | Candidatas antes da publicação de 01/11 e uma candidata de prova descartada depois. |
+| 03/11 | r176, UID 20261103203332 | Cartão de teste anterior aos ajustes de gravação dos mapas e enumeração HDMI da r177; não é a entrega recomendada. |
 | 02/11 | r175, UID 20261102001150 | Imagem cumulativa com cartão gravado e conferido. Substituída antes da publicação. |
 | 02/11 | r175, UID 20261102055800 | Instalada nos dois aparelhos de referência. Durante o teste final apareceu o defeito do teclado virtual, e por isso ela nunca foi promovida. A correção resultou na versão 20261102070544. |
 

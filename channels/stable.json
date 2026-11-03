@@ -1,0 +1,42 @@
+{
+  "schema": "nextos-native-channel-1",
+  "product": "retro-elite",
+  "family": "nextos-nx",
+  "platform": "Amlogic-nx.aarch64",
+  "channel": "stable",
+  "version": "5.1",
+  "edition": "Nextos",
+  "native_version": "5.1-r177-andromeda",
+  "release_id": "5.1-r177-andromeda-20261103221131",
+  "update_id": "20261103221131",
+  "source_commit": "5f01b5b104b7addb315a9601dbada47383525440",
+  "payload": {
+    "format": "nextos-native-zip-1",
+    "size_bytes": 1748936225,
+    "sha256": "8ba3691f4530823a8fee0a1d9c7f018f8a41ef5540806423d47a58c280e8c1f9",
+    "system_sha256": "8bd28c480d403ad73d0332ec104ffdb609ef8d6b268997f2f55f900a4c32b497",
+    "update_sha256": "bc175572bff8388a45a90c1aeefbf40e5411e18536429c492da944034598594f",
+    "boot_target": "Amlogic-nx-multisoc",
+    "boot_targets": [
+      "Amlogic-nx-gxl",
+      "Amlogic-nx-s4"
+    ],
+    "package_dir": "RetroElite-5.1",
+    "object_key": "updates/nextos-nx/releases/5.1-r177-andromeda-20261103221131/8ba3691f4530823a8fee0a1d9c7f018f8a41ef5540806423d47a58c280e8c1f9/update.zip",
+    "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r177-andromeda-20261103221131/8ba3691f4530823a8fee0a1d9c7f018f8a41ef5540806423d47a58c280e8c1f9/update.zip",
+    "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r177-andromeda-20261103221131/Nextos-5.1-20261103221131-update.zip"
+  },
+  "changelog": [
+    "Configuração inicial de controles sem mapa antes das boas-vindas; teclado padrão em RAM quando não existe perfil.",
+    "Salvamento dos mapas com gravação atômica e verificação do resultado; aviso e assistente mantido aberto se falhar.",
+    "RetroArch: opção Sair com rótulo correto e retorno ao frontend pelo alias do perfil GXL/S4.",
+    "Reinício do EmulationStation no perfil S4 com política de retomada alinhada ao frontend comum.",
+    "Lista de resoluções segue a indicação HDMI do driver e evita falso aviso de modo inseguro.",
+    "Base cumulativa 5.1 preservada, Linux 5.15.223 e GitHub/HTTPS de reserva com pacotes assinados, sem credenciais S3 permanentes na imagem."
+  ],
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
+    "value": "rsK6K8pvRNUFDWK2k2/xDss/kVf79dLw1Hk6vbCE2gT7Qla3LqBOmh3ttEIpLiwraM8VXcsgrR1YWtd1BEAKBQ=="
+  }
+}
