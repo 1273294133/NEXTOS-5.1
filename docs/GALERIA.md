@@ -26,20 +26,20 @@ Os registros abaixo são capturas preservadas do acervo do projeto, com data e v
 
 Crash Twinsanity — registro do acervo no NextOS,31/10/2026. Captura original640×360. O jogo não acompanha a imagem virgem.
 
-### Spider-Man Unlimited
+### Ultimate Spider-Man (PC, 2005)
 
-![Spider-Man Unlimited](../assets/gallery/Nextos-port-2-spider-man-unlimited-nextos-r051-20261030.png)
+![Ultimate Spider-Man](../assets/gallery/Nextos-port-2-ultimate-spider-man-pc-nextos-20261016.png)
 
-Spider-Man Unlimited — prévia de missão no NextOS, registro do acervo de30/10/2026, port r051. O jogo não acompanha a imagem virgem.
+Ultimate Spider-Man (versão PC de 2005) — registro do acervo no NextOS, 16/10/2026. Captura original 640×480. O jogo não acompanha a imagem virgem.
 
-### Celeste
+### God of War II
 
-![Celeste](../assets/gallery/Nextos-port-3-celeste-nextos-5.0-20261019.png)
+![God of War II](../assets/gallery/Nextos-port-3-god-of-war-ii-nextos-20261007.png)
 
-Celeste — registro do acervo no NextOS5.0,19/10/2026. O jogo não acompanha a imagem virgem.
+God of War II — combate no port da coleção, registro do acervo no NextOS, 07/10/2026. Captura original 1280×720. O jogo não acompanha a imagem virgem.
 
-### Chasm
+### God of War
 
-![Chasm](../assets/gallery/Nextos-port-4-chasm-nextos-5.0-20261019.png)
+![God of War](../assets/gallery/Nextos-port-4-god-of-war-nextos-20260914.png)
 
-Chasm — registro do acervo no NextOS5.0,19/10/2026. O jogo não acompanha a imagem virgem.
+God of War — combate no navio do Mar Egeu, registro do acervo no NextOS, 14/09/2026. Captura original 1280×720. O jogo não acompanha a imagem virgem.

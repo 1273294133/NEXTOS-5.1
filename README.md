@@ -111,13 +111,13 @@ A entrega UID 20261103010444 inclui o cliente que usa **GitHub como origem princ
 
 **Os jogos das imagens não acompanham a ROM virgem.** São capturas reais do acervo, sem logos ou molduras Retro Elite. Datas e versões estão na [galeria](docs/GALERIA.md).
 
-| Crash Twinsanity | Spider-Man Unlimited |
+| Crash Twinsanity | Ultimate Spider-Man (PC, 2005) |
 |---|---|
-| [![Crash Twinsanity](assets/gallery/Nextos-port-1-crash-twinsanity-nextos-20261031.png)](assets/gallery/Nextos-port-1-crash-twinsanity-nextos-20261031.png) | [![Spider-Man Unlimited](assets/gallery/Nextos-port-2-spider-man-unlimited-nextos-r051-20261030.png)](assets/gallery/Nextos-port-2-spider-man-unlimited-nextos-r051-20261030.png) |
+| [![Crash Twinsanity](assets/gallery/Nextos-port-1-crash-twinsanity-nextos-20261031.png)](assets/gallery/Nextos-port-1-crash-twinsanity-nextos-20261031.png) | [![Ultimate Spider-Man](assets/gallery/Nextos-port-2-ultimate-spider-man-pc-nextos-20261016.png)](assets/gallery/Nextos-port-2-ultimate-spider-man-pc-nextos-20261016.png) |
 
-| Celeste | Chasm |
+| God of War II | God of War |
 |---|---|
-| [![Celeste](assets/gallery/Nextos-port-3-celeste-nextos-5.0-20261019.png)](assets/gallery/Nextos-port-3-celeste-nextos-5.0-20261019.png) | [![Chasm](assets/gallery/Nextos-port-4-chasm-nextos-5.0-20261019.png)](assets/gallery/Nextos-port-4-chasm-nextos-5.0-20261019.png) |
+| [![God of War II](assets/gallery/Nextos-port-3-god-of-war-ii-nextos-20261007.png)](assets/gallery/Nextos-port-3-god-of-war-ii-nextos-20261007.png) | [![God of War](assets/gallery/Nextos-port-4-god-of-war-nextos-20260914.png)](assets/gallery/Nextos-port-4-god-of-war-nextos-20260914.png) |
 
 ## Compatibilidade e limites que importam
 
