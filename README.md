@@ -111,9 +111,9 @@ A entrega UID 20261103010444 inclui o cliente que usa **GitHub como origem princ
 
 **Os jogos das imagens não acompanham a ROM virgem.** São capturas reais do acervo, sem logos ou molduras Retro Elite. Datas e versões estão na [galeria](docs/GALERIA.md).
 
-| Crash Twinsanity | Ultimate Spider-Man (PC, 2005) |
+| Crash Twinsanity | Ultimate Spider-Man |
 |---|---|
-| [![Crash Twinsanity](assets/gallery/Nextos-port-1-crash-twinsanity-nextos-20261031.png)](assets/gallery/Nextos-port-1-crash-twinsanity-nextos-20261031.png) | [![Ultimate Spider-Man](assets/gallery/Nextos-port-2-ultimate-spider-man-pc-nextos-20261016.png)](assets/gallery/Nextos-port-2-ultimate-spider-man-pc-nextos-20261016.png) |
+| [![Crash Twinsanity](assets/gallery/Nextos-port-1-crash-twinsanity-nextos-20261031.png)](assets/gallery/Nextos-port-1-crash-twinsanity-nextos-20261031.png) | [![Ultimate Spider-Man](assets/gallery/Nextos-port-2-ultimate-spider-man-nextos-20261028.png)](assets/gallery/Nextos-port-2-ultimate-spider-man-nextos-20261028.png) |
 
 | God of War II | God of War |
 |---|---|

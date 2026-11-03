@@ -26,11 +26,11 @@ Os registros abaixo são capturas preservadas do acervo do projeto, com data e v
 
 Crash Twinsanity — registro do acervo no NextOS,31/10/2026. Captura original640×360. O jogo não acompanha a imagem virgem.
 
-### Ultimate Spider-Man (PC, 2005)
+### Ultimate Spider-Man
 
-![Ultimate Spider-Man](../assets/gallery/Nextos-port-2-ultimate-spider-man-pc-nextos-20261016.png)
+![Ultimate Spider-Man](../assets/gallery/Nextos-port-2-ultimate-spider-man-nextos-20261028.png)
 
-Ultimate Spider-Man (versão PC de 2005) — registro do acervo no NextOS, 16/10/2026. Captura original 640×480. O jogo não acompanha a imagem virgem.
+Ultimate Spider-Man (jogo de 2005) — port novo para o NextOS, feito a partir da versão Android; balançando pela cidade, registro do acervo de 28/10/2026. Captura original 640×360. O jogo não acompanha a imagem virgem.
 
 ### God of War II
 
