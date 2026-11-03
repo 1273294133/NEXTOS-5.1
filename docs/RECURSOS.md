@@ -277,6 +277,9 @@ Ficam em **START > SISTEMA E MANUTENÇÃO > ARMAZENAMENTO E CARTÃO SD**, salvo 
 
   - Loja nativa na lista de sistemas: catálogo por categorias, detalhes, espaço livre, download com verificação de integridade, abertura e exclusão de instalações.
   - O catálogo distribuído com o sistema pode ser consultado sem conta e sem internet ("Ver jogos existentes"). Baixar exige conta ativa.
+  - Depois de entrar, o menu da conta continua. **VER JOGOS EXISTENTES** consulta a vitrine; **ACESSAR NEXTOS EXCLUSIVOS**, com acesso ativo e situação novamente conferida, abre a lista real para baixar.
+  - Na raiz, categorias com jogos primeiro: Ports, GameCube, Wii, família PlayStation, Xbox e 3DS; demais com conteúdo depois; vazias no fim. Jogos dentro de categorias mantêm sua ordenação.
+  - Novas publicações compatíveis e autorizadas aparecem na atualização do catálogo online sem uma nova ROM. Arquivos privados continuam protegidos pelo serviço de contas.
 - **Uma conta, uma box:**
   - Cada instalação tem uma chave de dispositivo persistente, e cada pedido privado é assinado e protegido contra reaproveitamento (replay).
   - A mesma senha em outra instalação é recusada.

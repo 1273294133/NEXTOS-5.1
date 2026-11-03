@@ -13,7 +13,15 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### NEXTOS 5.1 — UID 20261102221950 (r175) · 02/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261103010444 (r175) · 03/11/2026 · **atual**
+
+Menu da conta preservado após login; vitrine **VER JOGOS EXISTENTES** separada de **ACESSAR NEXTOS EXCLUSIVOS**, que reconsulta acesso ativo e abre a loja real. Ícone de lembrar acesso sincronizado com o estado. Categorias populadas priorizadas por contagem real, com a família de sistemas escolhida pelo proprietário e as vazias no fim; jogos e filtros pessoais preservados.
+
+Catálogo online atualizado por publicações compatíveis e autorizadas, sem nova ROM por jogo. GitHub principal, R2 por HTTPS e assinatura Ed25519 permanecem. A imagem e o update vieram da composição padrão cumulativa e a atualização nativa concluiu no TX9 e no Aquário, preservando os dados verificados. Nenhum jogo acompanha a imagem virgem.
+
+A entrega segura UID20261102221950 e seu histórico são preservados. Esta atualização não reativa a distribuição 5.0 nem altera seu leitor/serviço legado.
+
+### NEXTOS 5.1 — UID 20261102221950 (r175) · 02/11/2026 · anterior segura preservada
 
 Recursos e R2 de reserva por HTTPS, sem credencial S3 permanente embarcada. GitHub principal, assinatura Ed25519, verificação de identidade e integridade, acompanhamento e cancelamento dos downloads preservados. Configurações padrão geradas a partir dos arquivos de fábrica, sem dados de aparelhos utilizados.
 

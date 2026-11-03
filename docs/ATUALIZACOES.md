@@ -2,13 +2,21 @@
 
 ## Situação das entregas
 
-A entrega **UID 20261102221950** usa **GitHub como origem principal e R2 como reserva por HTTPS**, sem credencial S3 permanente embarcada. O manifesto Ed25519 é conferido pela chave pública fixada; tamanho, hashes e identidade do pacote também são obrigatórios.
+A entrega **UID 20261103010444** usa **GitHub como origem principal e R2 como reserva por HTTPS**, sem credencial S3 permanente embarcada. O manifesto Ed25519 é conferido pela chave pública fixada; tamanho, hashes e identidade do pacote também são obrigatórios.
 
 A imagem e o update foram gerados pelo build padrão. A atualização nativa concluiu no TX9 e no Aquário, incluindo boot, finalizador a 100% e preservação dos dados e configurações verificados. Nos dois aparelhos, o cliente instalado consultou o manifesto assinado pela reserva HTTPS sem usar a configuração S3 antiga.
 
 As Releases UID 20261102070544 e UID 20261102145554 foram retiradas. Seus registros de integridade permanecem como histórico. Para uma instalação antiga, use a atualização nativa compatível ou o ZIP atual pelo menu de atualização local; não é necessário restaurar a chave antiga.
 
 Os aparelhos acessam o GitHub sem conta ou token GitHub. Se a origem principal estiver indisponível, o cliente utiliza a reserva HTTPS para a mesma entrega assinada.
+
+## NEXTOS Exclusivos: vitrine e acesso à loja
+
+O menu da conta permanece aberto depois de entrar. **VER JOGOS EXISTENTES** é a vitrine de consulta, somente de leitura, disponível também sem entrar na conta. Com acesso ativo, escolha **ACESSAR NEXTOS EXCLUSIVOS** para abrir a lista real de jogos e ports e iniciar os downloads autorizados. Essa opção consulta novamente a situação da conta antes de continuar.
+
+Na raiz da loja, as categorias com jogos aparecem primeiro: **Ports, GameCube, Wii, família PlayStation, Xbox e Nintendo 3DS**. Outras categorias com conteúdo vêm em seguida; as vazias ficam no fim. A ordenação dos jogos dentro de cada categoria e os filtros pessoais são preservados. **LEMBRAR ACESSO** mostra o estado real da opção e conserva somente a sessão escolhida, sem guardar a senha.
+
+O catálogo online acompanha novas publicações compatíveis e autorizadas no serviço: após atualizar a lista, os títulos passam a aparecer sem trocar a ROM nem editar uma lista manual no aparelho. Isso se limita aos sistemas, formatos e caminhos suportados. Jogos e ports privados continuam exigindo conta ativa e autorização do servidor; a vitrine não libera seus arquivos.
 
 ## Como atualizar uma instalação compatível
 

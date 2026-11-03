@@ -1,6 +1,6 @@
 # Segurança da distribuição
 
-A entrega UID20261102221950 não embarca a credencial S3/R2 antiga, token de publicação GitHub, chave privada de assinatura, senha administrativa ou códigos de recuperação. A imagem é produzida a partir dos arquivos de fábrica e passa por verificação de credenciais durante o build.
+A entrega UID20261103010444 não embarca a credencial S3/R2 antiga, token de publicação GitHub, chave privada de assinatura, senha administrativa ou códigos de recuperação. A imagem é produzida a partir dos arquivos de fábrica e passa por verificação de credenciais durante o build.
 
 O atualizador usa GitHub como origem principal e R2 por HTTPS como reserva. Manifestos assinados com Ed25519 são conferidos pela chave pública fixada; UID, família, plataforma, tamanho e hashes do pacote também são validados. A chave pública acompanha a ROM para permitir a verificação; a chave privada permanece com o publicador.
 
