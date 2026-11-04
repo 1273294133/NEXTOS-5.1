@@ -13,7 +13,7 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### NEXTOS 5.1 — UID 20261104204600 (r180) · 04/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261104214108 (r180) · 04/11/2026 · **atual**
 
 Fonte `171fa5f0961317e9a589068ca6bdfbf84e9d356d`.
 
