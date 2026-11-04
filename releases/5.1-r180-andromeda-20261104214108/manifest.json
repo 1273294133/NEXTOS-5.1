@@ -1,0 +1,62 @@
+{
+  "schema": "nextos-native-channel-1",
+  "product": "retro-elite",
+  "family": "nextos-nx",
+  "platform": "Amlogic-nx.aarch64",
+  "channel": "stable",
+  "version": "5.1",
+  "edition": "Nextos",
+  "native_version": "5.1-r180-andromeda",
+  "release_id": "5.1-r180-andromeda-20261104214108",
+  "update_id": "20261104214108",
+  "source_commit": "171fa5f0961317e9a589068ca6bdfbf84e9d356d",
+  "payload": {
+    "format": "nextos-native-zip-1",
+    "size_bytes": 1749003608,
+    "sha256": "b7e97cc69a007b3d426c7f5f7441dd5b9135a73fca3712b666f261122eb5052b",
+    "system_sha256": "4458d265a4cfae53cc628b6e49cb7c986621cfb63b9dc3a97d5756a720053922",
+    "update_sha256": "4dc0452ce8162adac9313429d255f98bf7867517d728f712577d7d0f57ae2ec3",
+    "boot_target": "Amlogic-nx-multisoc",
+    "boot_targets": [
+      "Amlogic-nx-gxl",
+      "Amlogic-nx-s4"
+    ],
+    "package_dir": "RetroElite-5.1",
+    "object_key": "updates/nextos-nx/releases/5.1-r180-andromeda-20261104214108/b7e97cc69a007b3d426c7f5f7441dd5b9135a73fca3712b666f261122eb5052b/update.zip",
+    "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r180-andromeda-20261104214108/b7e97cc69a007b3d426c7f5f7441dd5b9135a73fca3712b666f261122eb5052b/update.zip",
+    "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r180-andromeda-20261104214108/Nextos-5.1-20261104214108-update.zip"
+  },
+  "representations": {
+    "five-device-v1": {
+      "format": "nextos-native-zip-1",
+      "size_bytes": 1766238162,
+      "sha256": "4c6158e973f86209e791b3754f15359f335f4681b23546fcfdd0196aa6f2e01c",
+      "system_sha256": "4458d265a4cfae53cc628b6e49cb7c986621cfb63b9dc3a97d5756a720053922",
+      "update_sha256": "221d5638a50dace0c8d5972e2d685c7909a3785b5c0dbc294e44ebf4eed7d02a",
+      "boot_target": "Amlogic-nx-multisoc",
+      "boot_targets": [
+        "Amlogic-nx-gxl",
+        "Amlogic-nx-s4",
+        "Amlogic-nx-y7"
+      ],
+      "package_dir": "RetroElite-5.1",
+      "object_key": "updates/nextos-nx/releases/5.1-r180-andromeda-20261104214108/4c6158e973f86209e791b3754f15359f335f4681b23546fcfdd0196aa6f2e01c/update.zip",
+      "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r180-andromeda-20261104214108/4c6158e973f86209e791b3754f15359f335f4681b23546fcfdd0196aa6f2e01c/update.zip",
+      "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r180-andromeda-20261104214108/Nextos-5.1-20261104214108-unified-update.zip"
+    }
+  },
+  "changelog": [
+    "PortMaster: recuperação automática do arquivo de abertura após a atualização própria, preservando a versão instalada e os dados.",
+    "Jogo aleatório global e por sistema, incluindo subpastas, com shuffle e filtros para itens identificados como BIOS, utilitários e não funcionais.",
+    "Notas da versão visíveis antes de confirmar a atualização, com versão pública, data e codinome.",
+    "Configuração inicial por NEXTOS-SETUP.txt no cartão: Wi-Fi, idioma, fuso e nome do jogador; política de SSH preservada.",
+    "Progresso dos jogos com estados Jogando, Zerado e Abandonado, escolha manual e coleções automáticas.",
+    "Recuperação segura das permissões SSH observadas em cartões antigos, mantendo a identidade administrativa e sem acesso por senha.",
+    "Uma imagem para os cinco perfis suportados, com kernel5.15.223 e os caminhos de atualização compatíveis preservados."
+  ],
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
+    "value": "p84XLDEiM9z9p5QxuAYdsN4TQjYvQHKtzmqFIITL5nJrZaHK/RwVOr/KkKWwP2PTevHGoY/C9vwDwQafvOKBAg=="
+  }
+}

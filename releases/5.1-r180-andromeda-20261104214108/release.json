@@ -1,0 +1,31 @@
+{
+  "release_id": "5.1-r180-andromeda-20261104214108",
+  "update_id": "20261104214108",
+  "version": "5.1",
+  "linux_kernel": "5.15.223",
+  "platform": "Amlogic-nx.aarch64",
+  "edition": "Nextos",
+  "source_commit": "171fa5f0961317e9a589068ca6bdfbf84e9d356d",
+  "system_sha256": "4458d265a4cfae53cc628b6e49cb7c986621cfb63b9dc3a97d5756a720053922",
+  "signing_key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
+  "assets": [
+    {
+      "name": "Nextos-5.1-20261104214108-update.zip",
+      "size": 1749003608,
+      "sha256": "b7e97cc69a007b3d426c7f5f7441dd5b9135a73fca3712b666f261122eb5052b"
+    },
+    {
+      "name": "Nextos-5.1-20261104214108-unified-update.zip",
+      "size": 1766238162,
+      "sha256": "4c6158e973f86209e791b3754f15359f335f4681b23546fcfdd0196aa6f2e01c"
+    },
+    {
+      "name": "Nextos-5.1-20261104214108.img.gz",
+      "size": 1771586420,
+      "sha256": "667ae70384362da0750f56237525be469e0399e087f5685225d886ea250bd4c9"
+    }
+  ],
+  "physical_validation_claimed": false,
+  "acceptance_basis": "express release authorization and current static/component gates",
+  "release_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/tag/v5.1-r180-andromeda-20261104214108"
+}
