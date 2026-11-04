@@ -71,7 +71,7 @@ O DTB descreve a placa para o kernel: memória, pinos, Wi-Fi, HDMI e reservas. A
 | --- | --- | --- | --- | --- |
 | **TX9** | GXL `gxl_p281_2g` | 2 GB | ≈1,77 GiB | **Atualizado fisicamente para r178 (UID 20261104011437), finalização nativa 100%**: boot, finalização e preservação de dados aprovados. |
 | **Aquário** | S4 `s4_s905w2_2g` | 2 GB | ≈1,90 GiB | **Atualizado fisicamente para r178 (UID 20261104011437), finalização nativa 100%**: boot, finalização e preservação de dados aprovados. |
-| **D905** | GXL `gxl_p281_1g` | 1 GB | ≈850 MiB | **Cartão r178 aprovado pelo dono**, usando o mesmo arquivo testado no TX9. Provas anteriores de STORAGE preservadas. |
+| **D905** | GXL `gxl_p281_1g` | 1 GB | ≈850 MiB | **Cartão r178 testado**, usando o mesmo arquivo testado no TX9. Provas anteriores de STORAGE preservadas. |
 | **X2** | GXL, `dtb-x2.dtb` próprio (doador `gxl_p281_1g`) | 1 GB | ≈816 MiB | **Aprovações anteriores reaproveitadas.** A última instalação física registrada é a R157 (26/10/2026). A versão final não foi instalada na X2. O DTB da X2 tem mapa de memória e reservas próprios da placa. |
 | **Y7** | G12A/S905X2, `dtb-y7.dtb` | — | — | **Boot, imagens, áudio e controle aprovados no aparelho do colaborador.** Integra a imagem única r178; adaptadores Wi-Fi dependem do chipset. |
 | **GameStick genérico** | perfil sugerido: o mesmo do D905 (`gxl_p281_1g`) | — | — | **Depende da placa, do DTB e do SoC.** A aprovação do Y7 não se aplica a sticks de outra placa. |

@@ -7,7 +7,7 @@
 
 **Desempenho, fluidez e uma base de sistema modernizada para os aparelhos suportados.** A 5.1 reúne Linux 5.15.223, aceleração Mali-450 nos perfis GXL, evolução do frontend, memória comprimida com ZRAM, novas opções de áudio e atualização cumulativa com integridade de pacotes. O trabalho inclui desenvolvimento próprio, atualização de componentes e integração orientada ao hardware.
 
-> **r178 aprovada pelo dono · UID20261104011437. Uma imagem para D905, TX9, X2, Aquário e Y7.** Veja correções e a limitação conhecida do suporte em [Histórico](docs/HISTORICO.md).
+> **r178 · UID20261104011437. Uma imagem para D905, TX9, X2, Aquário e Y7.** Veja correções e a limitação conhecida do suporte em [Histórico](docs/HISTORICO.md).
 
 | Identidade | Edição 5.1 |
 |---|---|
@@ -121,7 +121,7 @@ A entrega r178, UID 20261104011437, preserva o cliente da base M71 que usa **Git
 
 ## Compatibilidade e limites que importam
 
-- A imagem única r178 foi aprovada pelo dono, com relatos de boot no TX9, D905 e Y7. TX9 e Aquário também concluíram a atualização nativa da UID20261104011437 a100%, com menu e configurações preservados. X2 mantém sua rota anterior e a correção de detecção baseada no ambiente real. Veja a limitação conhecida do suporte no histórico.
+- A imagem única r178 tem relatos de boot no TX9, D905 e Y7. TX9 e Aquário também concluíram a atualização nativa da UID20261104011437 a100%, com menu e configurações preservados. X2 mantém sua rota anterior e a correção de detecção baseada no ambiente real. Veja a limitação conhecida do suporte no histórico.
 - No Aquário, o host USB CRG pode interferir no Bluetooth quando um controle USB low-speed está sendo lido. O alcance depende da combinação de periféricos.
 - O APK não concede privilégios que o Android não oferece. Acesso root ou autorização compatível podem ser necessários.
 - Ganhos de boot, RAM e desempenho são apresentados com seu contexto; não representam um ganho universal de FPS.
