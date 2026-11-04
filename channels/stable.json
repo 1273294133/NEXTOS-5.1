@@ -6,33 +6,33 @@
   "channel": "stable",
   "version": "5.1",
   "edition": "Nextos",
-  "native_version": "5.1-r178-andromeda",
-  "release_id": "5.1-r178-andromeda-20261104011437",
-  "update_id": "20261104011437",
-  "source_commit": "034be8683c15adbff0f551aee2d18819d5a215cb",
+  "native_version": "5.1-r179-andromeda",
+  "release_id": "5.1-r179-andromeda-20261104044137",
+  "update_id": "20261104044137",
+  "source_commit": "a8aa58d5f951b213ed833ebd24b735ffaccc008b",
   "payload": {
     "format": "nextos-native-zip-1",
-    "size_bytes": 1748962385,
-    "sha256": "cf87164b09de4a3c026e953dc7b5ca4e71328581cebdd8c64318196a32d8934e",
-    "system_sha256": "a91a39c6828bcb552b85f4d2bb15bc65a1fb1316bbc60db775ee26305dd438b9",
-    "update_sha256": "e80565608c137f6b8c31eaa6de7d85e443eacdc3950d6502156a5c8821a82e6b",
+    "size_bytes": 1748975358,
+    "sha256": "7502cfcd972a3cdea2c0dfe0d99d2ed5a1f2d63b13e46a22eec439d87db11859",
+    "system_sha256": "e1936b8838d0cd7f2144aa56238c92c3cc97caaed9bee3ba334d2d969942b66d",
+    "update_sha256": "9327e08060ec7a303298b012249291404c2d1b9339fa69833ee3ae7fabf9fd17",
     "boot_target": "Amlogic-nx-multisoc",
     "boot_targets": [
       "Amlogic-nx-gxl",
       "Amlogic-nx-s4"
     ],
     "package_dir": "RetroElite-5.1",
-    "object_key": "updates/nextos-nx/releases/5.1-r178-andromeda-20261104011437/cf87164b09de4a3c026e953dc7b5ca4e71328581cebdd8c64318196a32d8934e/update.zip",
-    "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r178-andromeda-20261104011437/cf87164b09de4a3c026e953dc7b5ca4e71328581cebdd8c64318196a32d8934e/update.zip",
-    "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r178-andromeda-20261104011437/Nextos-5.1-20261104011437-update.zip"
+    "object_key": "updates/nextos-nx/releases/5.1-r179-andromeda-20261104044137/7502cfcd972a3cdea2c0dfe0d99d2ed5a1f2d63b13e46a22eec439d87db11859/update.zip",
+    "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r179-andromeda-20261104044137/7502cfcd972a3cdea2c0dfe0d99d2ed5a1f2d63b13e46a22eec439d87db11859/update.zip",
+    "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r179-andromeda-20261104044137/Nextos-5.1-20261104044137-update.zip"
   },
   "representations": {
     "five-device-v1": {
       "format": "nextos-native-zip-1",
-      "size_bytes": 1766196939,
-      "sha256": "6c69cc90162d066b6ec5effc15e670ca624eca78ac5e1a6cc35860987b57767e",
-      "system_sha256": "a91a39c6828bcb552b85f4d2bb15bc65a1fb1316bbc60db775ee26305dd438b9",
-      "update_sha256": "90c45155bfc5cd4db765ce3723325c895c8fa58c7db1fc553cb1216b4a1f587e",
+      "size_bytes": 1766209910,
+      "sha256": "31b00120b58b6a1489421998fd6b83d9312268b742e15b0c5853b893cbe9133c",
+      "system_sha256": "e1936b8838d0cd7f2144aa56238c92c3cc97caaed9bee3ba334d2d969942b66d",
+      "update_sha256": "78b02d90bd2c12be89e5f4b085ed0fba3cd2283e4c27f7d003ab01f4f2084dfa",
       "boot_target": "Amlogic-nx-multisoc",
       "boot_targets": [
         "Amlogic-nx-gxl",
@@ -40,25 +40,23 @@
         "Amlogic-nx-y7"
       ],
       "package_dir": "RetroElite-5.1",
-      "object_key": "updates/nextos-nx/releases/5.1-r178-andromeda-20261104011437/6c69cc90162d066b6ec5effc15e670ca624eca78ac5e1a6cc35860987b57767e/update.zip",
-      "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r178-andromeda-20261104011437/6c69cc90162d066b6ec5effc15e670ca624eca78ac5e1a6cc35860987b57767e/update.zip",
-      "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r178-andromeda-20261104011437/Nextos-5.1-20261104011437-unified-update.zip"
+      "object_key": "updates/nextos-nx/releases/5.1-r179-andromeda-20261104044137/31b00120b58b6a1489421998fd6b83d9312268b742e15b0c5853b893cbe9133c/update.zip",
+      "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r179-andromeda-20261104044137/31b00120b58b6a1489421998fd6b83d9312268b742e15b0c5853b893cbe9133c/update.zip",
+      "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r179-andromeda-20261104044137/Nextos-5.1-20261104044137-unified-update.zip"
     }
   },
   "changelog": [
-    "Suporte por código no ES aguarda confirmação do supervisor e apresenta progresso antes de mostrar o código.",
-    "Prazo do suporte acompanha o relógio monotônico; consulta e cancelamento da espera preservam a sessão de quatro horas.",
-    "Autorização explícita e consulta do cadastro do suporte automático pelo ES, com conclusão pelo operador no atendimento por código.",
-    "Pareamento do suporte automático usa cadastro individual e ticket temporário, preserva registros existentes e revogações; sem credencial administrativa na ROM.",
-    "Base cumulativa r177 preservada, incluindo mapeamento inicial, teclado, gravação atômica e retorno do RetroArch.",
-    "Uma única imagem para D905, TX9, X2, Aquário e Y7, com seleção automática do kernel/DTB e bootloader Y7 no cartão.",
-    "PortMaster: recupera launcher compatível ausente em instalação mais nova sem substituir a aplicação ou os dados.",
-    "PortMaster: interface exibe NextOS 5.1, mantendo os identificadores técnicos de plataforma e a integração após autoatualização.",
-    "Limite conhecido: o ajuste de espera de 15 segundos para a partida fria do suporte foi validado como componente e fica para a próxima geração; não está nesta imagem."
+    "Suporte por código: espera de prontidão autenticada por prazo monotônico de até15s e contagem regressiva durante a confirmação.",
+    "Helpers de rede disponíveis no menu S4/Y7; suporte a adaptadores continua dependente do hardware e driver.",
+    "Capas locais dos Exclusivos associadas pela identidade exata, sem alterar autorização dos arquivos privados.",
+    "Bibliotecas externas locais com seleção única, primária preservada e recusa de caminhos fora do volume.",
+    "Shim V3 resolve atéduas pontes de atalhos gerados, mantendo argv e gates de compatibilidade existentes.",
+    "Uma imagem para cinco perfis e transportes ZIP17/19 do mesmoSYSTEM/UID vinculados pelo mestre assinado.",
+    "Revisão aceita por compilação/gates estáticos/componentes; sem nova alegação de teste físico r179."
   ],
   "signature": {
     "algorithm": "ed25519",
     "key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
-    "value": "WCAqEueO1fI0t8xy3UoulvVlnCt77KhlCu4MI9u5Ek9ngoVy5Zs2uPxPWZjuzZA5akd9WvuZUMwwdsJfKB4YDA=="
+    "value": "bmdPYqbE/aDmMzfGcgtFKu71Z2mHIf7RWDUo+PVwrI70OmCLAa5hvtNKm6ydPjFKa8Krj91MMivGABJDXWYsAQ=="
   }
 }
