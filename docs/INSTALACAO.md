@@ -4,7 +4,7 @@ A RETRO ELITE 5.1 **roda do cartão SD**. Ela não apaga nem substitui o Android
 nada na memória interna (eMMC). Tire o cartão e a caixa volta a ser o que era.
 
 > Antes de começar, confira em [DISPOSITIVOS.md](DISPOSITIVOS.md) se a sua caixa é da família suportada
-> (Amlogic GXL ou S4/S905W2). O nome comercial da caixa não garante a placa interna.
+> (D905, TX9 e X2/GXL, Aquário/S4 ou Y7/G12A). O nome comercial da caixa não garante a placa interna.
 
 ## 1. O que você precisa
 

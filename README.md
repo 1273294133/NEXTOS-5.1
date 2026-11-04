@@ -7,15 +7,15 @@
 
 **Desempenho, fluidez e uma base de sistema modernizada para os aparelhos suportados.** A 5.1 reúne Linux 5.15.223, aceleração Mali-450 nos perfis GXL, evolução do frontend, memória comprimida com ZRAM, novas opções de áudio e atualização cumulativa com integridade de pacotes. O trabalho inclui desenvolvimento próprio, atualização de componentes e integração orientada ao hardware.
 
-> **r177 aprovada pelo dono após o teste do cartão e do reinício do sistema.** Entrega UID **20261103221131**. Correções e alcance no [histórico de versões](docs/HISTORICO.md).
+> **r178 aprovada pelo dono · UID20261104011437. Uma imagem para D905, TX9, X2, Aquário e Y7.** Veja correções e a limitação conhecida do suporte em [Histórico](docs/HISTORICO.md).
 
 | Identidade | Edição 5.1 |
 |---|---|
 | Nome da edição | **Nextos** |
 | Arquitetura | **AArch64** |
-| Família da imagem | **Amlogic-nx · GXL / S4** |
+| Família da imagem | **Amlogic-nx · GXL / S4 / G12A** |
 | Kernel Linux | **5.15.223** |
-| Entrega atual | **r177 · UID 20261103221131** |
+| Entrega atual | **r178 · UID 20261104011437** |
 | Instalação nova | Imagem `.img.gz` para cartão |
 | Atualização de instalação compatível | Pacote nativo `-update.zip` |
 | Acesso a este repositório | Documentação e binários de distribuição; sem código da ROM |
@@ -30,7 +30,7 @@
 
 | Pilar | O que muda na experiência |
 |---|---|
-| **Kernel Linux 5.15.223** | Base vendor adaptada aos perfis GXL / S4, preservando os drivers e as características do hardware suportado. |
+| **Kernel Linux 5.15.223** | Base vendor adaptada aos perfis GXL / S4 / G12A, preservando os drivers e as características do hardware suportado. |
 | **Mali-450 acelerado** | Mali/libMali e framebuffer/fbdev com OpenGL ES 2.0 por hardware na linha GXL. |
 | **systemd 262.1 e pacotes renovados** | glibc 2.44, Python 3.15.0, GCC 16.2.0, binutils 2.47 e as bibliotecas/emuladores com versões identificadas. [Inventário de pacotes](docs/PACOTES.md). |
 | **Fluidez do frontend** | Trabalho no uso de memória, carregamento de arte, navegação e caches. Em uma comparação TX9, o menu principal passou de 705,41 para 63,20 ms até a primeira mudança visual. |
@@ -105,7 +105,7 @@ A descrição completa por áreas está em [Recursos](docs/RECURSOS.md), com 20 
 
 Os arquivos desta release correspondem à imagem e ao update gerados pelo build padrão e validados nesta entrega. O repositório é independente do desenvolvimento privado: nenhum histórico de código da ROM foi importado para cá.
 
-A entrega r177, UID 20261103221131, preserva o cliente da base M71 que usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública de assinatura é distribuída. O acesso público ao GitHub dispensa uma conta GitHub nos aparelhos. A reserva R2 e os recursos públicos são acessados por HTTPS, com caminhos e tipos permitidos no servidor. Nenhuma chave S3 permanente acompanha a ROM. Os pacotes privados continuam no serviço autenticado de contas. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
+A entrega r178, UID 20261104011437, preserva o cliente da base M71 que usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública de assinatura é distribuída. O acesso público ao GitHub dispensa uma conta GitHub nos aparelhos. A reserva R2 e os recursos públicos são acessados por HTTPS, com caminhos e tipos permitidos no servidor. Nenhuma chave S3 permanente acompanha a ROM. Os pacotes privados continuam no serviço autenticado de contas. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
 
 ## Exemplos de ports do ecossistema
 
@@ -121,7 +121,7 @@ A entrega r177, UID 20261103221131, preserva o cliente da base M71 que usa **Git
 
 ## Compatibilidade e limites que importam
 
-- Nas aprovações herdadas da M71, TX9 e Aquário passaram na atualização nativa da UID 20261103010444, incluindo conclusão e consulta do manifesto assinado pelo R2. A r177 teve cartão e reinício aprovados pelo dono. D905 e X2 mantêm os alcances de suas aprovações anteriores.
+- A imagem única r178 foi aprovada pelo dono, com relatos de boot no TX9, D905 e Y7. TX9 e Aquário também concluíram a atualização nativa da UID20261104011437 a100%, com menu e configurações preservados. X2 mantém sua rota anterior e a correção de detecção baseada no ambiente real. Veja a limitação conhecida do suporte no histórico.
 - No Aquário, o host USB CRG pode interferir no Bluetooth quando um controle USB low-speed está sendo lido. O alcance depende da combinação de periféricos.
 - O APK não concede privilégios que o Android não oferece. Acesso root ou autorização compatível podem ser necessários.
 - Ganhos de boot, RAM e desempenho são apresentados com seu contexto; não representam um ganho universal de FPS.

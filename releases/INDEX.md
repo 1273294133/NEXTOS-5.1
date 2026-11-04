@@ -1,9 +1,10 @@
-# Releases da NEXTOS 5.1
+# Releases da NEXTOS5.1
 
-Entrega atual: **r177 · UID 20261103221131**, edição **Nextos**, kernel Linux **5.15.223**.
+Entrega atual: **r178 · UID20261104011437**, Linux5.15.223.
 
-ROM e update: https://github.com/NextOs-Ports/NEXTOS-5.1/releases/tag/v5.1-r177-andromeda-20261103221131
+Imagem única para **D905, TX9, X2, Aquário e Y7**, com seleção automática de boot:
+https://github.com/NextOs-Ports/NEXTOS-5.1/releases/tag/v5.1-r178-andromeda-20261104011437
 
-Cartão e reinício aprovados pelo dono. Configuração de controle antes das boas-vindas, teclado padrão em RAM, salvamento atômico/checado, retorno do RetroArch pelo perfil, Sair em português, retomada do ES em S4 e consulta HDMI corrigida. Base M71 e segurança preservadas; veja o [histórico e os limites](../docs/HISTORICO.md).
+Controles, suporte e PortMaster compartilham a mesma base. O dono aprovou esta imagem; TX9 e Aquário concluíram a atualização nativa. Consulte as [correções e limitações conhecidas](../docs/HISTORICO.md).
 
-A UID 20261103010444 foi retirada. A r176 UID 20261103203332 foi uma etapa de teste, não a entrega recomendada. Os registros antigos permanecem como histórico, sem republicar seus binários nem acrescentar Y7/G12A ao suporte.
+Os ZIPs são transportes de atualização para gerações diferentes de cliente, com o MESMO SYSTEM/UID. Não são outras imagens/ROMs. Binários retirados permanecem apenas como histórico.

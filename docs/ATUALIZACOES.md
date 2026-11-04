@@ -2,11 +2,11 @@
 
 ## Situação das entregas
 
-A entrega **r177, UID 20261103221131**, preserva o cliente M71 que usa **GitHub como origem principal e R2 como reserva por HTTPS**, sem credencial S3 permanente embarcada. O manifesto Ed25519 é conferido pela chave pública fixada; tamanho, hashes e identidade do pacote também são obrigatórios.
+A entrega **r178, UID 20261104011437**, preserva o cliente M71 que usa **GitHub como origem principal e R2 como reserva por HTTPS**, sem credencial S3 permanente embarcada. O manifesto Ed25519 é conferido pela chave pública fixada; tamanho, hashes e identidade do pacote também são obrigatórios.
 
-A imagem e o update da r177 foram gerados pelo build padrão; o dono aprovou o teste do cartão e o reinício do sistema. As aprovações de atualização nativa no TX9 e no Aquário pertencem à base M71 UID 20261103010444: boot, finalizador, dados e consulta assinada pela reserva HTTPS foram conferidos naquela entrega. Esses alcances são herdados, sem declarar uma nova rodada nos dois aparelhos.
+A imagem única r178 foi aprovada pelo dono para D905, TX9, X2, Aquário e Y7. A atualização nativa dessa geração concluiu a100% no TX9 e no Aquário, com novo boot, menu ativo e configurações preservadas. Os ZIPs17/19 transportam o MESMO SYSTEM/UID para clientes de gerações diferentes; o novo cliente seleciona a alternativa de cinco perfis somente após autenticar o mestre assinado. Consulte a limitação conhecida da espera do serviço de suporte no histórico.
 
-As Releases UID 20261102070544, UID 20261102145554 e UID 20261103010444 foram retiradas; a r176 UID 20261103203332 foi uma etapa de teste de cartão, não a entrega atual. Seus registros de integridade permanecem como histórico. Para uma instalação antiga, use a atualização nativa compatível ou o ZIP atual pelo menu de atualização local; não é necessário restaurar a chave antiga.
+As Releases UID 20261102070544, UID 20261102145554 e UID 20261103010444 foram retiradas; a r176 UID 20261103203332 foi uma etapa de teste de cartão e a r177 UID 20261103221131 foi substituída pela r178. Seus registros de integridade permanecem como histórico. Para uma instalação antiga, use a atualização nativa compatível ou o ZIP atual pelo menu de atualização local; não é necessário restaurar a chave antiga.
 
 Os aparelhos acessam o GitHub sem conta ou token GitHub. Se a origem principal estiver indisponível, o cliente utiliza a reserva HTTPS para a mesma entrega assinada.
 

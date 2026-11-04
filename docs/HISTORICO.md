@@ -13,7 +13,22 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### NEXTOS 5.1 — UID 20261103221131 (r177) · 03/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261104011437 (r178) · 03/11/2026 · **atual**
+
+Publicação autorizada pelo dono para esta entrega, fonte `034be8683c15adbff0f551aee2d18819d5a215cb`. Correções de suporte sobre a r177; a validação da ação do menu foi feita no Aquário pelo menu real.
+
+- **Suporte por código:** ao iniciar o atendimento, o menu aguarda o código confirmado e mostra o progresso da conexão. Antes, a tela abria enquanto o supervisor ainda conectava e ficava em "Código: indisponível". Validado no Aquário: código em cerca de 12 segundos, fechar a caixa mantém a sessão e o encerramento explícito funciona. Cancelar a espera não encerra a sessão.
+- **Suporte automático:** autorização explícita no menu. O primeiro cadastro é concluído pelo operador durante um atendimento por código atual; depois, o aparelho cadastrado informa sua presença nos próximos boots. Configurações existentes e revogações são preservadas. Credenciais administrativas e tickets compartilhados não acompanham a imagem.
+- Herdados da r177: configuração de controles, retorno do RetroArch pelo perfil, salvamento atômico dos mapas, retomada do ES em S4, consulta HDMI corrigida e a segurança do canal de atualização (GitHub principal, R2 HTTPS, Ed25519, sem credencial S3; política de SSH inalterada).
+- Y7/G12A integrado ao MESMO arquivo de imagem dos modelos D905, TX9, X2 e Aquário, com seleção automática do boot. O SYSTEM e as correções são comuns. O dono aprovou a imagem atual e relatou os testes no TX9, D905 e Y7. A atualização nativa da mesma geração concluiu no TX9 e no Aquário.
+
+PortMaster: restauração do launcher compatível ausente em instalação mais nova, com versão e dados preservados. A interface passa a exibir NextOS 5.1; identificadores técnicos e reaplicação após autoatualização preservados.
+
+**Limitação conhecida desta imagem:** em uma inicialização fria do TX9, o serviço auxiliar de suporte ficou pronto depois da janela curta de espera e não gerou código. O ajuste para aguardar até15s foi validado como componente temporário; ele NÃO está neste arquivo aprovado. Ficará na próxima geração, junto à integração futura do adaptador Wi-Fi. A geração de código pelo ES já aguarda o resultado da conexão; esse limite adicional do serviço é separado.
+
+A distribuição mantém UMA imagem. Há dois ZIPs de transporte do MESMO SYSTEM/UID: o pacote de migração para clientes antigos e o pacote completo selecionado automaticamente pelos clientes novos, vinculados por um único mestre assinado.
+
+### NEXTOS 5.1 — UID 20261103221131 (r177) · 03/11/2026 · substituída pela r178
 
 Cartão e reinício do sistema aprovados pelo dono; publicação autorizada para esta entrega, fonte `5f01b5b104b7addb315a9601dbada47383525440`.
 

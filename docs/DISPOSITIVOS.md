@@ -14,8 +14,7 @@ caixa existente.
   duas árvores de fabricante (vendor) da Amlogic, uma para a família GXL e outra para a família S4,
   compiladas a partir da fonte pelas receitas do projeto.
 
-A mesma imagem atende as duas famílias. O cartão traz os dois kernels e os DTBs. O carregador da
-própria caixa e os scripts de boot escolhem o par certo para o SoC.
+A r178 usa **uma única imagem** para D905, TX9, X2, Aquário e Y7. O cartão traz os kernels e DTBs nomeados, incluindo `kernel-y7.img` e `dtb-y7.dtb`, e escolhe o perfil automaticamente. O Y7/G12A reutiliza o kernel vendor 5.15 do S4 com DTB e inicialização próprios; não usa o kernel GXL.
 
 ## Plataforma
 
@@ -65,18 +64,20 @@ O DTB descreve a placa para o kernel: memória, pinos, Wi-Fi, HDMI e reservas. A
   - `s4_s905w2_2g`
   - `s4_s905w2_4g`
 - `dtb-x2.dtb`, um DTB próprio da variante X2;
-- `dtb-s4-2g.dtb` e `dtb-s4-4g.dtb`, carregados pelo `cfgload` no S4.
+- `dtb-s4-2g.dtb` e `dtb-s4-4g.dtb`, carregados pelo `cfgload` no S4;
+- `dtb-y7.dtb` cru e `kernel-y7.img`, selecionados no Y7/G12A.
 
 | Aparelho de referência | Perfil / DTB | RAM nominal | RAM visível ao Linux | Estado na 5.1 |
 | --- | --- | --- | --- | --- |
-| **TX9** | GXL `gxl_p281_2g` | 2 GB | ≈1,77 GiB | **Atualizado fisicamente para a versão final (UID 20261102070544)**: boot, finalização e preservação de dados aprovados. |
-| **Aquário** | S4 `s4_s905w2_2g` | 2 GB | ≈1,90 GiB | **Atualizado fisicamente para a versão final (UID 20261102070544)**: boot, finalização e preservação de dados aprovados. |
-| **D905** | GXL `gxl_p281_1g` | 1 GB | ≈850 MiB | **Aprovações anteriores reaproveitadas** (boot normal, kernel e STORAGE em rodadas de out/2026 da 5.1). A prevenção/reparação de STORAGE e boot D905 tem aprovação anterior reaproveitada. A gravação e leitura de cartão registradas pertencem a uma candidata anterior; não foram apresentadas como gravação ou primeiro boot da UID20261102070544 no D905. |
+| **TX9** | GXL `gxl_p281_2g` | 2 GB | ≈1,77 GiB | **Atualizado fisicamente para r178 (UID 20261104011437), finalização nativa 100%**: boot, finalização e preservação de dados aprovados. |
+| **Aquário** | S4 `s4_s905w2_2g` | 2 GB | ≈1,90 GiB | **Atualizado fisicamente para r178 (UID 20261104011437), finalização nativa 100%**: boot, finalização e preservação de dados aprovados. |
+| **D905** | GXL `gxl_p281_1g` | 1 GB | ≈850 MiB | **Cartão r178 aprovado pelo dono**, usando o mesmo arquivo testado no TX9. Provas anteriores de STORAGE preservadas. |
 | **X2** | GXL, `dtb-x2.dtb` próprio (doador `gxl_p281_1g`) | 1 GB | ≈816 MiB | **Aprovações anteriores reaproveitadas.** A última instalação física registrada é a R157 (26/10/2026). A versão final não foi instalada na X2. O DTB da X2 tem mapa de memória e reservas próprios da placa. |
-| **GameStick** | perfil sugerido: o mesmo do D905 (`gxl_p281_1g`) | — | — | **Depende da placa, do DTB e do SoC.** Nenhum GameStick físico foi testado. |
+| **Y7** | G12A/S905X2, `dtb-y7.dtb` | — | — | **Boot, imagens, áudio e controle aprovados no aparelho do colaborador.** Integra a imagem única r178; adaptadores Wi-Fi dependem do chipset. |
+| **GameStick genérico** | perfil sugerido: o mesmo do D905 (`gxl_p281_1g`) | — | — | **Depende da placa, do DTB e do SoC.** A aprovação do Y7 não se aplica a sticks de outra placa. |
 | Placa com perfil `s4_s905w2_4g` | S4 4 GB | 4 GB | — | **Perfil de fonte, sem atestação física.** O DTB existe e é gerado da mesma origem, mas nenhuma caixa de 4 GB foi testada. |
 
-Caixas com outros SoCs (S905X2/X3/X4, S912, S922X etc.) **não fazem parte** desta família de imagem.
+O suporte G12A/S905X2 é específico ao **Y7 identificado**. Outros aparelhos S905X2, além de S905X3/X4, S912 e S922X, não têm suporte presumido por compartilhar o nome do SoC.
 
 ### RAM mínima e perfis de memória
 
