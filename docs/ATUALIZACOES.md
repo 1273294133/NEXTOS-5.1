@@ -2,11 +2,11 @@
 
 ## Situação das entregas
 
-A entrega **r179, UID 20261104044137**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `a8aa58d5f951b213ed833ebd24b735ffaccc008b`.
+A entrega **r180, UID 20261104203500**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `f516fe58c86fee96b99f5f7fb36d9e4997029a2d`.
 
 Uma imagem para D905, TX9, X2, Aquário e Y7. Os transportes `-update.zip` (legado17) e `-unified-update.zip` (completo19) contêm o MESMO SYSTEM/UID e são vinculados pelo mesmo mestre assinado. O cliente novo escolhe a alternativa somente após verificar a assinatura; não se alteram hashes, identidades ou contas para forçar atualização.
 
-Esta revisão usa nova compilação, gates estáticos e provas de componentes, sem alegar nova rodada física r179. A r178 e suas provas identificadas permanecem históricas. A correção de prontidão do serviço de suporte e os demais deltas estão no [Histórico](HISTORICO.md).
+Esta revisão usa nova compilação, gates estáticos e provas de componentes, sem alegar nova rodada física r180. A r178 e suas provas identificadas permanecem históricas. As correções do PortMaster e do SSH e os demais recursos estão no [Histórico](HISTORICO.md).
 
 Releases retiradas e candidatas antigas não voltam a ser recomendadas; para instalações compatíveis, use o atualizador normal ou o ZIP legado pelo menu local, sem restaurar credenciais antigas. O GitHub é acessado sem conta/token GitHub; a reserva HTTPS entrega os mesmos bytes assinados.
 

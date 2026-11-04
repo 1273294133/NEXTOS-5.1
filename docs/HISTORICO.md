@@ -13,7 +13,23 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### NEXTOS 5.1 — UID 20261104044137 (r179) · 04/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261104203500 (r180) · 04/11/2026 · **atual**
+
+Fonte `f516fe58c86fee96b99f5f7fb36d9e4997029a2d`.
+
+- PortMaster: recuperação automática do arquivo de abertura após a atualização própria, preservando a versão instalada e os dados.
+- Jogo aleatório global e por sistema, incluindo subpastas, com shuffle e filtros para itens identificados como BIOS, utilitários e não funcionais.
+- Notas da versão visíveis antes de confirmar a atualização, com versão pública, data e codinome.
+- Configuração inicial por NEXTOS-SETUP.txt no cartão: Wi-Fi, idioma, fuso e nome do jogador; política de SSH preservada.
+- Progresso dos jogos com estados Jogando, Zerado e Abandonado, escolha manual e coleções automáticas.
+- Recuperação segura das permissões SSH observadas em cartões antigos, mantendo a identidade administrativa e sem acesso por senha.
+- Uma imagem para os cinco perfis suportados, com kernel 5.15.223 e os caminhos de atualização compatíveis preservados.
+
+A recuperação SSH mantém a chave administrativa autorizada, reconhece apenas metadados de fábrica revisados e preserva identidades rotacionadas. As correções anteriores do suporte remoto por código permanecem incluídas. A configuração inicial pelo cartão não aceita chaves ou comandos SSH.
+
+A aceitação usa a compilação padrão, conferência dos arquivos reais de SYSTEM/BOOT/ZIP, assinatura e provas dos componentes. Não são alegados novos testes físicos desta revisão. Uma imagem, com dois transportes do mesmo SYSTEM/UID para clientes de atualização compatíveis.
+
+### NEXTOS 5.1 — UID 20261104044137 (r179) · 04/11/2026 · substituída pela r180
 
 Fonte `a8aa58d5f951b213ed833ebd24b735ffaccc008b`. Atualização cumulativa com a mesma base Linux 5.15.223 e imagem única para os cinco perfis.
 
