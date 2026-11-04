@@ -2,13 +2,13 @@
 
 ## Situação das entregas
 
-A entrega **r178, UID 20261104011437**, preserva o cliente M71 que usa **GitHub como origem principal e R2 como reserva por HTTPS**, sem credencial S3 permanente embarcada. O manifesto Ed25519 é conferido pela chave pública fixada; tamanho, hashes e identidade do pacote também são obrigatórios.
+A entrega **r179, UID 20261104044137**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `a8aa58d5f951b213ed833ebd24b735ffaccc008b`.
 
-A imagem única r178 atende D905, TX9, X2, Aquário e Y7. A atualização nativa dessa geração concluiu a100% no TX9 e no Aquário, com novo boot, menu ativo e configurações preservadas. Os ZIPs17/19 transportam o MESMO SYSTEM/UID para clientes de gerações diferentes; o novo cliente seleciona a alternativa de cinco perfis somente após autenticar o mestre assinado. Consulte a limitação conhecida da espera do serviço de suporte no histórico.
+Uma imagem para D905, TX9, X2, Aquário e Y7. Os transportes `-update.zip` (legado17) e `-unified-update.zip` (completo19) contêm o MESMO SYSTEM/UID e são vinculados pelo mesmo mestre assinado. O cliente novo escolhe a alternativa somente após verificar a assinatura; não se alteram hashes, identidades ou contas para forçar atualização.
 
-As Releases UID 20261102070544, UID 20261102145554 e UID 20261103010444 foram retiradas; a r176 UID 20261103203332 foi uma etapa de teste de cartão e a r177 UID 20261103221131 foi substituída pela r178. Seus registros de integridade permanecem como histórico. Para uma instalação antiga, use a atualização nativa compatível ou o ZIP atual pelo menu de atualização local; não é necessário restaurar a chave antiga.
+Esta revisão usa nova compilação, gates estáticos e provas de componentes, sem alegar nova rodada física r179. A r178 e suas provas identificadas permanecem históricas. A correção de prontidão do serviço de suporte e os demais deltas estão no [Histórico](HISTORICO.md).
 
-Os aparelhos acessam o GitHub sem conta ou token GitHub. Se a origem principal estiver indisponível, o cliente utiliza a reserva HTTPS para a mesma entrega assinada.
+Releases retiradas e candidatas antigas não voltam a ser recomendadas; para instalações compatíveis, use o atualizador normal ou o ZIP legado pelo menu local, sem restaurar credenciais antigas. O GitHub é acessado sem conta/token GitHub; a reserva HTTPS entrega os mesmos bytes assinados.
 
 ## NEXTOS Exclusivos: vitrine e acesso à loja
 

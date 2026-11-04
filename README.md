@@ -7,7 +7,7 @@
 
 **Desempenho, fluidez e uma base de sistema modernizada para os aparelhos suportados.** A 5.1 reúne Linux 5.15.223, aceleração Mali-450 nos perfis GXL, evolução do frontend, memória comprimida com ZRAM, novas opções de áudio e atualização cumulativa com integridade de pacotes. O trabalho inclui desenvolvimento próprio, atualização de componentes e integração orientada ao hardware.
 
-> **r178 · UID20261104011437. Uma imagem para D905, TX9, X2, Aquário e Y7.** Veja correções e a limitação conhecida do suporte em [Histórico](docs/HISTORICO.md).
+> **r179 · UID 20261104044137. Uma imagem para D905, TX9, X2, Aquário e Y7.** Correções cumulativas de suporte, rede, capas, bibliotecas externas e atalhos em [Histórico](docs/HISTORICO.md).
 
 | Identidade | Edição 5.1 |
 |---|---|
@@ -15,7 +15,7 @@
 | Arquitetura | **AArch64** |
 | Família da imagem | **Amlogic-nx · GXL / S4 / G12A** |
 | Kernel Linux | **5.15.223** |
-| Entrega atual | **r178 · UID 20261104011437** |
+| Entrega atual | **r179 · UID 20261104044137** |
 | Instalação nova | Imagem `.img.gz` para cartão |
 | Atualização de instalação compatível | Pacote nativo `-update.zip` |
 | Acesso a este repositório | Documentação e binários de distribuição; sem código da ROM |
@@ -94,7 +94,8 @@ A descrição completa por áreas está em [Recursos](docs/RECURSOS.md), com 20 
 | Arquivo da release | Finalidade |
 |---|---|
 | `Nextos-5.1-<UID>.img.gz` | Instalação em cartão. A gravação apaga o conteúdo do cartão selecionado. |
-| `Nextos-5.1-<UID>-update.zip` | Atualização nativa de uma instalação compatível. |
+| `Nextos-5.1-<UID>-update.zip` | Transporte compatível com clientes legados. |
+| `Nextos-5.1-<UID>-unified-update.zip` | Transporte completo, selecionado pelo cliente novo após conferir o mestre assinado. |
 | `SHA256SUMS` | Conferência dos arquivos baixados. |
 | `SHA256SUMS.sig` e `update-signing.pub` | Assinatura Ed25519 e chave pública de distribuição. |
 | `manifest.json` e `release.json` | Versão, UID, tamanho, hashes e identidade da entrega. |
@@ -105,7 +106,7 @@ A descrição completa por áreas está em [Recursos](docs/RECURSOS.md), com 20 
 
 Os arquivos desta release correspondem à imagem e ao update gerados pelo build padrão e validados nesta entrega. O repositório é independente do desenvolvimento privado: nenhum histórico de código da ROM foi importado para cá.
 
-A entrega r178, UID 20261104011437, preserva o cliente da base M71 que usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública de assinatura é distribuída. O acesso público ao GitHub dispensa uma conta GitHub nos aparelhos. A reserva R2 e os recursos públicos são acessados por HTTPS, com caminhos e tipos permitidos no servidor. Nenhuma chave S3 permanente acompanha a ROM. Os pacotes privados continuam no serviço autenticado de contas. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
+A entrega r179, UID 20261104044137, preserva o cliente da base M71 que usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública de assinatura é distribuída. O acesso público ao GitHub dispensa uma conta GitHub nos aparelhos. A reserva R2 e os recursos públicos são acessados por HTTPS, com caminhos e tipos permitidos no servidor. Nenhuma chave S3 permanente acompanha a ROM. Os pacotes privados continuam no serviço autenticado de contas. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
 
 ## Exemplos de ports do ecossistema
 
@@ -121,7 +122,7 @@ A entrega r178, UID 20261104011437, preserva o cliente da base M71 que usa **Git
 
 ## Compatibilidade e limites que importam
 
-- A imagem única r178 tem relatos de boot no TX9, D905 e Y7. TX9 e Aquário também concluíram a atualização nativa da UID20261104011437 a100%, com menu e configurações preservados. X2 mantém sua rota anterior e a correção de detecção baseada no ambiente real. Veja a limitação conhecida do suporte no histórico.
+- A r179 mantém a imagem única dos cinco perfis. Esta revisão é aceita por compilação, gates estáticos e provas de componentes; não representa uma nova rodada de testes físicos. As provas anteriores continuam vinculadas às revisões identificadas no histórico. Compatibilidade de ports e periféricos permanece limitada às rotas reconhecidas.
 - No Aquário, o host USB CRG pode interferir no Bluetooth quando um controle USB low-speed está sendo lido. O alcance depende da combinação de periféricos.
 - O APK não concede privilégios que o Android não oferece. Acesso root ou autorização compatível podem ser necessários.
 - Ganhos de boot, RAM e desempenho são apresentados com seu contexto; não representam um ganho universal de FPS.

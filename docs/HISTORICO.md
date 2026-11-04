@@ -13,7 +13,20 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### NEXTOS 5.1 — UID 20261104011437 (r178) · 03/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261104044137 (r179) · 04/11/2026 · **atual**
+
+Fonte `a8aa58d5f951b213ed833ebd24b735ffaccc008b`. Atualização cumulativa com a mesma base Linux 5.15.223 e imagem única para os cinco perfis.
+
+- Suporte por código aguarda prontidão autenticada por até15s e mostra contagem regressiva durante a confirmação. O ajuste de espera preparado na revisão anterior integra esta geração.
+- Helpers de rede disponíveis no menu S4/Y7; adaptadores continuam dependentes de driver e hardware compatíveis.
+- Capas locais dos Exclusivos recuperadas pela identidade exata, preservando imagens pessoais e autorização dos downloads.
+- Bibliotecas externas locais: seleção única quando a primária está vazia, sem mover jogos ou substituir escolhas explícitas.
+- Shim V3 alcança o launcher original por atéduas pontes de atalhos gerados, mantendo argumentos e os gates existentes; não é garantia universal de ports.
+
+A aceitação desta revisão usa compilação nativa, gates estáticos e provas de componentes. Não são alegados novos testes físicos da r179. Os ZIPs17/19 vinculados pelo mestre assinado transportam o mesmo SYSTEM/UID; a distribuição continua com uma imagem.
+
+
+### NEXTOS 5.1 — UID 20261104011437 (r178) · 03/11/2026 · substituída pela r179
 
 Entrega publicada com a fonte `034be8683c15adbff0f551aee2d18819d5a215cb`. Correções de suporte sobre a r177; a validação da ação do menu foi feita no Aquário pelo menu real.
 
