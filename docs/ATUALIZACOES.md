@@ -2,7 +2,7 @@
 
 ## Situação das entregas
 
-A entrega **r180, UID 20261104203500**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `f516fe58c86fee96b99f5f7fb36d9e4997029a2d`.
+A entrega **r180, UID 20261104204600**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `171fa5f0961317e9a589068ca6bdfbf84e9d356d`.
 
 Uma imagem para D905, TX9, X2, Aquário e Y7. Os transportes `-update.zip` (legado17) e `-unified-update.zip` (completo19) contêm o MESMO SYSTEM/UID e são vinculados pelo mesmo mestre assinado. O cliente novo escolhe a alternativa somente após verificar a assinatura; não se alteram hashes, identidades ou contas para forçar atualização.
 

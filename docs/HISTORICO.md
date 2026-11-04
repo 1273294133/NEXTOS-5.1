@@ -13,9 +13,9 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### NEXTOS 5.1 — UID 20261104203500 (r180) · 04/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261104204600 (r180) · 04/11/2026 · **atual**
 
-Fonte `f516fe58c86fee96b99f5f7fb36d9e4997029a2d`.
+Fonte `171fa5f0961317e9a589068ca6bdfbf84e9d356d`.
 
 - PortMaster: recuperação automática do arquivo de abertura após a atualização própria, preservando a versão instalada e os dados.
 - Jogo aleatório global e por sistema, incluindo subpastas, com shuffle e filtros para itens identificados como BIOS, utilitários e não funcionais.
