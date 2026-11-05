@@ -2,11 +2,11 @@
 
 ## Situação das entregas
 
-A entrega **r180, UID 20261104214108**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `171fa5f0961317e9a589068ca6bdfbf84e9d356d`.
+A entrega **r181, UID 20261105162256**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `e4a7d13d855ab06189110a6a9fa8b6e3c6540e26`.
 
 Uma imagem para D905, TX9, X2, Aquário e Y7. Os transportes `-update.zip` (legado17) e `-unified-update.zip` (completo19) contêm o MESMO SYSTEM/UID e são vinculados pelo mesmo mestre assinado. O cliente novo escolhe a alternativa somente após verificar a assinatura; não se alteram hashes, identidades ou contas para forçar atualização.
 
-Esta revisão usa nova compilação, gates estáticos e provas de componentes, sem alegar nova rodada física r180. A r178 e suas provas identificadas permanecem históricas. As correções do PortMaster e do SSH e os demais recursos estão no [Histórico](HISTORICO.md).
+Esta revisão passou pela compilação padrão, integridade, assinatura e compatibilidade com onze clientes históricos, além de atualização real pelo canal e novo boot no Aquário e no TX9. D905, X2 e Y7 não foram atualizados fisicamente nesta rodada. As novidades estão no [Histórico](HISTORICO.md).
 
 Releases retiradas e candidatas antigas não voltam a ser recomendadas; para instalações compatíveis, use o atualizador normal ou o ZIP legado pelo menu local, sem restaurar credenciais antigas. O GitHub é acessado sem conta/token GitHub; a reserva HTTPS entrega os mesmos bytes assinados.
 

@@ -13,7 +13,20 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### NEXTOS 5.1 — UID 20261104214108 (r180) · 04/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261105162256 (r181) · 05/11/2026 · **atual**
+
+Fonte `e4a7d13d855ab06189110a6a9fa8b6e3c6540e26`.
+
+- Nintendo 3DS com Azahar ARM/GLES2 e otimizações instaladas junto dos novos pacotes de jogos pelo mesmo serviço privado de contas. Sem arquivos de sistema da Nintendo.
+- Correção da identidade do controle no assistente inicial e durante conexão/desconexão de outros controles.
+- Importação de coleções com prévia, capas e favoritos, sem substituir arquivos existentes.
+- Conversão CHD/RVZ/CSO verificada, cancelamento e remoção explícita e segura do original.
+- Automação com autenticação, Home Assistant, pausa, volume e desligamento.
+- Ajustes de multitap, identificação de BIOS, configurações RetroArch 32/64 bits, memória do menu e exFAT.
+
+Atualização assinada pelo canal e novo boot confirmados no Aquário e no TX9, com menu, SSH e configurações preservados. Validação de imagem/BOOT/ZIP para os cinco perfis e compatibilidade com onze clientes históricos; sem nova prova física de D905, X2 e Y7. Uma imagem e dois transportes do mesmo SYSTEM/UID.
+
+### NEXTOS 5.1 — UID 20261104214108 (r180) · 04/11/2026 · substituída pela r181
 
 Fonte `171fa5f0961317e9a589068ca6bdfbf84e9d356d`.
 
