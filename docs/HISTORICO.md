@@ -13,7 +13,19 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### NEXTOS 5.1 — UID 20261105162256 (r181) · 05/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261106034352 (r183) · 06/11/2026 · **atual**
+
+Fonte `5caa6c317713da3e803e6ae7bc566b4286734e83`. Cumulativa sobre a r181 e a candidata r182.
+
+- DTB individual para firmwares S905L que carregam kernel e DTB diretamente; perfis1GB/2GB pinados e preservados nas atualizações.
+- Nomes reservados e colisões de caixa na FAT são recusados antes da escrita.
+- Instalação e recuperação compartilham o contrato de nomes; a lista da transação limita limpeza e rollback aos arquivos envolvidos.
+- Backups pessoais anteriores são preservados; preparo interrompido e confirmação concluída têm recuperação distinta.
+- Limite térmico passivo GXL em85°C, com hot95°C e crítico110°C mantidos.
+
+Atualização pelo canal e novo boot confirmados no Aquário e TX9. Testes do BusyBox ARM, assinatura/transação, imagem e onze clientes históricos. D905, X2, Y7 e G10 não tiveram nova rodada física nesta entrega. A candidata r182 foi revisada antes da publicação; as correções da revisão entram nesta r183.
+
+### NEXTOS 5.1 — UID 20261105162256 (r181) · 05/11/2026 · substituída pela r183
 
 Fonte `e4a7d13d855ab06189110a6a9fa8b6e3c6540e26`.
 

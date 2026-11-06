@@ -2,7 +2,7 @@
 
 ## Situação das entregas
 
-A entrega **r181, UID 20261105162256**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `e4a7d13d855ab06189110a6a9fa8b6e3c6540e26`.
+A entrega **r183, UID 20261106034352**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `5caa6c317713da3e803e6ae7bc566b4286734e83`.
 
 Uma imagem para D905, TX9, X2, Aquário e Y7. Os transportes `-update.zip` (legado17) e `-unified-update.zip` (completo19) contêm o MESMO SYSTEM/UID e são vinculados pelo mesmo mestre assinado. O cliente novo escolhe a alternativa somente após verificar a assinatura; não se alteram hashes, identidades ou contas para forçar atualização.
 
@@ -17,6 +17,10 @@ O menu da conta permanece aberto depois de entrar. **VER JOGOS EXISTENTES** é a
 Na raiz da loja, as categorias com jogos aparecem primeiro: **Ports, GameCube, Wii, família PlayStation, Xbox e Nintendo 3DS**. Outras categorias com conteúdo vêm em seguida; as vazias ficam no fim. A ordenação dos jogos dentro de cada categoria e os filtros pessoais são preservados. **LEMBRAR ACESSO** mostra o estado real da opção e conserva somente a sessão escolhida, sem guardar a senha.
 
 O catálogo online acompanha novas publicações compatíveis e autorizadas no serviço: após atualizar a lista, os títulos passam a aparecer sem trocar a ROM nem editar uma lista manual no aparelho. Isso se limita aos sistemas, formatos e caminhos suportados. Jogos e ports privados continuam exigindo conta ativa e autorização do servidor; a vitrine não libera seus arquivos.
+
+## Compatibilidade incorporada na r183
+
+A imagem traz DTBs individuais GXL de1GB e2GB conferidos por hash. A atualização preserva o perfil individual selecionado, ou o contêiner quando esse já é o formato do cartão. A admissão dos nomes considera a FAT e protege arquivos reservados. A recuperação e a confirmação usam os arquivos registrados na própria transação; backups anteriores são preservados.
 
 ## Como atualizar uma instalação compatível
 

@@ -1,0 +1,31 @@
+{
+  "release_id": "5.1-r183-andromeda-20261106034352",
+  "update_id": "20261106034352",
+  "version": "5.1",
+  "linux_kernel": "5.15.223",
+  "platform": "Amlogic-nx.aarch64",
+  "edition": "Nextos",
+  "source_commit": "5caa6c317713da3e803e6ae7bc566b4286734e83",
+  "system_sha256": "5892f346e85db5751d93139aaef96353dcba764439ff36d474463961bb60c002",
+  "signing_key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
+  "assets": [
+    {
+      "name": "Nextos-5.1-20261106034352-update.zip",
+      "size": 1768511724,
+      "sha256": "835e61a0553caae6403c54531fe8a256ad8c3343777fa1a0c60a502fa9ca18bb"
+    },
+    {
+      "name": "Nextos-5.1-20261106034352-unified-update.zip",
+      "size": 1785747442,
+      "sha256": "d4da7b7dba54c549b31d4727469295c476e24684f5245ba24881822338a0d5d9"
+    },
+    {
+      "name": "Nextos-5.1-20261106034352.img.gz",
+      "size": 1791040030,
+      "sha256": "87cd222250996b05597dc38491d04bb363d51d9e70f324a4cfd1a521f553dced"
+    }
+  ],
+  "physical_validation_claimed": true,
+  "acceptance_basis": "signed-channel update and healthy boot on Aquario and TX9",
+  "release_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/tag/v5.1-r183-andromeda-20261106034352"
+}

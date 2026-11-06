@@ -1,0 +1,61 @@
+{
+  "schema": "nextos-native-channel-1",
+  "product": "retro-elite",
+  "family": "nextos-nx",
+  "platform": "Amlogic-nx.aarch64",
+  "channel": "stable",
+  "version": "5.1",
+  "edition": "Nextos",
+  "native_version": "5.1-r183-andromeda",
+  "release_id": "5.1-r183-andromeda-20261106034352",
+  "update_id": "20261106034352",
+  "source_commit": "5caa6c317713da3e803e6ae7bc566b4286734e83",
+  "payload": {
+    "format": "nextos-native-zip-1",
+    "size_bytes": 1768511724,
+    "sha256": "835e61a0553caae6403c54531fe8a256ad8c3343777fa1a0c60a502fa9ca18bb",
+    "system_sha256": "5892f346e85db5751d93139aaef96353dcba764439ff36d474463961bb60c002",
+    "update_sha256": "f65579105bf6105d40d7a16ef023f873cb1fc22b3641055fecbaa07ebb6ac5fe",
+    "boot_target": "Amlogic-nx-multisoc",
+    "boot_targets": [
+      "Amlogic-nx-gxl",
+      "Amlogic-nx-s4"
+    ],
+    "package_dir": "RetroElite-5.1",
+    "object_key": "updates/nextos-nx/releases/5.1-r183-andromeda-20261106034352/835e61a0553caae6403c54531fe8a256ad8c3343777fa1a0c60a502fa9ca18bb/update.zip",
+    "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r183-andromeda-20261106034352/835e61a0553caae6403c54531fe8a256ad8c3343777fa1a0c60a502fa9ca18bb/update.zip",
+    "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r183-andromeda-20261106034352/Nextos-5.1-20261106034352-update.zip"
+  },
+  "representations": {
+    "five-device-v1": {
+      "format": "nextos-native-zip-1",
+      "size_bytes": 1785747442,
+      "sha256": "d4da7b7dba54c549b31d4727469295c476e24684f5245ba24881822338a0d5d9",
+      "system_sha256": "5892f346e85db5751d93139aaef96353dcba764439ff36d474463961bb60c002",
+      "update_sha256": "d69035d81bbb76e86c105174f2c23549f1ab9d4270cf088a6c0163cc36ded7bb",
+      "boot_target": "Amlogic-nx-multisoc",
+      "boot_targets": [
+        "Amlogic-nx-gxl",
+        "Amlogic-nx-s4",
+        "Amlogic-nx-y7"
+      ],
+      "package_dir": "RetroElite-5.1",
+      "object_key": "updates/nextos-nx/releases/5.1-r183-andromeda-20261106034352/d4da7b7dba54c549b31d4727469295c476e24684f5245ba24881822338a0d5d9/update.zip",
+      "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r183-andromeda-20261106034352/d4da7b7dba54c549b31d4727469295c476e24684f5245ba24881822338a0d5d9/update.zip",
+      "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r183-andromeda-20261106034352/Nextos-5.1-20261106034352-unified-update.zip"
+    }
+  },
+  "changelog": [
+    "Preserva o perfil do DTB individual de 1 GB ou 2 GB nas atualizações, com validação por hash.",
+    "Recuperação e confirmação usam a lista de arquivos da própria atualização; backups pessoais são preservados.",
+    "Nomes novos de BOOT têm a mesma validação na instalação e recuperação, inclusive diferenças entre maiúsculas e minúsculas na FAT.",
+    "Inclui suporte ao DTB individual para aparelhos S905L com firmware que carrega kernel e DTB diretamente.",
+    "Mantém uma imagem para D905, TX9, X2, Aquário e Y7 e os transportes compatíveis com clientes 5.1 antigos e atuais.",
+    "Ajuste GXL incorporado da main: limite térmico passivo em 85 °C; limites hot e crítico preservados."
+  ],
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
+    "value": "cxr0earObu/Z2vD80VGZEBie6dHu+hMVdvEw7haqPd4x2iWxI3IkICxSBt8FwBjCOL8xHQXo5XvJxyDqiH+qCA=="
+  }
+}
