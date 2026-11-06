@@ -1,0 +1,38 @@
+{
+  "schema": "nextos-native-channel-1",
+  "product": "retro-elite",
+  "family": "nextos-nx",
+  "platform": "Amlogic-nx.aarch64",
+  "channel": "stable",
+  "version": "5.1",
+  "edition": "Nextos",
+  "native_version": "5.1-r182-andromeda",
+  "release_id": "5.1-r182-andromeda-20261105235445",
+  "update_id": "20261105235445",
+  "source_commit": "771d8da7ff14209269736cd5a945d7619a7ff235",
+  "payload": {
+    "format": "nextos-native-zip-1",
+    "size_bytes": 1768579418,
+    "sha256": "aa643c4cf7dc1b6a623276d2332b0f6b80b971896e3d98e11d608dd9e6c7e0d9",
+    "system_sha256": "b47d826d4b118a4584098c06e974cfc69ee693b523b38ecdb989f1a4c558ea3f",
+    "update_sha256": "f67961cca0af20bd2512b7671da8fdb1510bdff1adcdb2fd843dddbb8c2a9f4d",
+    "boot_target": "Amlogic-nx-multisoc",
+    "boot_targets": [
+      "Amlogic-nx-gxl",
+      "Amlogic-nx-s4"
+    ],
+    "package_dir": "RetroElite-5.1",
+    "object_key": "updates/nextos-nx/releases/5.1-r182-andromeda-20261105235445/aa643c4cf7dc1b6a623276d2332b0f6b80b971896e3d98e11d608dd9e6c7e0d9/update.zip",
+    "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r182-andromeda-20261105235445/aa643c4cf7dc1b6a623276d2332b0f6b80b971896e3d98e11d608dd9e6c7e0d9/update.zip"
+  },
+  "changelog": [
+    "Boot do dourado grande (S905L) e GameStick G10: cartão novo com DTB puro para U-Boots antigas.",
+    "Atualizador aceita arquivos de BOOT novos com nomes seguros; nunca mais trava por nome desconhecido.",
+    "Mesma imagem para D905, TX9, X2, Aquário e Y7; pacote compatível com clientes r180/r181."
+  ],
+  "signature": {
+    "algorithm": "ed25519",
+    "key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
+    "value": "Ueei46xa6D6MmdxU0yTqDDLK8B1YRUxDFBa6/4aG8dUbfwwsclZHTXIHa5Fp2Hcg22kHsNnqGqdHO7BvbR3DCg=="
+  }
+}

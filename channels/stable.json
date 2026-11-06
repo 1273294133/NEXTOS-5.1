@@ -6,58 +6,33 @@
   "channel": "stable",
   "version": "5.1",
   "edition": "Nextos",
-  "native_version": "5.1-r181-andromeda",
-  "release_id": "5.1-r181-andromeda-20261105162256",
-  "update_id": "20261105162256",
-  "source_commit": "e4a7d13d855ab06189110a6a9fa8b6e3c6540e26",
+  "native_version": "5.1-r182-andromeda",
+  "release_id": "5.1-r182-andromeda-20261105235445",
+  "update_id": "20261105235445",
+  "source_commit": "771d8da7ff14209269736cd5a945d7619a7ff235",
   "payload": {
     "format": "nextos-native-zip-1",
-    "size_bytes": 1768520694,
-    "sha256": "a193ef62c25547afd9045fbfcae1e36940cc472f09a878b28d1d77c6597a4546",
-    "system_sha256": "cbf126e2c67b77824c83840a7d1d0ca7372d705f67e314ea69d9d5267fb18e05",
-    "update_sha256": "a372411d5968aa205c32f27cc71442d00ec424dc2d7ebb92a7fcc5ff1b65d6ae",
+    "size_bytes": 1768579418,
+    "sha256": "aa643c4cf7dc1b6a623276d2332b0f6b80b971896e3d98e11d608dd9e6c7e0d9",
+    "system_sha256": "b47d826d4b118a4584098c06e974cfc69ee693b523b38ecdb989f1a4c558ea3f",
+    "update_sha256": "f67961cca0af20bd2512b7671da8fdb1510bdff1adcdb2fd843dddbb8c2a9f4d",
     "boot_target": "Amlogic-nx-multisoc",
     "boot_targets": [
       "Amlogic-nx-gxl",
       "Amlogic-nx-s4"
     ],
     "package_dir": "RetroElite-5.1",
-    "object_key": "updates/nextos-nx/releases/5.1-r181-andromeda-20261105162256/a193ef62c25547afd9045fbfcae1e36940cc472f09a878b28d1d77c6597a4546/update.zip",
-    "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r181-andromeda-20261105162256/a193ef62c25547afd9045fbfcae1e36940cc472f09a878b28d1d77c6597a4546/update.zip",
-    "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r181-andromeda-20261105162256/Nextos-5.1-20261105162256-update.zip"
-  },
-  "representations": {
-    "five-device-v1": {
-      "format": "nextos-native-zip-1",
-      "size_bytes": 1785755245,
-      "sha256": "510a36ecfe1e42895cba8c9cd8c8ba47f0d0ac10a3c5094d19c3515d0c5fcb06",
-      "system_sha256": "cbf126e2c67b77824c83840a7d1d0ca7372d705f67e314ea69d9d5267fb18e05",
-      "update_sha256": "ad54cba02c524e0ebb443a0c53e06f2e2911ae3b86b81cc652dd2bddf622b76f",
-      "boot_target": "Amlogic-nx-multisoc",
-      "boot_targets": [
-        "Amlogic-nx-gxl",
-        "Amlogic-nx-s4",
-        "Amlogic-nx-y7"
-      ],
-      "package_dir": "RetroElite-5.1",
-      "object_key": "updates/nextos-nx/releases/5.1-r181-andromeda-20261105162256/510a36ecfe1e42895cba8c9cd8c8ba47f0d0ac10a3c5094d19c3515d0c5fcb06/update.zip",
-      "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r181-andromeda-20261105162256/510a36ecfe1e42895cba8c9cd8c8ba47f0d0ac10a3c5094d19c3515d0c5fcb06/update.zip",
-      "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r181-andromeda-20261105162256/Nextos-5.1-20261105162256-unified-update.zip"
-    }
+    "object_key": "updates/nextos-nx/releases/5.1-r182-andromeda-20261105235445/aa643c4cf7dc1b6a623276d2332b0f6b80b971896e3d98e11d608dd9e6c7e0d9/update.zip",
+    "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r182-andromeda-20261105235445/aa643c4cf7dc1b6a623276d2332b0f6b80b971896e3d98e11d608dd9e6c7e0d9/update.zip"
   },
   "changelog": [
-    "Nintendo3DS com Azahar ARM/GLES2, bancos iniciais e otimizações privadas pela mesma conta dos jogos.",
-    "Correção do controle no primeiro assistente e durante conexão/reconexão de outros controles.",
-    "Importação de coleções com prévia, capas e favoritos, preservando arquivos existentes.",
-    "Conversão CHD/RVZ/CSO verificada e remoção explícita/segura do original; tarefas canceláveis.",
-    "API de automação com autenticação, HomeAssistant, pausa, volume e desligamento.",
-    "Multitap por lançamento, BIOS por hash e configurações RetroArch32/64 preservadas.",
-    "Memória do menu por capacidade, voz opcional e exFAT nativo.",
-    "Mesma imagem para D905, TX9, X2, Aquario e Y7; atualização compatível com clientes5.1 antigos e novos."
+    "Boot do dourado grande (S905L) e GameStick G10: cartão novo com DTB puro para U-Boots antigas.",
+    "Atualizador aceita arquivos de BOOT novos com nomes seguros; nunca mais trava por nome desconhecido.",
+    "Mesma imagem para D905, TX9, X2, Aquário e Y7; pacote compatível com clientes r180/r181."
   ],
   "signature": {
     "algorithm": "ed25519",
     "key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
-    "value": "eNlkJOIAUtJP0U+KwOKlW/p2Nzf4G1v2ZQdxPjUla2fNOaUfLo7a+OjoBfj3/nCrUJssiaNUNdMhtshZjgHjCQ=="
+    "value": "Ueei46xa6D6MmdxU0yTqDDLK8B1YRUxDFBa6/4aG8dUbfwwsclZHTXIHa5Fp2Hcg22kHsNnqGqdHO7BvbR3DCg=="
   }
 }
