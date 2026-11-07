@@ -1,0 +1,35 @@
+{
+  "release_id": "5.1-r185-andromeda-20261107155210",
+  "update_id": "20261107155210",
+  "version": "5.1",
+  "linux_kernel": "5.15.223",
+  "platform": "Amlogic-nx.aarch64",
+  "source_commit": "faa13061a7640fa97a4a94688dc3152d8c794a37",
+  "system_sha256": "82d03aaa16373e12e580f14447961643a25832fcd78a33f279d0302aa24803fb",
+  "signing_key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
+  "assets": [
+    {
+      "name": "Nextos-5.1-20261107155210.img.gz",
+      "size": 1799000851,
+      "sha256": "a62651be5c5b490b29dce66e654b16d871fe71b25967ff10fab7f5241c33c705"
+    },
+    {
+      "name": "Nextos-5.1-20261107155210-sc2-update.zip",
+      "size": 1793714693,
+      "sha256": "c31123b53a3ddbbf7b789dae70af66a212569f100128f9df8aac8e53e0faf9eb"
+    },
+    {
+      "name": "Nextos-5.1-20261107155210-update.zip",
+      "size": 1759011149,
+      "sha256": "3b51fc4fbc8955e447cbaa3d700c830d3b3033b37134c923bb4a9109cc2405be"
+    },
+    {
+      "name": "Nextos-5.1-20261107155210-unified-update.zip",
+      "size": 1776323368,
+      "sha256": "c07fc3dd14af3af2fde9af82d7626fdb1d33d01b920fad77fd02a8d0ff726e4c"
+    }
+  ],
+  "physical_validation_claimed": true,
+  "acceptance_basis": "Approved cumulative r185; native update and healthy final boot on D905 and Aquario. HK1 2GB validation inherited from integrated test2; no claim of 4GB physical validation.",
+  "release_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/tag/v5.1-r185-andromeda-20261107155210"
+}

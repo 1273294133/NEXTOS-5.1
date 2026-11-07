@@ -13,7 +13,21 @@ Cada versão tem uma identificação única de atualização (**UID**), mostrada
 
 ## Versões publicadas no canal estável
 
-### NEXTOS 5.1 — UID 20261106034352 (r183) · 06/11/2026 · **atual**
+### NEXTOS 5.1 — UID 20261107155210 (r185) · 07/11/2026 · **atual**
+
+Fonte `faa13061a7640fa97a4a94688dc3152d8c794a37`. Cumulativa sobre a r183, incluindo a recuperação r184 e a integração HK1/SC2.
+
+- Recuperação em RAM antes de acessar os dados, manutenção de instalação interrompida e registros de saúde do boot.
+- Ausência de assinatura de EEROMS não autoriza formatação. Reparos automáticos ficam limitados a metadados comprovadamente recuperáveis, com progresso discreto.
+- Listas de jogos e favoritos com gravação atômica, backup, recuperação e retenção de arquivos danificados ou pendentes de replay.
+- Falha exFAT com remontagem somente leitura reproduzida em imagens de teste; reparo e persistência dos saves após remontagem conferidos.
+- Perfil HK1 RBOX X4S 2 GB/SC2 integrado na imagem única; Wi-Fi/Bluetooth preservam a validação anterior da placa testada. Modelo de 4 GB sem validação física alegada.
+- D905 e Aquário: atualização nativa concluída em 100%, boot normal, frontend e verificador conferidos, listas acompanhadas preservadas.
+- Compatibilidade de transporte r170–r180 verificada no PC. Pacotes legado17, compatível19 e completo25 compartilham SYSTEM/UID; o canal conserva os dois transportes aceitos pelos clientes existentes.
+
+[Download da r185](https://github.com/NextOs-Ports/NEXTOS-5.1/releases/tag/v5.1-r185-andromeda-20261107155210).
+
+### NEXTOS 5.1 — UID 20261106034352 (r183) · 06/11/2026
 
 Fonte `5caa6c317713da3e803e6ae7bc566b4286734e83`. Cumulativa sobre a r181 e a candidata r182.
 

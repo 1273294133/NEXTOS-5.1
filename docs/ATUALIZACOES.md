@@ -2,11 +2,11 @@
 
 ## Situação das entregas
 
-A entrega **r183, UID 20261106034352**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `5caa6c317713da3e803e6ae7bc566b4286734e83`.
+A entrega **r185, UID 20261107155210**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `faa13061a7640fa97a4a94688dc3152d8c794a37`.
 
-Uma imagem para D905, TX9, X2, Aquário e Y7. Os transportes `-update.zip` (legado17) e `-unified-update.zip` (completo19) contêm o MESMO SYSTEM/UID e são vinculados pelo mesmo mestre assinado. O cliente novo escolhe a alternativa somente após verificar a assinatura; não se alteram hashes, identidades ou contas para forçar atualização.
+A imagem única inclui D905, TX9, X2, Aquário, Y7 e HK1 RBOX X4S 2 GB/SC2. Os transportes `-update.zip` (legado17) e `-unified-update.zip` (compatível19) contêm o mesmo SYSTEM/UID e são vinculados pelo mesmo manifesto assinado. O cliente existente escolhe sua representação após verificar a assinatura. Clientes antigos que fixam o nome anterior do repositório usam o transporte R2; clientes com a representação assinada mantêm GitHub principal e R2 de reserva. O pacote `-sc2-update.zip` traz o conjunto nativo completo25, para o fluxo nativo compatível com SC2; não deve substituir manualmente a escolha de um atualizador antigo.
 
-Esta revisão passou pela compilação padrão, integridade, assinatura e compatibilidade com onze clientes históricos, além de atualização real pelo canal e novo boot no Aquário e no TX9. D905, X2 e Y7 não foram atualizados fisicamente nesta rodada. As novidades estão no [Histórico](HISTORICO.md).
+A r185 foi gerada pelo build padrão e aprovada após atualização nativa, conclusão em 100% e boot normal no D905 e Aquário. Os contratos de clientes r170–r180 passaram no PC com BOOT final e SYSTEM de teste. A publicação reutiliza essas provas, sem alegar nova rodada física em todos os modelos. Listas, favoritos e armazenamento ganharam recuperação segura, descrita no [Histórico](HISTORICO.md).
 
 Releases retiradas e candidatas antigas não voltam a ser recomendadas; para instalações compatíveis, use o atualizador normal ou o ZIP legado pelo menu local, sem restaurar credenciais antigas. O GitHub é acessado sem conta/token GitHub; a reserva HTTPS entrega os mesmos bytes assinados.
 

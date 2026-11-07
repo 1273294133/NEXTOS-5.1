@@ -14,7 +14,9 @@ caixa existente.
   duas árvores de fabricante (vendor) da Amlogic, uma para a família GXL e outra para a família S4,
   compiladas a partir da fonte pelas receitas do projeto.
 
-A r178 usa **uma única imagem** para D905, TX9, X2, Aquário e Y7. O cartão traz os kernels e DTBs nomeados, incluindo `kernel-y7.img` e `dtb-y7.dtb`, e escolhe o perfil automaticamente. O Y7/G12A reutiliza o kernel vendor 5.15 do S4 com DTB e inicialização próprios; não usa o kernel GXL.
+A r185 usa **uma única imagem** para D905, TX9, X2, Aquário, Y7 e HK1 RBOX X4S 2 GB/SC2. O cartão traz os kernels e DTBs nomeados e escolhe o perfil automaticamente. Y7/G12A e SC2 usam inicialização e DTBs próprios sobre a base vendor compatível.
+
+O HK1 RBOX X4S **2 GB** passou pela atualização nativa, boot, transferência Wi-Fi, reconexão e inicialização Bluetooth na integração test2 preservada na r185. Descoberta Bluetooth foi aceita; não há prova de pareamento nem de variante 4 GB. As tabelas GXL/S4 abaixo mantêm as características das respectivas famílias.
 
 ## Plataforma
 
