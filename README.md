@@ -7,7 +7,7 @@
 
 **Desempenho, fluidez e uma base de sistema modernizada para os aparelhos suportados.** A 5.1 reúne Linux 5.15.223, aceleração Mali-450 nos perfis GXL, evolução do frontend, memória comprimida com ZRAM, novas opções de áudio e atualização cumulativa com integridade de pacotes. O trabalho inclui desenvolvimento próprio, atualização de componentes e integração orientada ao hardware.
 
-> **r186 · UID 20261108232402. Uma imagem para D905, TX9, X2, Aquário, Y7 e HK1 RBOX X4S 2 GB/SC2.** Transação de atualização em 2 GiB com SYSTEM residente, resgate em RAM com código de 4h, cofre/conversão de saves e novidades em [Histórico](docs/HISTORICO.md).
+> **r186 · UID 20261109002541. Uma imagem para D905, TX9, X2, Aquário, Y7 e HK1 RBOX X4S 2 GB/SC2.** Transação de atualização em 2 GiB com SYSTEM residente, resgate em RAM com código de 4h, cofre/conversão de saves e novidades em [Histórico](docs/HISTORICO.md).
 
 | Identidade | Edição 5.1 |
 |---|---|
@@ -15,7 +15,7 @@
 | Arquitetura | **AArch64** |
 | Família da imagem | **Amlogic-nx · GXL / S4 / G12A / SC2** |
 | Kernel Linux | **5.15.223** |
-| Entrega atual | **r186 · UID 20261108232402** |
+| Entrega atual | **r186 · UID 20261109002541** |
 | Instalação nova | Imagem `.img.gz` para cartão |
 | Atualização de instalação compatível | Pacote nativo `-update.zip` |
 | Acesso a este repositório | Documentação e binários de distribuição; sem código da ROM |
@@ -105,7 +105,7 @@ A descrição completa por áreas está em [Recursos](docs/RECURSOS.md), com 20 
 
 Os arquivos desta release correspondem à imagem e ao update gerados pelo build padrão e validados nesta entrega. O repositório é independente do desenvolvimento privado: nenhum histórico de código da ROM foi importado para cá.
 
-A entrega r186, UID 20261108232402, preserva o cliente da base M71 que usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública de assinatura é distribuída. O acesso público ao GitHub dispensa uma conta GitHub nos aparelhos. A reserva R2 e os recursos públicos são acessados por HTTPS, com caminhos e tipos permitidos no servidor. Nenhuma chave S3 permanente acompanha a ROM. Os pacotes privados continuam no serviço autenticado de contas. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
+A entrega r186, UID 20261109002541, preserva o cliente da base M71 que usa **GitHub como origem principal e R2 como reserva**, com manifesto assinado e identidade imutável do pacote. A chave privada de assinatura e as credenciais de publicação ficam fora da ROM e deste repositório; somente a chave pública de assinatura é distribuída. O acesso público ao GitHub dispensa uma conta GitHub nos aparelhos. A reserva R2 e os recursos públicos são acessados por HTTPS, com caminhos e tipos permitidos no servidor. Nenhuma chave S3 permanente acompanha a ROM. Os pacotes privados continuam no serviço autenticado de contas. Consulte [Atualizações](docs/ATUALIZACOES.md) para o estado de cada entrega.
 
 ## Exemplos de ports do ecossistema
 

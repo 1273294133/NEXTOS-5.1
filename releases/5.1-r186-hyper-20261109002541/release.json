@@ -1,0 +1,25 @@
+{
+  "release_id": "5.1-r186-hyper-20261109002541",
+  "update_id": "20261109002541",
+  "version": "5.1",
+  "linux_kernel": "5.15.223",
+  "platform": "Amlogic-nx.aarch64",
+  "source_commit": "cd11c1ea2972a171d9eb57db5b2ab68ad7cfd3bf",
+  "system_sha256": "2911c7eb04c2b57b8f77a1e9a2bdd508160ac21f4ce4ca86f3d5a7909614a7ec",
+  "signing_key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
+  "assets": [
+    {
+      "name": "Nextos-5.1-20261109002541.img.gz",
+      "size": 1802361047,
+      "sha256": "9505f56a841aa538a47a46f1f51077797891e4bbbd8f37f92947bc4d7130b8ee"
+    },
+    {
+      "name": "Nextos-5.1-20261109002541-update.zip",
+      "size": 1797080182,
+      "sha256": "640467c5e2a8f3eb97b7884439038a2c927126679d1b735f3edc00eafb7c48d3"
+    }
+  ],
+  "physical_validation_claimed": true,
+  "acceptance_basis": "Approved cumulative r186-hyper; 2GiB resident SYSTEM update transaction, boot trial supervisor, early-RAM recovery with 4h support code, and DraStic actual save path validated on Aquario and TX9.",
+  "release_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/tag/v5.1-r186-hyper-20261109002541"
+}

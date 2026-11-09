@@ -7,15 +7,15 @@
   "version": "5.1",
   "edition": "Nextos",
   "native_version": "5.1-r186-hyper",
-  "release_id": "5.1-r186-hyper-20261108232402",
-  "update_id": "20261108232402",
-  "source_commit": "565e5c5a68c5c91eeb4a42c80f35a210bc3430ca",
+  "release_id": "5.1-r186-hyper-20261109002541",
+  "update_id": "20261109002541",
+  "source_commit": "cd11c1ea2972a171d9eb57db5b2ab68ad7cfd3bf",
   "payload": {
     "format": "nextos-native-zip-1",
-    "size_bytes": 1797080113,
-    "sha256": "3e3788532533b1628e09943a5831669866ff8996a17dc14a2b34847ded8663e6",
-    "system_sha256": "0212e74eb91a9e54010697f6bf124181cf1d13b5357dd3f4246480b41ee3d814",
-    "update_sha256": "a5a53f9714e3843d2d75e0cd2e848a40ded3c2cca171b131cd61d9fef94248df",
+    "size_bytes": 1797080182,
+    "sha256": "640467c5e2a8f3eb97b7884439038a2c927126679d1b735f3edc00eafb7c48d3",
+    "system_sha256": "2911c7eb04c2b57b8f77a1e9a2bdd508160ac21f4ce4ca86f3d5a7909614a7ec",
+    "update_sha256": "2a31ba5f898407480e58d76500494efe50c22577323a3bdbc8e3c7df9ed018c2",
     "boot_target": "Amlogic-nx-multisoc",
     "boot_targets": [
       "Amlogic-nx-gxl",
@@ -24,9 +24,9 @@
       "Amlogic-nx-sc2"
     ],
     "package_dir": "RetroElite-5.1",
-    "object_key": "updates/nextos-nx/releases/5.1-r186-hyper-20261108232402/3e3788532533b1628e09943a5831669866ff8996a17dc14a2b34847ded8663e6/update.zip",
-    "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r186-hyper-20261108232402/3e3788532533b1628e09943a5831669866ff8996a17dc14a2b34847ded8663e6/update.zip",
-    "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r186-hyper-20261108232402/Nextos-5.1-20261108232402-update.zip"
+    "object_key": "updates/nextos-nx/releases/5.1-r186-hyper-20261109002541/640467c5e2a8f3eb97b7884439038a2c927126679d1b735f3edc00eafb7c48d3/update.zip",
+    "url": "r2:black-retro-content/updates/nextos-nx/releases/5.1-r186-hyper-20261109002541/640467c5e2a8f3eb97b7884439038a2c927126679d1b735f3edc00eafb7c48d3/update.zip",
+    "github_url": "https://github.com/NextOs-Ports/NEXTOS-5.1/releases/download/v5.1-r186-hyper-20261109002541/Nextos-5.1-20261109002541-update.zip"
   },
   "changelog": [
     "PortMaster: corrigidos pedidos de atualização que podiam prender os diálogos, com reparo que preserva runtimes e pacotes atuais.",
@@ -70,11 +70,12 @@
     "Atualização: cada sistema instalado tem caminho próprio por identificação de conteúdo, evitando sobrescrita ao reutilizar a mesma pasta de atualização.",
     "Limpeza: cópias de atualização já consumidas podem ser removidas sem apagar o sistema ativo, o anterior preservado ou imagens ainda montadas.",
     "Saves DraStic: histórico e conversão usam a pasta realmente gravada pelo emulador, inclusive para jogos em subpastas, preservando o legado existente e protegendo nomes repetidos.",
-    "Atualização: corrigido o cálculo de espaço para substituições do mesmo tamanho em BOOT residente, mantendo a versão base e seus backups intactos."
+    "Atualização: corrigido o cálculo de espaço para substituições do mesmo tamanho em BOOT residente, mantendo a versão base e seus backups intactos.",
+    "Shaders: seleção por jogo passa explicitamente o preset ao RetroArch, corrigindo a permanência no efeito padrão; configuração global e opção de herdar são preservadas."
   ],
   "signature": {
     "algorithm": "ed25519",
     "key_id": "sha256:80cc6b45b270e49d0509bb0fc67acaae4d20d46c37a757804e45b3669253c039",
-    "value": "yIvZUEmrisobZ8AGrCl1igTenz4oUOJ04ChwmEeLQvRqSLFCSKkRLsOeq6SzBZQBuz9wC9WyW7K3ogWmjwe7AQ=="
+    "value": "8oEyMlyC1gokMfby41A6J9YXUfx0hgN5zUDYH8hTCwEdT5/LFON5BZtByq1KxY2Re17/dCQdiLFDakXuxBrPCQ=="
   }
 }

@@ -2,9 +2,9 @@
 
 ## Situação das entregas
 
-A entrega **r186, UID 20261108232402**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `565e5c5a68c5c91eeb4a42c80f35a210bc3430ca`.
+A entrega **r186, UID 20261109002541**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `cd11c1ea2972a171d9eb57db5b2ab68ad7cfd3bf`.
 
-A imagem única inclui D905, TX9, X2, Aquário, Y7 e HK1 RBOX X4S 2 GB/SC2. O manifesto assinado publica exclusivamente o pacote nativo completo de 25 arquivos (`Nextos-5.1-20261108232402-update.zip`, formato `flat25` com SC2 normalizado em `files`, sem `representations`). Clientes modernos (`r178` segunda build até atuais) aplicam o pacote pelo canal usando o helper autenticado empacotado, com transação em 2 GiB (`SYSTEM` residente no armazenamento e base intacta no `BOOT`). Clientes antigos (`r170` até primeira `r178`) recusam de forma segura antes de tocar o `BOOT` e podem usar o lançador manual do pacote quando aplicável.
+A imagem única inclui D905, TX9, X2, Aquário, Y7 e HK1 RBOX X4S 2 GB/SC2. O manifesto assinado publica exclusivamente o pacote nativo completo de 25 arquivos (`Nextos-5.1-20261109002541-update.zip`, formato `flat25` com SC2 normalizado em `files`, sem `representations`). Clientes modernos (`r178` segunda build até atuais) aplicam o pacote pelo canal usando o helper autenticado empacotado, com transação em 2 GiB (`SYSTEM` residente no armazenamento e base intacta no `BOOT`). Clientes antigos (`r170` até primeira `r178`) recusam de forma segura antes de tocar o `BOOT` e podem usar o lançador manual do pacote quando aplicável.
 
 A r186 foi gerada pelo build padrão e aprovada após validação física no Aquário e no TX9, testes automatizados de saves/DraStic e verificação dos contratos de clientes históricos no PC. As novidades completas e limites de validação estão no [Histórico](HISTORICO.md).
 
