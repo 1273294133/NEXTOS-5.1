@@ -2,11 +2,11 @@
 
 ## Situação das entregas
 
-A entrega **r185, UID 20261107155210**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `faa13061a7640fa97a4a94688dc3152d8c794a37`.
+A entrega **r186, UID 20261108232402**, preserva GitHub principal, R2 de reserva por HTTPS e assinatura Ed25519, sem credencial S3 permanente embarcada. Fonte `565e5c5a68c5c91eeb4a42c80f35a210bc3430ca`.
 
-A imagem única inclui D905, TX9, X2, Aquário, Y7 e HK1 RBOX X4S 2 GB/SC2. Os transportes `-update.zip` (legado17) e `-unified-update.zip` (compatível19) contêm o mesmo SYSTEM/UID e são vinculados pelo mesmo manifesto assinado. O cliente existente escolhe sua representação após verificar a assinatura. Clientes antigos que fixam o nome anterior do repositório usam o transporte R2; clientes com a representação assinada mantêm GitHub principal e R2 de reserva. O pacote `-sc2-update.zip` traz o conjunto nativo completo25, para o fluxo nativo compatível com SC2; não deve substituir manualmente a escolha de um atualizador antigo.
+A imagem única inclui D905, TX9, X2, Aquário, Y7 e HK1 RBOX X4S 2 GB/SC2. O manifesto assinado publica exclusivamente o pacote nativo completo de 25 arquivos (`Nextos-5.1-20261108232402-update.zip`, formato `flat25` com SC2 normalizado em `files`, sem `representations`). Clientes modernos (`r178` segunda build até atuais) aplicam o pacote pelo canal usando o helper autenticado empacotado, com transação em 2 GiB (`SYSTEM` residente no armazenamento e base intacta no `BOOT`). Clientes antigos (`r170` até primeira `r178`) recusam de forma segura antes de tocar o `BOOT` e podem usar o lançador manual do pacote quando aplicável.
 
-A r185 foi gerada pelo build padrão e aprovada após atualização nativa, conclusão em 100% e boot normal no D905 e Aquário. Os contratos de clientes r170–r180 passaram no PC com BOOT final e SYSTEM de teste. A publicação reutiliza essas provas, sem alegar nova rodada física em todos os modelos. Listas, favoritos e armazenamento ganharam recuperação segura, descrita no [Histórico](HISTORICO.md).
+A r186 foi gerada pelo build padrão e aprovada após validação física no Aquário e no TX9, testes automatizados de saves/DraStic e verificação dos contratos de clientes históricos no PC. As novidades completas e limites de validação estão no [Histórico](HISTORICO.md).
 
 Releases retiradas e candidatas antigas não voltam a ser recomendadas; para instalações compatíveis, use o atualizador normal ou o ZIP legado pelo menu local, sem restaurar credenciais antigas. O GitHub é acessado sem conta/token GitHub; a reserva HTTPS entrega os mesmos bytes assinados.
 
