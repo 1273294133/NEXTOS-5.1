@@ -44,6 +44,7 @@ jobs:
           printf 'entries: '
           msgfmt --statistics -o /dev/null i18n/zh_CN/emulationstation2.po 2>&1 | tail -1
 
+
       - name: Package
         run: |
           set -euo pipefail
@@ -64,14 +65,16 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
+          cat > release_notes.md <<'NOTES'
+          把 EmulationStation / Retro Elite 菜单完整汉化（1264 条 msgid，100% 覆盖）。
+
+          安装：解压到机器任意目录，SSH 以 root 执行 install-zh_CN.sh。
+
+          脚本会把语言目录从只读 SYSTEM 复制到存储卡，写入 zh_CN 语言文件，
+          把 system.language 设为 zh_CN 并重启菜单。不改动 SYSTEM 镜像，
+          随时可以改回 pt_BR / en_US。
+          NOTES
           gh release delete zh_CN-locale --yes --cleanup-tag || true
           gh release create zh_CN-locale nextos-5.1-zh_CN-locale.zip \
             --title "NEXTOS 5.1 简体中文语言包" \
-            --notes "把 EmulationStation/Retro Elite 菜单完整汉化（1264 条，100% 覆盖）。
-
-安装：解压到机器任意目录，SSH 以 root 执行
-\`\`\`sh
-sh install-zh_CN.sh
-\`\`\`
-脚本会把语言目录从只读 SYSTEM 复制到存储卡、写入 zh_CN 语言文件、把 system.language 设为 zh_CN 并重启菜单。
-不改动 SYSTEM 镜像，随时可以改回 pt_BR / en_US。"
+            --notes-file release_notes.md
