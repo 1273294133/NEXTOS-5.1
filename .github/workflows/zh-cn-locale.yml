@@ -1,0 +1,77 @@
+name: Build zh_CN locale package
+
+# 把 i18n/zh_CN/emulationstation2.po 编译成 emulationstation2.mo，
+# 打包成可直接在机器上安装的 nextos-5.1-zh_CN-locale.zip，并发布到 Releases。
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'i18n/**'
+      - '.github/workflows/zh-cn-locale.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install gettext
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends gettext zip
+
+      - name: Compile emulationstation2.mo
+        run: |
+          set -euo pipefail
+          out=dist/zh_CN/LC_MESSAGES
+          mkdir -p "$out"
+          msgfmt --check --statistics -o "$out/emulationstation2.mo" i18n/zh_CN/emulationstation2.po
+          cp i18n/zh_CN/emulationstation2.po "$out/emulationstation2.po"
+          # 安装脚本放在包根目录，解压后直接 sh install-zh_CN.sh
+          cp i18n/install-zh_CN.sh dist/install-zh_CN.sh
+          chmod +x dist/install-zh_CN.sh
+          cp i18n/zh_CN/README.md dist/README.md 2>/dev/null || true
+
+      - name: Show compiled catalogue info
+        run: |
+          ls -l dist/zh_CN/LC_MESSAGES/
+          printf 'entries: '
+          msgfmt --statistics -o /dev/null i18n/zh_CN/emulationstation2.po 2>&1 | tail -1
+
+      - name: Package
+        run: |
+          set -euo pipefail
+          cd dist
+          zip -qr ../nextos-5.1-zh_CN-locale.zip .
+          cd ..
+          unzip -l nextos-5.1-zh_CN-locale.zip
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: nextos-5.1-zh_CN-locale
+          path: nextos-5.1-zh_CN-locale.zip
+          if-no-files-found: error
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release delete zh_CN-locale --yes --cleanup-tag || true
+          gh release create zh_CN-locale nextos-5.1-zh_CN-locale.zip \
+            --title "NEXTOS 5.1 简体中文语言包" \
+            --notes "把 EmulationStation/Retro Elite 菜单完整汉化（1264 条，100% 覆盖）。
+
+安装：解压到机器任意目录，SSH 以 root 执行
+\`\`\`sh
+sh install-zh_CN.sh
+\`\`\`
+脚本会把语言目录从只读 SYSTEM 复制到存储卡、写入 zh_CN 语言文件、把 system.language 设为 zh_CN 并重启菜单。
+不改动 SYSTEM 镜像，随时可以改回 pt_BR / en_US。"
