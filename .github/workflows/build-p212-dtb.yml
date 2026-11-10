@@ -1,0 +1,57 @@
+name: build-p212-dtb
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'dtb/**'
+      - '.github/workflows/build-p212-dtb.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+        with:
+          path: src
+
+      - name: Fetch amlogic-no 5.15 kernel tree
+        uses: actions/checkout@v4
+        with:
+          repository: CoreELEC/linux-amlogic
+          ref: 5.15.196_20260306
+          fetch-depth: 1
+          path: kernel
+
+      - name: Install build deps
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq bc device-tree-compiler
+
+      - name: Stage board files
+        run: |
+          cp src/dtb/*.dts kernel/arch/arm64/boot/dts/amlogic/
+          printf '%s\n' \
+            'dtb-y += nextos-p212-1g-std.dtb' \
+            'dtb-y += nextos-p212-1g-slow.dtb' \
+            >> kernel/arch/arm64/boot/dts/amlogic/Makefile
+
+      - name: Build DTBs
+        working-directory: kernel
+        run: |
+          make ARCH=arm64 defconfig
+          make ARCH=arm64 -j"$(nproc)" dtbs
+          echo '--- built ---'
+          ls -l arch/arm64/boot/dts/amlogic/*p212*.dtb arch/arm64/boot/dts/amlogic/*p281*.dtb
+
+      - name: Upload DTBs
+        uses: actions/upload-artifact@v4
+        with:
+          name: p212-dtbs
+          if-no-files-found: error
+          path: |
+            kernel/arch/arm64/boot/dts/amlogic/*p212*.dtb
+            kernel/arch/arm64/boot/dts/amlogic/*p281*.dtb
