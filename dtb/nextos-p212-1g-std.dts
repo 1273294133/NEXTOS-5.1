@@ -1,0 +1,25 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * NEXTOS 5.1 / CoreELEC amlogic-no 5.15 kernel
+ * Board: Amlogic P212 reference (S905X / S905L / S905L-B), 1 GiB DDR
+ *
+ * Difference vs upstream meson-gxl-s905x-p212.dts:
+ *   - /memory reduced from 2 GiB (0x80000000) to 1 GiB (0x40000000)
+ * Everything else (PMIC, eMMC, SD, USB, HDMI, IR, Ethernet) keeps the
+ * P212 reference definition, which is what EmuELEC's
+ * gxl_p212_1g_slowemmc.dtb / gxl_p212_1g.dtb are built for.
+ */
+
+/dts-v1/;
+
+#include "meson-gxl-s905x-p212.dtsi"
+
+/ {
+	model = "NEXTOS P212 1GB (Amlogic S905L/LB)";
+	compatible = "amlogic,p212", "amlogic,s905x", "amlogic,meson-gxl";
+
+	memory@0 {
+		device_type = "memory";
+		reg = <0x0 0x0 0x0 0x40000000>; /* 1 GiB */
+	};
+};
