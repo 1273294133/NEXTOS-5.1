@@ -31,34 +31,26 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq device-tree-compiler
 
-      - name: Stage board files
-        run: |
-          cp src/dtb/*.dts kernel/arch/arm64/boot/dts/amlogic/
-
-      - name: Compile DTBs with cpp + dtc
+      - name: Compile all board DTBs
         run: |
           set -e
-          cd kernel
-          K=arch/arm64/boot/dts
-          mkdir -p /tmp/out
-          for f in \
-            $K/amlogic/nextos-p212-1g-std.dts \
-            $K/amlogic/nextos-p212-1g-slow.dts \
-            $K/amlogic/meson-gxl-s905x-p212.dts \
-            $K/amlogic/meson-gxl-s905w-p281.dts ; do
+          K=kernel/arch/arm64/boot/dts
+          mkdir -p out
+          for f in src/dtb/*.dts; do
             base=$(basename "$f" .dts)
             echo "== $base =="
-            cpp -nostdinc -I include -I $K -I $K/amlogic -undef -D__DTS__ \
-              -x assembler-with-cpp "$f" -o /tmp/out/$base.dts.tmp
-            dtc -I dts -O dtb -o /tmp/out/$base.dtb /tmp/out/$base.dts.tmp
+            cpp -nostdinc -I kernel/include -I "$K" -I "$K/amlogic" -undef -D__DTS__ \
+              -x assembler-with-cpp "$f" -o "out/$base.dts.tmp"
+            dtc -I dts -O dtb -o "out/$base.dtb" "out/$base.dts.tmp"
+            rm -f "out/$base.dts.tmp"
           done
           echo '--- built ---'
-          ls -l /tmp/out/*.dtb
-          sha256sum /tmp/out/*.dtb
+          ls -l out/*.dtb
+          sha256sum out/*.dtb
 
       - name: Upload DTBs
         uses: actions/upload-artifact@v4
         with:
           name: p212-dtbs
           if-no-files-found: error
-          path: /tmp/out/*.dtb
+          path: out/*.dtb
