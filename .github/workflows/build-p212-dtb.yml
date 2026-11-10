@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 20
 
     steps:
       - name: Checkout this repo
@@ -26,32 +26,39 @@ jobs:
           fetch-depth: 1
           path: kernel
 
-      - name: Install build deps
+      - name: Install dtc
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq bc device-tree-compiler
+          sudo apt-get install -y -qq device-tree-compiler
 
       - name: Stage board files
         run: |
           cp src/dtb/*.dts kernel/arch/arm64/boot/dts/amlogic/
-          printf '%s\n' \
-            'dtb-y += nextos-p212-1g-std.dtb' \
-            'dtb-y += nextos-p212-1g-slow.dtb' \
-            >> kernel/arch/arm64/boot/dts/amlogic/Makefile
 
-      - name: Build DTBs
-        working-directory: kernel
+      - name: Compile DTBs with cpp + dtc
         run: |
-          make ARCH=arm64 defconfig
-          make ARCH=arm64 -j"$(nproc)" dtbs
+          set -e
+          cd kernel
+          K=arch/arm64/boot/dts
+          mkdir -p /tmp/out
+          for f in \
+            $K/amlogic/nextos-p212-1g-std.dts \
+            $K/amlogic/nextos-p212-1g-slow.dts \
+            $K/amlogic/meson-gxl-s905x-p212.dts \
+            $K/amlogic/meson-gxl-s905w-p281.dts ; do
+            base=$(basename "$f" .dts)
+            echo "== $base =="
+            cpp -nostdinc -I include -I $K -I $K/amlogic -undef -D__DTS__ \
+              -x assembler-with-cpp "$f" -o /tmp/out/$base.dts.tmp
+            dtc -I dts -O dtb -o /tmp/out/$base.dtb /tmp/out/$base.dts.tmp
+          done
           echo '--- built ---'
-          ls -l arch/arm64/boot/dts/amlogic/*p212*.dtb arch/arm64/boot/dts/amlogic/*p281*.dtb
+          ls -l /tmp/out/*.dtb
+          sha256sum /tmp/out/*.dtb
 
       - name: Upload DTBs
         uses: actions/upload-artifact@v4
         with:
           name: p212-dtbs
           if-no-files-found: error
-          path: |
-            kernel/arch/arm64/boot/dts/amlogic/*p212*.dtb
-            kernel/arch/arm64/boot/dts/amlogic/*p281*.dtb
+          path: /tmp/out/*.dtb
