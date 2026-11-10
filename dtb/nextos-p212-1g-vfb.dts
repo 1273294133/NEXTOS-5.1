@@ -1,0 +1,56 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * NEXTOS 5.1 / amlogic-no 5.15 kernel
+ * Board: Amlogic P212 reference (S905X / S905L / S905L-B), 1 GiB DDR
+ *
+ * Variant "vfb": mainline P212 layout plus the vendor reserved-memory
+ * regions that the NEXTOS (Amlogic 5.15 vendor) kernel expects for its
+ * boot logo / framebuffer / pstore. Values copied verbatim from the
+ * official NEXTOS r187 dtb.img container (GXL p281 1 GiB profile):
+ *   uboot-logo@3d800000   0x800000    no-map
+ *   framebuffer@3e000000  0x2000000   no-map, compatible "amlogic, fb-memory"
+ *   ramoops@6000000       0x40000     no-map, compatible "ramoops"
+ *   linux,cma             size 0x10000000
+ */
+
+/dts-v1/;
+
+#include "meson-gxl-s905x-p212.dtsi"
+
+/ {
+	model = "NEXTOS P212 1GB vendor-fb (Amlogic S905L/LB)";
+	compatible = "amlogic,p212", "amlogic,s905x", "amlogic,meson-gxl";
+
+	memory@0 {
+		device_type = "memory";
+		reg = <0x0 0x0 0x0 0x40000000>; /* 1 GiB */
+	};
+
+	reserved-memory {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		ranges;
+
+		uboot-logo@3d800000 {
+			reg = <0x0 0x3d800000 0x0 0x800000>;
+			no-map;
+		};
+
+		framebuffer@3e000000 {
+			compatible = "amlogic, fb-memory";
+			reg = <0x0 0x3e000000 0x0 0x2000000>;
+			no-map;
+		};
+
+		ramoops@6000000 {
+			compatible = "ramoops";
+			reg = <0x0 0x6000000 0x0 0x40000>;
+			no-map;
+		};
+
+		linux,cma {
+			compatible = "shared-dma-pool";
+			size = <0x0 0x10000000>;
+		};
+	};
+};
