@@ -1,0 +1,40 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * NEXTOS 5.1 / CoreELEC amlogic-no 5.15 kernel
+ * Board: Amlogic P212 reference (S905X / S905L / S905L-B), 1 GiB DDR
+ *        variant for "slow eMMC" operator boxes (like EmuELEC's
+ *        gxl_p212_1g_slowemmc.dtb)
+ *
+ * Differences vs nextos-p212-1g-std.dts:
+ *   - eMMC forced to 52 MHz highspeed, HS200 / DDR-1.8V disabled
+ *   - Wi-Fi SDIO controller (sd_emmc_a) disabled: most S905L operator
+ *     boxes of this family ship without the BCM SDIO module
+ * Everything else identical to the P212 reference.
+ */
+
+/dts-v1/;
+
+#include "meson-gxl-s905x-p212.dtsi"
+
+/ {
+	model = "NEXTOS P212 1GB slow-eMMC (Amlogic S905L/LB)";
+	compatible = "amlogic,p212", "amlogic,s905x", "amlogic,meson-gxl";
+
+	memory@0 {
+		device_type = "memory";
+		reg = <0x0 0x0 0x0 0x40000000>; /* 1 GiB */
+	};
+};
+
+/* Workplace eMMC in these operator boxes is slow: drop HS200/DDR-1.8V */
+&sd_emmc_c {
+	max-frequency = <52000000>;
+	cap-mmc-highspeed;
+	/delete-property/ mmc-hs200-1_8v;
+	/delete-property/ mmc-ddr-1_8v;
+};
+
+/* No BCM SDIO Wi-Fi module on this board revision */
+&sd_emmc_a {
+	status = "disabled";
+};
