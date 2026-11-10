@@ -1,0 +1,62 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * NEXTOS 5.1 / amlogic-no 5.15 kernel
+ * Board: Amlogic P212 reference (S905X / S905L / S905L-B), 1 GiB DDR
+ *
+ * Variant "vfb-slow": vendor reserved-memory regions (see nextos-p212-1g-vfb.dts)
+ * plus conservative eMMC timing for operator boxes with slow eMMC,
+ * and the Wi-Fi SDIO controller disabled.
+ */
+
+/dts-v1/;
+
+#include "meson-gxl-s905x-p212.dtsi"
+
+/ {
+	model = "NEXTOS P212 1GB vendor-fb slow-eMMC (Amlogic S905L/LB)";
+	compatible = "amlogic,p212", "amlogic,s905x", "amlogic,meson-gxl";
+
+	memory@0 {
+		device_type = "memory";
+		reg = <0x0 0x0 0x0 0x40000000>; /* 1 GiB */
+	};
+
+	reserved-memory {
+		#address-cells = <2>;
+		#size-cells = <2>;
+		ranges;
+
+		uboot-logo@3d800000 {
+			reg = <0x0 0x3d800000 0x0 0x800000>;
+			no-map;
+		};
+
+		framebuffer@3e000000 {
+			compatible = "amlogic, fb-memory";
+			reg = <0x0 0x3e000000 0x0 0x2000000>;
+			no-map;
+		};
+
+		ramoops@6000000 {
+			compatible = "ramoops";
+			reg = <0x0 0x6000000 0x0 0x40000>;
+			no-map;
+		};
+
+		linux,cma {
+			compatible = "shared-dma-pool";
+			size = <0x0 0x10000000>;
+		};
+	};
+};
+
+&sd_emmc_c {
+	max-frequency = <52000000>;
+	cap-mmc-highspeed;
+	/delete-property/ mmc-hs200-1_8v;
+	/delete-property/ mmc-ddr-1_8v;
+};
+
+&sd_emmc_a {
+	status = "disabled";
+};
